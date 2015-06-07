@@ -1,0 +1,11 @@
+diplonautic_landing_homepage:
+    path:     /
+    defaults: { _controller: DiplonauticLandingBundle:Default:index }
+
+diplonautic_landing_about: 
+    path:     /about
+    defaults: { _controller: DiplonauticLandingBundle:Default:about }
+    
+diplonautic_landing_products: 
+    path:     /products
+    defaults: { _controller: DiplonauticLandingBundle:Default:products }    

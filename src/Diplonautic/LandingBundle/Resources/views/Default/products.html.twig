@@ -1,0 +1,45 @@
+{% extends 'DiplonauticLandingBundle::layout.html.twig' %}
+{% block content %}
+    {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
+    <div class="main">
+        
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 main-description text-center">
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto1.png")}}" alt="">
+                            <h4>AIRE ACONDICIONAT</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto2.png")}}" alt="">
+                            <h4>SISTEMES FRIGORIFICS</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto3.png")}}" alt="">
+                            <h4>GENERADOR</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto4.png")}}" alt="">
+                            <h4>POTABILITZADOR</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto5.png")}}" alt="">
+                            <h4>SISTEMES ELÉCTRICS</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="{{ asset("bundles/diplonauticlanding/images/Picto6.png")}}" alt="">
+                            <h4>HÉLIX DE MANIOBRA</h4>
+                        </div>
+                    </div>
+                   
+                    <div class="col-sm-1 col-sm-offset-1 languages">
+                        <div class="cat">CAT</div>
+                        <div class="en">EN</div>
+                        <div class="divisory"><div class="sub-div1"></div><div class="sub-div2"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

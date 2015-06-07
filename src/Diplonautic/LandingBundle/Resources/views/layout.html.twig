@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="{{app.request.locale}}">
+    <head>
+	
+        <meta charset="utf-8">
+
+        <title>Diplonautic</title>
+
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta property="og:image" content=""/>
+
+        <meta http-equiv="Content-Language" content="{{app.request.locale}}"/>
+        <meta property="og:type" content="website" />   
+        <meta name="Robots" content="all"/>
+
+        <meta property="fb:admins" content="" />
+
+
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/main.css') }}" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <script src="{{ asset("bundles/diplonauticlanding/js/bootstrap.min.js") }}"></script>
+        
+    {% block extra_head %}{% endblock %}
+</head>
+<body{% block body_attr %}{% endblock %}>
+  
+<!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="wrapper">
+{% block content %}{% endblock %}
+
+{% block footer %}
+    {% include "DiplonauticLandingBundle:Default:footer.html.twig" %}
+{% endblock %}
+
+</div>
+
+</body>
+</html>
