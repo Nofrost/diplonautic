@@ -6,6 +6,14 @@ diplonautic_landing_about:
     path:     /about
     defaults: { _controller: DiplonauticLandingBundle:Default:about }
     
+diplonautic_landing_contact: 
+    path:     /contact
+    defaults: { _controller: DiplonauticLandingBundle:Default:contact }    
+    
 diplonautic_landing_products: 
     path:     /products
-    defaults: { _controller: DiplonauticLandingBundle:Default:products }    
+    defaults: { _controller: DiplonauticLandingBundle:Default:products } 
+    
+diplonautic_landing_air_conditioner: 
+    path:     /products/air-conditioner
+    defaults: { _controller: DiplonauticLandingBundle:Default:airConditioner } 
