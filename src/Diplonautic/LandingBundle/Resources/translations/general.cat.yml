@@ -1,0 +1,18 @@
+header : 
+    home : 'INICI'
+    company : 'EMPRESA'
+    products : 'PRODUCTES'
+    oportunities : 'OPORTUNITATS'
+    contact : 'CONTACTE'
+    
+index :
+    title : 'DISENY I INSTAL·LACIONS <br> NÀUTIQUES'
+    we_improve : 'Millorem la seva navegació amb la'
+    list : 
+        installation : 'INSTAL·LACIÓ'
+        repair : 'REPARACIÓ'
+        maintenance : 'MANTENIMENT'
+    
+    electrical : 'dels equips elèctrics de la seva EMBARCACIÓ.'
+    
+    

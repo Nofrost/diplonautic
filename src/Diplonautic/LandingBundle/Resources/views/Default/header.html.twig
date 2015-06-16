@@ -1,4 +1,4 @@
-
+{% trans_default_domain "general" %}
 <div class="container-fluid">
     <nav>
         <div class="row">
@@ -10,20 +10,20 @@
             <div class="division"></div>
             <div class="col-sm-9 col-md-8 navbar-diplonautic">
                 <ul class="nav navbar-nav">
-                      <li class="text-center">
-                          <a href="{{path("diplonautic_landing_homepage")}}">INICI</a>
+                      <li class="text-center" id="index_header">
+                          <a href="{{path("diplonautic_landing_homepage")}}">{%trans%}header.home{%endtrans%}</a>
                       </li>
-                      <li class="text-center">
-                          <a href="{{path("diplonautic_landing_about")}}">EMPRESA</a>
+                      <li class="text-center" id="about_header">
+                          <a href="{{path("diplonautic_landing_about")}}">{%trans%}header.company{%endtrans%}</a>
                       </li>
-                      <li class="text-center">
-                          <a href="{{path("diplonautic_landing_products")}}">PRODUCTES</a>
+                      <li class="text-center" id="products_header">
+                          <a href="{{path("diplonautic_landing_products")}}">{%trans%}header.products{%endtrans%}</a>
                       </li>
-                      <li class="text-center">
-                          <a href="#">OPORTUNITATS</a>
+                      <li class="text-center" id="oportunities_header">
+                          <a href="#">{%trans%}header.oportunities{%endtrans%}</a>
                       </li>
-                      <li class="text-center">
-                          <a href="{{path("diplonautic_landing_contact")}}">CONTACTE</a>
+                      <li class="text-center" id="contact_header">
+                          <a href="{{path("diplonautic_landing_contact")}}">{%trans%}header.contact{%endtrans%}</a>
                       </li>
 
                   </ul><!--navbar-right-->

@@ -1,3 +1,4 @@
+{% trans_default_domain "general" %}
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
@@ -7,15 +8,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-6 main-description">
-                        <h1 class="h3"><b>DISEÑO E INSTALACIONES<br>NÁUTICAS</b></h1>
+                        <h1 class="h3"><b>{%trans%}index.title{%endtrans%}</b></h1>
                         <div class="divisory"><div class="sub-div1"></div><div class="sub-div2"></div></div>
-                        <p>Mejoramos su navegación con la
+                        <p>{%trans%}index.we_improve{%endtrans%}
                         <ul>
-                            <li>INSTALACIÓN</li>
-                            <li>REPARACIÓN</li>
-                            <li>MANTENIMIENTO</li>
+                            <li>{%trans%}index.list.installation{%endtrans%}</li>
+                            <li>{%trans%}index.list.repair{%endtrans%}</li>
+                            <li>{%trans%}index.list.maintenance{%endtrans%}</li>
                         </ul>
-                        de los equipos eléctricos de su EMBARCACIÓN</p>
+                        {%trans%}index.electrical{%endtrans%}</p>
                     </div>
                     
                     <div class="col-sm-5 main-marks">
@@ -50,8 +51,13 @@
                         </table>
                     </div>
                     <div class="col-sm-1 languages">
-                        <div id="cat">CAT</div>
-                        <div id="en">EN</div>
+                        <div id="cat">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "cat" })}}">CAT</a>
+                        </div>
+                        
+                        <div id="en">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}">EN</a>
+                        </div>
                         
                     </div>
                 </div>

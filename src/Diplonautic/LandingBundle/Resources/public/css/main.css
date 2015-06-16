@@ -1,22 +1,8 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 24/05/2015, 20:28:35
     Author     : dan
 */
-@font-face {
-  font-family: 'pirulen';
-/*  src: url('webfont.eot');  IE9 Compat Modes */
-  src: url('../fonts/pirulen.ttf')  format('truetype'); /* Safari, Android, iOS */
-/*  src: url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 
-       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
-       url('webfont.woff') format('woff'),  Pretty Modern Browsers */
-       
-/*       url('webfont.svg#svgFontName') format('svg');  Legacy iOS */
-}
+/*----------------------------GENERAL CLASSES---------------------------------*/
 body{
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
@@ -36,12 +22,15 @@ body{
 a{
     color: #fff;
 }
-h1, .h1{
-    font-size: 22px;
+h2, .h2{
+    font-size: 24px;
 }
 h3, .h3{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
+}
+h4, .h4{
+    font-size: 18px;
 }
 /*-----------------------------Header--------------------------------------*/
 
@@ -102,7 +91,7 @@ h3, .h3{
         height: 26px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-    min-width: 109px;
+    min-width: 106px;
     padding-top: 33px;
     padding-bottom: 32px;
 }
@@ -117,7 +106,7 @@ h3, .h3{
         height: 50px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 131px;
+        min-width: 129px;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -126,10 +115,10 @@ h3, .h3{
         padding-bottom: 10px;
     }
     .nav-logo> a > img {
-        height: 65px;
+        height: 60px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 175px;
+        min-width: 158px;
     }
 }
 /*--------------------------------home----------------------------------------*/
@@ -145,21 +134,15 @@ h3, .h3{
 .main-description img{
     width: 100%;
 }
-.pictos img{
-    height: 50px;
-    width: auto;
-}
 .main-description ul{
     list-style: none;
     padding: 0px;
 }
-
 .main-marks{
     background-color: #fff;
     height: 425px;
     padding: 30px;
 }
-
 .main-marks td{
     padding: 5px;
     text-align: center;
@@ -167,6 +150,16 @@ h3, .h3{
 }
 .main-marks td img{
     width: 100%;
+}
+
+.main-description-product{
+    background-color: rgba(0,67,95,0.8);
+    min-height: 425px;
+    padding: 37px;
+}
+.main-description-product img{
+    height: 50px;
+    width: auto;
 }
 
 .languages div{
@@ -180,16 +173,6 @@ h3, .h3{
     background-color: rgba(120,189,218,0.5);
     color: #fff;
 }
-
-@media only screen and (min-width:1200px) {
-    .main-marks td img{
-        width: 70%;
-    }
-    .main-marks td img.width-fifty{
-    width: 50%;
-    }
-}
-
 .divisory{
     border-bottom: 1px solid #fff;
     width: 100%;
@@ -197,9 +180,7 @@ h3, .h3{
     position: relative;
     margin-bottom: 13px;
 }
-.pictos .divisory{
-    width: 108%;
-}
+
 .divisory .sub-div1 {
     width: 31px;
     height: 15px;
@@ -220,15 +201,54 @@ h3, .h3{
     /* left: 383px; */
     right: 8px;
 }
-.main-description-product{
-    background-color: rgba(0,67,95,0.8);
-    min-height: 425px;
-    padding: 37px;
+@media only screen and (min-width:768px) {
+    .pictos img{
+        height: 35px;
+        width: auto;
+    }
+    .pictos h4{
+        font-size: 10px;
+    }
+    .pictos .divisory{
+        width: 120%;
+    }
+    .pictos p{
+        font-size: 12px;
+    }
 }
-.main-description-product img{
-    height: 50px;
-    width: auto;
+@media only screen and (min-width:992px) {
+    .pictos img{
+        height: 40px;
+    }
+    .pictos h4{
+        font-size: 14px;
+    }
+    .pictos .divisory{
+        width: 113%;
+    }
+    .pictos p{
+        font-size: 14px;
+    }
 }
+@media only screen and (min-width:1200px) {
+    .main-marks td img{
+        width: 70%;
+    }
+    .main-marks td img.width-fifty{
+        width: 50%;
+    }
+    .pictos img{
+        height: 50px;
+    }
+    .pictos .divisory{
+        width: 108%;
+    }
+    .pictos p{
+        font-size: 1em;
+    }
+}
+
+
 
 
 
