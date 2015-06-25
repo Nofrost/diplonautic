@@ -1,0 +1,49 @@
+{% extends 'DiplonauticLandingBundle::layout.html.twig' %}
+{%trans_default_domain 'general'%}
+{% block content %}
+    {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
+    <div class="main">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-7 main-description-product">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="{{ asset("bundles/diplonauticlanding/images/Picto4.png")}}" alt="">
+                            </div>
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <h1 class="h4">{%trans%}products.wt.title{%endtrans%}</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-2">
+                                <p>{%trans%}water.intro{%endtrans%}
+                                    <ul>
+                                        <li>{%trans%}water.e_recover{%endtrans%}</li>
+                                        <li>{%trans%}water.dc{%endtrans%}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p>{%trans%}water.closing{%endtrans%}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 main-marks">
+                        
+                    </div>
+                    <div class="col-sm-1 languages">
+                        <div id="cat">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}">CAT</a>
+                        </div>
+                        
+                        <div id="en">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

@@ -1,28 +1,33 @@
 {% trans_default_domain "general" %}
 <div class="container-fluid">
-    <nav>
+    <nav role="navigation">
         <div class="row">
-            <div class="col-sm-3 col-md-4 text-center nav-logo">
+            <div class="col-xs-12 col-sm-3 col-md-4 text-center nav-logo">
                 <a href="#">
                     <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/logo.png") }}">
                 </a>
             </div>
-            <div class="division"></div>
-            <div class="col-sm-9 col-md-8 navbar-diplonautic">
+            <div class="division hidden-xs"></div>
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="col-xs-7 col-sm-9 col-md-8 navbar-diplonautic collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                      <li class="text-center" id="index_header">
+                      <li id="index_header">
                           <a href="{{path("diplonautic_landing_homepage")}}">{%trans%}header.home{%endtrans%}</a>
                       </li>
-                      <li class="text-center" id="about_header">
+                      <li id="about_header">
                           <a href="{{path("diplonautic_landing_about")}}">{%trans%}header.company{%endtrans%}</a>
                       </li>
-                      <li class="text-center" id="products_header">
+                      <li id="products_header">
                           <a href="{{path("diplonautic_landing_products")}}">{%trans%}header.products{%endtrans%}</a>
                       </li>
-                      <li class="text-center" id="oportunities_header">
+                      <li id="oportunities_header">
                           <a href="#">{%trans%}header.oportunities{%endtrans%}</a>
                       </li>
-                      <li class="text-center" id="contact_header">
+                      <li id="contact_header">
                           <a href="{{path("diplonautic_landing_contact")}}">{%trans%}header.contact{%endtrans%}</a>
                       </li>
 
@@ -31,3 +36,4 @@
         </div>
     </nav>
 </div>
+                      

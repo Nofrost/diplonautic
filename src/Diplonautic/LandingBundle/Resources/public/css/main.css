@@ -7,7 +7,7 @@ body{
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #fff;
-    background: url(../images/Background-web.png) no-repeat center center fixed; 
+    background: url(../images/Background-mob.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,17 +32,53 @@ h3, .h3{
 h4, .h4{
     font-size: 18px;
 }
+@media only screen and (min-width:768px) {
+    body{
+        background: url(../images/Background-web.png) no-repeat center center fixed;
+         -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        position:absolute;
+    }
+    h2, .h2{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:992px) {
+    h2, .h2{
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    h2, .h2{
+        font-size: 24px;
+    }
+}
 /*-----------------------------Header--------------------------------------*/
-
-.nav-logo{
-    min-height: 85px;
+.navbar-toggle {
+    float: left;
+    margin-left: 12%;
     background-color: rgba(0,67,95,0.5);
-    width: 41.466667%;
+    font-size: 31px;
+    /* width: 55px; */
+    border-radius: 0;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.navbar-nav {
+    margin: 0;
+}
+.nav-logo{
+    background-color: rgba(0,67,95,0.5);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .nav-logo> a > img {
-    height: 65px;
+    height: 42px;
 }
 .navbar-diplonautic{
     background-color: rgba(0,67,95,0.7);
@@ -50,24 +86,25 @@ h4, .h4{
     min-height: 85px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 15px;
+}
+.navbar-diplonautic>.navbar-nav>ul{
+    margin: 0;
+}
+.navbar-diplonautic>.navbar-nav>li{
+    text-align: left;
+}
+.navbar-diplonautic>.navbar-nav>li>a {
+    min-width: 187px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+.navbar-diplonautic>.navbar-nav>li:last-child>a {
+    border-bottom: none;
 }
 
-.navbar-diplonautic>.navbar-nav>li>a{
-    min-width: 175px;
-    padding-top: 33px;
-    padding-bottom: 32px;
-}
-.navbar-diplonautic>.navbar-nav>li:after{
-    border-right: 1px solid;
-    content: "";
-    position: absolute;
-    height: 19px;
-    right: 0px;
-    top: 33px;
-}
-.navbar-diplonautic>.navbar-nav>li:last-child:after{
-    border-right: none;
-}
 
 .navbar-diplonautic>.navbar-nav>li>a:hover{
     background-color: rgba(255,255,255,0.7);
@@ -76,25 +113,55 @@ h4, .h4{
 .navbar-diplonautic>.navbar-nav>li:first-child>a{
     border-left: none;
 }
-.division{
-    width: 0.2%;
-    min-height: 12px;
-    float: left;
-}
+
 @media only screen and (min-width:768px) {
     .nav-logo{
         width: 24.8%;
         padding-top: 29px;
         padding-bottom: 29px;
+        min-height: 85px;
     }
     .nav-logo> a > img {
         height: 26px;
     }
+    .navbar-diplonautic{
+        margin-top: 0px;
+        display: block;
+    }
+    .navbar-diplonautic>.navbar-nav>li{
+        text-align: center;
+    }
+/*    .navbar-diplonautic>.navbar-nav>li>a{
+        min-width: 106px;
+        padding-top: 33px;
+        padding-bottom: 32px;
+        border-bottom: 0px;
+        font-size: 14px;
+    }*/
     .navbar-diplonautic>.navbar-nav>li>a{
-    min-width: 106px;
-    padding-top: 33px;
-    padding-bottom: 32px;
-}
+        min-width: 115px;
+        padding-top: 33px;
+        padding-bottom: 32px;
+        border-bottom: 0px;
+        font-size: 12px;
+        padding: 33px 10px 32px;
+    }
+    .division{
+        width: 0.2%;
+        min-height: 12px;
+        float: left;
+    }
+    .navbar-diplonautic>.navbar-nav>li:after{
+        border-right: 1px solid;
+        content: "";
+        position: absolute;
+        height: 19px;
+        right: 0px;
+        top: 33px;
+    }
+    .navbar-diplonautic>.navbar-nav>li:last-child:after{
+        border-right: none;
+    }
 }
 @media only screen and (min-width:992px) {
     .nav-logo{
@@ -106,7 +173,7 @@ h4, .h4{
         height: 50px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 129px;
+        min-width: 132px;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -118,12 +185,13 @@ h4, .h4{
         height: 60px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 158px;
+        min-width: 164px;
+        font-size: 14px;
     }
 }
 /*--------------------------------home----------------------------------------*/
 .main{
-    margin: 120px 0;
+    margin: 10% 0;
 }
 .main-description{
     background-color: rgba(0,67,95,0.8);
@@ -148,7 +216,7 @@ h4, .h4{
     text-align: center;
     vertical-align: middle;
 }
-.main-marks td img{
+.main-marks img{
     width: 100%;
 }
 
@@ -173,6 +241,7 @@ h4, .h4{
     background-color: rgba(120,189,218,0.5);
     color: #fff;
 }
+
 .divisory{
     border-bottom: 1px solid #fff;
     width: 100%;
@@ -201,6 +270,11 @@ h4, .h4{
     /* left: 383px; */
     right: 8px;
 }
+.pictos a:hover {
+    text-shadow: 0px 0px 5px #fff;
+    color: white;
+    text-decoration: none;
+}
 @media only screen and (min-width:768px) {
     .pictos img{
         height: 35px;
@@ -215,6 +289,9 @@ h4, .h4{
     .pictos p{
         font-size: 12px;
     }
+    .main{
+        margin: 16% 0 3%;
+    }
 }
 @media only screen and (min-width:992px) {
     .pictos img{
@@ -228,6 +305,9 @@ h4, .h4{
     }
     .pictos p{
         font-size: 14px;
+    }
+    .main{
+        margin: 13% 0 3%;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -246,11 +326,16 @@ h4, .h4{
     .pictos p{
         font-size: 1em;
     }
+    .main{
+        margin: 10% 0 3%;
+    }
 }
 
 
 
-
+.pad-left{
+    padding-left: 0px;
+}
 
 
 

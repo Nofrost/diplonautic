@@ -1,0 +1,11 @@
+services:
+    sonata.admin.oportunitat:
+        class: Diplonautic\LandingBundle\Admin\OportunitatAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, show_in_dashboard: true, group: "Diplonautic", label: "Oportunitat" }
+        arguments:
+            - ~
+            - Diplonautic\LandingBundle\Entity\Oportunitat
+            - ~
+        calls:
+            - [ setTranslationDomain, [DiplonauticLandingBundle]]

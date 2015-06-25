@@ -5,15 +5,8 @@
         <group>
             <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/header.html.twig</file>
             <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/public/css/main.css</file>
-            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/index.html.twig</file>
-            <file>file:/home/dan/diplonautic/app/config/parameters.yml.dist</file>
-            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/layout.html.twig</file>
-            <file>file:/home/dan/diplonautic/app/config/security.yml</file>
-            <file>file:/home/dan/diplonautic/app/AppKernel.php</file>
-            <file>file:/home/dan/diplonautic/app/config/parameters.yml</file>
-            <file>file:/home/dan/diplonautic/app/config/routing.yml</file>
+            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/about.html.twig</file>
             <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/air-conditioner.html.twig</file>
-            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/products.html.twig</file>
         </group>
     </open-files>
 </project-private>

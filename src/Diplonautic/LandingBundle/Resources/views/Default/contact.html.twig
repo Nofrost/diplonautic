@@ -1,3 +1,4 @@
+{%trans_default_domain 'general'%}
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
@@ -9,13 +10,13 @@
                     <div class="col-sm-11 main-description">
                         <div class="row">
                             <div class="col-sm-3">
-                                <h2>DEPARTAMENT<br>ADMINISTRACIÓ</h2>
+                                <h2>{%trans%}contact.administration{%endtrans%}</h2>
                             </div>
                             <div class="col-sm-3 col-sm-offset-1">
-                                <h2>DEPARTAMENT<br>TÈCNIC</h2>
+                                <h2>{%trans%}contact.tecnich{%endtrans%}</h2>
                             </div>
                             <div class="col-sm-3 col-sm-offset-1">
-                                <h2>OFICINES<br>I TALLER</h2>
+                                <h2>{%trans%}contact.offices{%endtrans%}</h2>
                             </div>
                         </div>
                         <div class="divisory"><div class="sub-div1"></div><div class="sub-div2"></div></div>
@@ -35,7 +36,7 @@
                    
                     <div class="col-sm-1 languages">
                         <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "cat" })}}">CAT</a>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}">CAT</a>
                         </div>
                         
                         <div id="en">

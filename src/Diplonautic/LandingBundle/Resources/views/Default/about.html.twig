@@ -1,3 +1,4 @@
+{%trans_default_domain "general"%}
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
@@ -6,26 +7,19 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-11 main-description">
-                        <h1 class="h3"><b>ELS SEUS PROJECTES,<br>SÓN ELS NOSTRES REPTES</b></h1>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-11 main-description">
+                        <h1 class="h3"><b>{%trans%}about.title{%endtrans%}</b></h1>
                         <div class="divisory"><div class="sub-div1"></div><div class="sub-div2"></div></div>
-                        <div class="col-sm-5">
-                            <p>DIPLONAUTIC és una empresa que proveeix al mercat 
-                                español de solucions altament especialitzades 
-                                per millorar el confort a la seva embarcació.</p>
-                            <p>Líders en el seu sector i amb més de 30 anys d’experiència,
-                                ofereix projectes personalitzats amb les majors garatíes de calitat,
-                                eficàcia i profesionalitat, aplicant la més moderna tecnología.</p>
+                        <div class="col-sm-5 pad-left">
+                            <p>{%trans%}about.paragraph_one{%endtrans%}</p>
+                            <p>{%trans%}about.paragraph_one_two{%endtrans%}</p>
                         </div>
                         <div class="col-sm-5">
-                            <p>Ens avala una dilatada experiència i una constant actualització de coneixements.
-                            Si ha pensat en millorar la comoditat de la seva embarcació no dubti en fer-nos una consulta
-                            i li prepararem un pressupost adaptat a les seves necessitats, sense compromís.
-                            Li garantitzem una atenció personalitzada amb la millor relació qualitat-preu.</p>
+                            <p>{%trans%}about.paragraph_two{%endtrans%}</p>
                         </div>
                     </div>
                    
-                    <div class="col-sm-1 languages">
+                    <div class="col-sm-1 languages hidden-xs">
                         <div class="cat">CAT</div>
                         <div class="en">EN</div>
                         

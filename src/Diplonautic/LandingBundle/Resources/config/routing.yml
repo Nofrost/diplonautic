@@ -17,3 +17,23 @@ diplonautic_landing_products:
 diplonautic_landing_air_conditioner: 
     path:     /products/air-conditioner
     defaults: { _controller: DiplonauticLandingBundle:Default:airConditioner } 
+
+diplonautic_landing_refrigeration_systems: 
+    path:     /products/refrigeration-systems
+    defaults: { _controller: DiplonauticLandingBundle:Default:refrigerationSystems }
+    
+diplonautic_landing_generators: 
+    path:     /products/generators
+    defaults: { _controller: DiplonauticLandingBundle:Default:generators }
+    
+diplonautic_landing_water_treatment: 
+    path:     /products/water-treatment
+    defaults: { _controller: DiplonauticLandingBundle:Default:waterTreatment } 
+
+diplonautic_landing_electric_systems: 
+    path:     /products/electric-systems
+    defaults: { _controller: DiplonauticLandingBundle:Default:electricSystems } 
+    
+diplonautic_landing_maneuvering_propeller: 
+    path:     /products/maneuvering-propeller
+    defaults: { _controller: DiplonauticLandingBundle:Default:maneuveringPropeller }    

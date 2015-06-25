@@ -26,5 +26,25 @@ class DefaultController extends Controller
     {
         return $this->render('DiplonauticLandingBundle:Default:air-conditioner.html.twig');
     }
+    public function refrigerationSystemsAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:refrigeration-systems.html.twig');
+    }
+    public function generatorsAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:generators.html.twig');
+    }
+    public function waterTreatmentAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:water-treatment.html.twig');
+    }
+    public function electricSystemsAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:electric-systems.html.twig');
+    }
+    public function maneuveringPropellerAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:maneuvering-propeller.html.twig');
+    }
     
 }
