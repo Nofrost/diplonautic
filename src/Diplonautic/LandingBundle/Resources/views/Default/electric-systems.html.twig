@@ -1,0 +1,52 @@
+{% extends 'DiplonauticLandingBundle::layout.html.twig' %}
+{%trans_default_domain 'general'%}
+{% block content %}
+    {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
+    <div class="main">
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-7 main-description-product">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="{{ asset("bundles/diplonauticlanding/images/Picto5.png")}}" alt="">
+                            </div>
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <h1 class="h4">{%trans%}products.es.title{%endtrans%}</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-2">
+                                <p>{%trans%}electric.intro{%endtrans%}
+                                    <ul>
+                                        <li>{%trans%}electric.battery{%endtrans%}</li>
+                                        <li>{%trans%}electric.dc{%endtrans%}</li>
+                                        <li>{%trans%}electric.bombs{%endtrans%}</li>
+                                        <li>{%trans%}electric.fire{%endtrans%}</li>
+                                        <li>{%trans%}electric.heaters{%endtrans%}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p>
+                                    {%trans%}electric.closing{%endtrans%}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 main-marks">
+                        
+                    </div>
+                    <div class="col-sm-1 languages hidden-xs">
+                        <div id="cat">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}">CAT</a>
+                        </div>
+                        <div id="en">
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

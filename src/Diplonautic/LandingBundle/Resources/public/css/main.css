@@ -1,32 +1,19 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 24/05/2015, 20:28:35
     Author     : dan
 */
-@font-face {
-  font-family: 'pirulen';
-/*  src: url('webfont.eot');  IE9 Compat Modes */
-  src: url('../fonts/pirulen.ttf')  format('truetype'); /* Safari, Android, iOS */
-/*  src: url('webfont.eot?#iefix') format('embedded-opentype'),  IE6-IE8 
-       url('webfont.woff2') format('woff2'),  Super Modern Browsers 
-       url('webfont.woff') format('woff'),  Pretty Modern Browsers */
-       
-/*       url('webfont.svg#svgFontName') format('svg');  Legacy iOS */
-}
+/*----------------------------GENERAL CLASSES---------------------------------*/
 body{
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     color: #fff;
-    background: url(../images/Background-web.png) no-repeat center center fixed; 
+    background: url(../images/Background-mob.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 100%;
+    width: 100%;
     position:absolute;
 }
 .wrapper{
@@ -35,76 +22,151 @@ body{
 a{
     color: #fff;
 }
-h1, .h1{
-    font-size: 22px;
+h2, .h2{
+    font-size: 24px;
 }
 h3, .h3{
-    font-size: 18px;
+    font-size: 22px;
     line-height: 26px;
 }
+h4, .h4{
+    font-size: 18px;
+}
+@media only screen and (min-width:768px) {
+    body{
+        background: url(../images/Background-web.png) no-repeat center center fixed;
+         -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        position:absolute;
+    }
+    h2, .h2{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:992px) {
+    h2, .h2{
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    h2, .h2{
+        font-size: 24px;
+    }
+}
 /*-----------------------------Header--------------------------------------*/
-
-.nav-logo{
-    min-height: 85px;
+.navbar-toggle {
+    float: left;
+    margin-left: 12%;
     background-color: rgba(0,67,95,0.5);
-    width: 41.466667%;
+    font-size: 31px;
+    /* width: 55px; */
+    border-radius: 0;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.navbar-nav {
+    margin: 0;
+}
+.nav-logo{
+    background-color: rgba(0,67,95,0.5);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .nav-logo> a > img {
-    height: 65px;
+    height: 42px;
 }
 .navbar-diplonautic{
     background-color: rgba(0,67,95,0.7);
     font-size: 0.8125em;
-    min-height: 85px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 15px;
+}
+.navbar-diplonautic>.navbar-nav>ul{
+    margin: 0;
+}
+.navbar-diplonautic>.navbar-nav>li{
+    text-align: left;
+}
+.navbar-diplonautic>.navbar-nav>li>a {
+    min-width: 187px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+}
+.navbar-diplonautic>.navbar-nav>li:last-child>a {
+    border-bottom: none;
 }
 
-.navbar-diplonautic>.navbar-nav>li>a{
-    min-width: 175px;
-    padding-top: 33px;
-    padding-bottom: 32px;
-}
-.navbar-diplonautic>.navbar-nav>li:after{
-    border-right: 1px solid;
-    content: "";
-    position: absolute;
-    height: 19px;
-    right: 0px;
-    top: 33px;
-}
-.navbar-diplonautic>.navbar-nav>li:last-child:after{
-    border-right: none;
-}
-
-.navbar-diplonautic>.navbar-nav>li>a:hover{
+.active,
+.navbar-diplonautic>.navbar-nav>li>a:hover,
+.navbar-diplonautic>.navbar-nav>li>a:active{
     background-color: rgba(255,255,255,0.7);
-    color: rgb(0,67,95);
+    color: #fff;
 }
 .navbar-diplonautic>.navbar-nav>li:first-child>a{
     border-left: none;
 }
-.division{
-    width: 0.2%;
-    min-height: 12px;
-    float: left;
-}
+
 @media only screen and (min-width:768px) {
     .nav-logo{
         width: 24.8%;
         padding-top: 29px;
         padding-bottom: 29px;
+        min-height: 85px;
     }
     .nav-logo> a > img {
         height: 26px;
     }
+    .navbar-diplonautic{
+        margin-top: 0px;
+        display: block;
+    }
+    .navbar-diplonautic>.navbar-nav>li{
+        text-align: center;
+    }
+/*    .navbar-diplonautic>.navbar-nav>li>a{
+        min-width: 106px;
+        padding-top: 33px;
+        padding-bottom: 32px;
+        border-bottom: 0px;
+        font-size: 14px;
+    }*/
     .navbar-diplonautic>.navbar-nav>li>a{
-    min-width: 109px;
-    padding-top: 33px;
-    padding-bottom: 32px;
-}
+        min-width: 115px;
+        padding-top: 33px;
+        padding-bottom: 32px;
+        border-bottom: 0px;
+        font-size: 12px;
+        padding: 34px 10px 33px;
+        height: 85px;
+    }
+    .division{
+        width: 0.2%;
+        min-height: 12px;
+        float: left;
+    }
+    .navbar-diplonautic>.navbar-nav>li:after{
+        border-right: 1px solid;
+        content: "";
+        position: absolute;
+        height: 19px;
+        right: 0px;
+        top: 33px;
+    }
+    .navbar-diplonautic>.navbar-nav>li.active:after{
+        border-right: 0px;
+    }
+    
+    .navbar-diplonautic>.navbar-nav>li:last-child:after{
+        border-right: none;
+    }
 }
 @media only screen and (min-width:992px) {
     .nav-logo{
@@ -116,7 +178,7 @@ h3, .h3{
         height: 50px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 131px;
+        min-width: 132px;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -125,21 +187,28 @@ h3, .h3{
         padding-bottom: 10px;
     }
     .nav-logo> a > img {
-        height: 65px;
+        height: 60px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 175px;
+        min-width: 164px;
+        font-size: 14px;
     }
 }
 /*--------------------------------home----------------------------------------*/
 .main{
-    margin: 120px 0;
+    margin: 10% 0;
 }
 .main-description{
     background-color: rgba(0,67,95,0.8);
     min-height: 425px;
-    padding: 74px;
+    padding: 37px 74px;
 }
+.main-opportunities{
+    background-color: rgba(0,67,95,0.8);
+    min-height: 425px;
+    padding: 37px 25px;
+}
+
 .main-description img{
     width: 100%;
 }
@@ -147,33 +216,40 @@ h3, .h3{
     list-style: none;
     padding: 0px;
 }
-
 .main-marks{
     background-color: #fff;
     height: 425px;
     padding: 30px;
 }
-
 .main-marks td{
     padding: 5px;
     text-align: center;
     vertical-align: middle;
 }
-.main-marks td img{
+.main-marks img{
     width: 100%;
+}
+
+.main-description-product{
+    background-color: rgba(0,67,95,0.8);
+    min-height: 425px;
+    padding: 37px;
+}
+.main-description-product img{
+    height: 50px;
+    width: auto;
 }
 
 .languages div{
     background-color: rgba(0,67,95,0.5);
+    margin-bottom: 6px;
+    padding: 8px;
 }
-
-@media only screen and (min-width:1200px) {
-    .main-marks td img{
-        width: 70%;
-    }
-    .main-marks td img.width-fifty{
-    width: 50%;
-    }
+.languages div:hover,
+.languages div:focus,
+.languages div:active{
+    background-color: rgba(120,189,218,0.5);
+    color: #fff;
 }
 
 .divisory{
@@ -183,6 +259,7 @@ h3, .h3{
     position: relative;
     margin-bottom: 13px;
 }
+
 .divisory .sub-div1 {
     width: 31px;
     height: 15px;
@@ -203,15 +280,104 @@ h3, .h3{
     /* left: 383px; */
     right: 8px;
 }
+.pictos a:hover {
+    text-shadow: 0px 0px 5px #fff;
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (min-width:768px) {
+    .pictos img{
+        height: 35px;
+        width: auto;
+    }
+    .pictos h4{
+        font-size: 10px;
+    }
+    .pictos .divisory{
+        width: 120%;
+    }
+    .pictos p{
+        font-size: 12px;
+    }
+    .main{
+        margin: 16% 0 3%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .pictos img{
+        height: 40px;
+    }
+    .pictos h4{
+        font-size: 14px;
+    }
+    .pictos .divisory{
+        width: 113%;
+    }
+    .pictos p{
+        font-size: 14px;
+    }
+    .main{
+        margin: 13% 0 3%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .main-marks td img{
+        width: 70%;
+    }
+    .main-marks td img.width-fifty{
+        width: 50%;
+    }
+    .pictos img{
+        height: 50px;
+    }
+    .pictos .divisory{
+        width: 108%;
+    }
+    .pictos p{
+        font-size: 1em;
+    }
+    .main{
+        margin: 10% 0 3%;
+    }
+}
 
 
 
+.pad-left{
+    padding-left: 0px;
+}
+.main-opportunities .item{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.main-opportunities .item img{
+    display: block;
+    position: relative;
+    height: 322px;
+    width: auto;
+    overflow: hidden;
+}
+.main-opportunities .item .simple-caption {
+    position: absolute; 
+    background: rgba(0,0,0,0.75); 
+    color: white; 
+    padding: 10px 20px; 
+    width: 100%;
+    opacity: 0;
+    bottom: -30%; 
+    left: 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+}
 
-
-
-
-
-
+.main-opportunities .item:hover .simple-caption {
+    opacity: 1;
+    bottom: 0;
+}
+.cap-bot .simple-caption { left: 0; bottom: -30%;}
+.cap-bot:hover .simple-caption { bottom: 0; }
 
 
 

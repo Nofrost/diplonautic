@@ -1,3 +1,14 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+    
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+#app:
+#    resource: "@AppBundle/Controller/"
+#    type:     annotation
+# app/config/routing.yml
+_bazinga_jstranslation:
+    resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
