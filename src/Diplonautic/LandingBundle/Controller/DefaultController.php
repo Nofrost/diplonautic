@@ -46,5 +46,9 @@ class DefaultController extends Controller
     {
         return $this->render('DiplonauticLandingBundle:Default:maneuvering-propeller.html.twig');
     }
+    public function opportunitiesAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:opportunities.html.twig');
+    }
     
 }

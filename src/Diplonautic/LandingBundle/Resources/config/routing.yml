@@ -36,4 +36,8 @@ diplonautic_landing_electric_systems:
     
 diplonautic_landing_maneuvering_propeller: 
     path:     /products/maneuvering-propeller
-    defaults: { _controller: DiplonauticLandingBundle:Default:maneuveringPropeller }    
+    defaults: { _controller: DiplonauticLandingBundle:Default:maneuveringPropeller }  
+    
+diplonautic_landing_opportunities: 
+    path:     /opportunities
+    defaults: { _controller: DiplonauticLandingBundle:Default:opportunities }        

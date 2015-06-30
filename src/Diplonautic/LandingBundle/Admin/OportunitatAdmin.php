@@ -17,9 +17,10 @@ class OportunitatAdmin extends Admin
         $formMapper
             ->add('translations', 'a2lix_translations_gedmo', array(
                 'by_reference' => false,
+                'fields'=> array(
                 'title' => array(),
-                'subtitle' => array(), 
-                'titleHome' => array()))
+                'description' => array(), 
+                'price' => array())))
         ;
     }
 

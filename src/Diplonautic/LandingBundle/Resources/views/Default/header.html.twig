@@ -15,19 +15,19 @@
             </div>
             <div class="col-xs-7 col-sm-9 col-md-8 navbar-diplonautic collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                      <li id="index_header">
+                      <li id="index_header"{% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}class="active"{% endif %}>
                           <a href="{{path("diplonautic_landing_homepage")}}">{%trans%}header.home{%endtrans%}</a>
                       </li>
-                      <li id="about_header">
+                      <li id="about_header"{% if "diplonautic_landing_about" in app.request.attributes.get('_route') %}class="active"{% endif %}>
                           <a href="{{path("diplonautic_landing_about")}}">{%trans%}header.company{%endtrans%}</a>
                       </li>
-                      <li id="products_header">
+                      <li id="products_header"{% if "diplonautic_landing_products" in app.request.attributes.get('_route') %}class="active"{% endif %}>
                           <a href="{{path("diplonautic_landing_products")}}">{%trans%}header.products{%endtrans%}</a>
                       </li>
-                      <li id="oportunities_header">
-                          <a href="#">{%trans%}header.oportunities{%endtrans%}</a>
+                      <li id="oportunities_header"{% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}class="active"{% endif %}>
+                          <a href="{{path("diplonautic_landing_opportunities")}}">{%trans%}header.oportunities{%endtrans%}</a>
                       </li>
-                      <li id="contact_header">
+                      <li id="contact_header"{% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}class="active"{% endif %}>
                           <a href="{{path("diplonautic_landing_contact")}}">{%trans%}header.contact{%endtrans%}</a>
                       </li>
 
