@@ -7,17 +7,17 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-7 main-description-product">
+                    <div class="col-sm-10 col-md-9 main-description-product">
                         <div class="row">
                             <div class="col-sm-1">
                                 <img src="{{ asset("bundles/diplonauticlanding/images/Picto1.png")}}" alt="">
                             </div>
-                            <div class="col-sm-10 col-sm-offset-1">
+                            <div class="col-sm-10">
                                 <h1 class="h4">{%trans%}products.rs.title{%endtrans%}</h1>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-5 col-sm-offset-2">
+                            <div class="col-sm-5 col-sm-offset-1">
                                 <p>{%trans%}refrigeration.intro{%endtrans%}
                                     <ul>
                                         <li>{%trans%}refrigeration.fridge{%endtrans%}</li>
@@ -27,16 +27,13 @@
                                     </ul>
                                 </p>
                             </div>
-                            <div class="col-sm-5">
+                            <div class="col-sm-5 col-sm-offset-1">
                                 <p>{%trans%}refrigeration.closing{%endtrans%}</p>
+                                <p class="link-products">{%trans%}refrigeration.message_link{%endtrans%}<a href="#"><strong>LINK</strong></a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-sm-4 main-marks">
-                        
-                    </div>
-                    <div class="col-sm-1 languages hidden-xs">
+                    <div class="col-sm-1 col-sm-offset-1 col-md-offset-2 languages hidden-xs">
                         <div id="cat">
                             <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}">CAT</a>
                         </div>
