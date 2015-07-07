@@ -221,7 +221,7 @@ h4, .h4{
 }
 .main-description{
     background-color: rgba(0,67,95,0.8);
-/*    min-height: 425px;*/
+    min-height: 347px;
     padding: 37px 74px;
 }
 .main-opportunities{
