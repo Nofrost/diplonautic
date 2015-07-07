@@ -9,21 +9,40 @@
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-11 col-sm-offset-0 main-opportunities">
                       <div id="owl-demo" class="owl-carousel owl-theme">
-
+                          <div class="item op-intro">
+                              <h1 class="h4">OPORTUNITATS</h1>
+                              <p>Lorem fistrum sit amet irure llevame al sircoo labore magna no te digo trigo por no llamarte Rodrigor reprehenderit sit amet. Jarl jarl tempor amatomaa pupita.</div>
                             <div class="item cap-bot">
-                            <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/Timon.png") }}"></div>
-                            <div class="item cap-bot">
-                                <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}">
+                                <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/artaban.JPG") }}">
                                 <div class="caption simple-caption">
-                                    <h3>Barco</h3>
+                                    <h3>Peça de control</h3>
+                                    <span class="pull-right">300€</span>
                                     <div>
-                                        Mira, un texto real descriptivo
+                                        Cosa amb vàlvula, per temes nàutics i tal
                                     </div>
-                                    <span>Preu</span>
+                                    
                                 </div>
                             </div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/AquaBase.jpg") }}"></div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
+                            <div class="item cap-bot">
+                                <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/ego.jpg") }}">
+                                <div class="caption simple-caption">
+                                    <h3>Joc d'eines</h3>
+                                    <span class="pull-right">1200€</span>
+                                    <div>
+                                        Estris pel control de la pressió dels aparells de refrigeració
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/yammar.jpg") }}">
+                                <div class="caption simple-caption">
+                                    <h3>Motor</h3>
+                                    <span class="pull-right">1500€</span>
+                                    <div>
+                                        Loasd ansd as dasn ja asdj japwo asd asdr sdf df dfa dfwsd
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/ego.jpg") }}"></div>
                             <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
                             <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
                             <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
@@ -39,10 +58,14 @@
                    
                     <div class="col-sm-1 languages hidden-xs">
                         <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}">CAT</a>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %}>
+                                CAT
+                            </a>
                         </div>
                         <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}">EN</a>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %}>
+                                EN
+                            </a>
                         </div>
                     </div>
                 </div>

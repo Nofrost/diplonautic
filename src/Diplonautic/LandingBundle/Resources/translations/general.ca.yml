@@ -22,7 +22,7 @@ about :
     paragraph_two : 'Ens avala una dilatada experiència i una constant actualització de coneixements. Si ha pensat en millorar la comoditat de la seva embarcació no dubti en fer-nos una consulta i li prepararem un pressupost adaptat a les seves necessitats, sense compromís. Li garantitzem una atenció personalitzada amb la millor relació qualitat-preu.'
 
 products : 
-    ac.title : 'AIRE ACONDICIONAT'
+    ac.title : 'AIRE<br>ACONDICIONAT'
     ac.paragraph : "Sistemes de climatització per embarcacions d’esbarjo"
     rs.title : 'SISTEMES FRIGORÍFICS'
     rs.paragraph : 'Dissenys en neveres i congeladors especialitzats per al sector nàutic'
@@ -32,7 +32,7 @@ products :
     wt.paragraph : 'Sistemes de potabilització per osmosi inversa'
     es.title : 'SISTEMES ELÉCTRICS'
     es.paragraph : 'Instal·lacions elèctriques dissenyades exclusivament pel sector nàutic'
-    ms.title : 'HÉLIX DE MANIOBRA'
+    ms.title : 'HÉLIX <br>DE MANIOBRA'
     ms.paragraph : 'Hèlix que li facilitaran l’atracada i el desembarcament de la seva embarcació'
     
 air: 
