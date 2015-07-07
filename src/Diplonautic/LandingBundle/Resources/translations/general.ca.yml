@@ -40,7 +40,8 @@ air:
     compact_machine: 'Equips compactes'
     split_machine: 'Equips Split'
     chiller_machine: "Equips “Chiller”"
-    closing: 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips d’aire condicionat. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
+    closing: 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips d’aire condicionat. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>'
+    message_link: 'Per més informació fes click al '
 
 refrigeration : 
     intro : 'Diplonautic projecta la instal·lació frigorífica que vostè necessiti. Treballem amb les marques líders en el sector nàutic assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
@@ -48,7 +49,8 @@ refrigeration :
     furniture: 'Mobles frigorífics'
     rooms : 'Càmeres frigorífiques'
     systems: 'Sistemes de condensació per aigua de mar, per aire, a 220Vac o a corrent continua.'
-    closing: 'Ens avala una llarga trajectòria en la instal·lació y reforma d’equips frigorífics. El nostre camp de treball és molt ampli i va des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Li garantim que a Diplonautic trobarà la solució que vostè necessita.'
+    closing: 'Ens avala una llarga trajectòria en la instal·lació y reforma d’equips frigorífics. El nostre camp de treball és molt ampli i va des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Li garantim que a Diplonautic trobarà la solució que vostè necessita.<br><br>'
+    message_link: 'Per més informació fes click al '
     
 generators :
     intro : 'Diplonautic determina el Grup Electrogen que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
