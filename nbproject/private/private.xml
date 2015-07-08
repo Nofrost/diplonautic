@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/air-conditioner.html.twig</file>
+            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/public/css/main.css</file>
+            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/refrigeration-systems.html.twig</file>
+            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/views/Default/opportunities.html.twig</file>
+            <file>file:/home/dan/diplonautic/src/Diplonautic/LandingBundle/Resources/public/js/owl.carousel.js</file>
         </group>
     </open-files>
 </project-private>

@@ -1,0 +1,90 @@
+header : 
+    home : 'HOME'
+    company : 'ABOUT'
+    products : 'PRODUCTS'
+    oportunities : 'OPPORTUNITIES'
+    contact : 'CONTACT'
+    
+index :
+    title : 'DESIGN AND NAUTICAL <br>INSTALLATIONS'
+    we_improve : 'We improve your navigation with'
+    list : 
+        installation : 'INSTALLATION'
+        repair : 'REPAIR'
+        maintenance : 'MAINTENANCE'
+    
+    electrical : 'of the electrical equipment of your BOAT.'
+
+about :
+    title : 'ELS SEUS PROJECTES,<br>SÓN ELS NOSTRES REPTES'
+    paragraph_one : 'DIPLONAUTIC és una empresa que proveeix al mercat espanyol de solucions altament especialitzades per millorar el confort a la seva embarcació.'
+    paragraph_one_two : 'Líders en el seu sector i amb més de 30 anys d’experiència, ofereix projectes personalitzats amb les majors garatíes de calitat, eficàcia i profesionalitat, aplicant la més moderna tecnología.'
+    paragraph_two : 'Ens avala una dilatada experiència i una constant actualització de coneixements. Si ha pensat en millorar la comoditat de la seva embarcació no dubti en fer-nos una consulta i li prepararem un pressupost adaptat a les seves necessitats, sense compromís. Li garantitzem una atenció personalitzada amb la millor relació qualitat-preu.'
+
+products : 
+    ac.title : 'AIRE<br>ACONDICIONAT'
+    ac.paragraph : "Sistemes de climatització per embarcacions d’esbarjo"
+    rs.title : 'SISTEMES FRIGORÍFICS'
+    rs.paragraph : 'Dissenys en neveres i congeladors especialitzats per al sector nàutic'
+    gen.title: 'GENERADOR'
+    gen.paragraph : 'Generadors elèctrics per treballar a ambients marins'
+    wt.title : 'POTABILITZADOR'
+    wt.paragraph : 'Sistemes de potabilització per osmosi inversa'
+    es.title : 'SISTEMES ELÉCTRICS'
+    es.paragraph : 'Instal·lacions elèctriques dissenyades exclusivament pel sector nàutic'
+    ms.title : 'HÉLIX <br>DE MANIOBRA'
+    ms.paragraph : 'Hèlix que li facilitaran l’atracada i el desembarcament de la seva embarcació'
+    
+air: 
+    intro: 'Diplonautic realitza el projecte de la instal·lació d’aire condicionat que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació.'
+    compact_machine: 'Equips compactes'
+    split_machine: 'Equips Split'
+    chiller_machine: "Equips “Chiller”"
+    closing: 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips d’aire condicionat. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>'
+    message_link: 'Per més informació fes click al '
+
+refrigeration : 
+    intro : 'Diplonautic projecta la instal·lació frigorífica que vostè necessiti. Treballem amb les marques líders en el sector nàutic assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
+    fridge: 'Neveres i congeladors compactes'
+    furniture: 'Mobles frigorífics'
+    rooms : 'Càmeres frigorífiques'
+    systems: 'Sistemes de condensació per aigua de mar, per aire, a 220Vac o a corrent continua.'
+    closing: 'Ens avala una llarga trajectòria en la instal·lació y reforma d’equips frigorífics. El nostre camp de treball és molt ampli i va des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Li garantim que a Diplonautic trobarà la solució que vostè necessita.<br><br>'
+    message_link: 'Per més informació fes click al '
+    
+generators :
+    intro : 'Diplonautic determina el Grup Electrogen que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
+    mono_grups: 'Grups Monofàsics'
+    tri_grups : 'Grups Trifàsics'
+    paralel: 'Sistemes en paral·lel'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació y reforma de grups electrògens. El nostre camp de treball és ampli i va des de petites potencies de 3kVA fins als 150kVA.<br><br>Li garantim que a Diplonautic trobarà la solució que vostè necessita.'
+
+water :
+    intro : 'Diplonàutic projecta i realitza la instal·lació elèctrica que millor s’adapti a la seva embarcació. Proposem la millor de les solucions per satisfer les seves necessitats. Som especialistes en:'
+    e_recover: 'Equips amb/sense recuperador d’energia.'
+    dc : 'Equips a corrent contínua o corrent alterna.'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips potabilització. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
+
+electric: 
+    intro : 'Diplonautic realitza el projecte de la instal·lació de Ósmosis Inversa que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
+    battery: 'Grups de bateries, Carregadors i inversors'
+    dc: 'Quadres elèctrics de corrent alterna i continua'
+    bombs: 'Bombes d’aigua de mar i dolça'
+    fire: 'Centrals contra incendis i buidatge'
+    heaters: "Calentadors d’aigües"
+    etc: 'Etc'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma de sistemes elèctrics. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br> Garantim que a Diplonautic trobarà la solució que vostè necessita'
+
+propeller: 
+    intro : 'Diplonautic determinarà les hèlix de maniobra que vostè necessiti. Treballem amb les marques líders del sector nàutic i ens assegurem de proporcionar-li la millor solució per la seva embarcació:'
+    proa: 'Hèlix de proa y popa'
+    fixed: 'Fixes o retràctils'
+    electric: 'Elèctriques o hidràuliques'
+    variable: 'Hèlix de propulsió de pas variable'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma de hèlix de maniobra. El nostre camp de treball és ampli i abarca des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Garantim que a Diplonautic trobarà la solució que vostè necessita.'
+
+    
+contact : 
+    administration : 'DEPARTAMENT<br>ADMINISTRACIÓ'
+    tecnich : 'DEPARTAMENT<br>TÈCNIC'
+    offices : 'OFICINES<br>I TALLER'
