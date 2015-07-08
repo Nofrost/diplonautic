@@ -92,7 +92,7 @@ sonata_admin:
     #security_handler: sonata.admin.security.handler.acl
 
     title:      'Diplonautic'
-    title_logo: bundles/diplonauticlanding/images/logo.png
+    title_logo: bundles/diplonauticlanding/images/imago.png
     templates:
         dashboard: SonataAdminBundle:Core:dashboard.html.twig
 

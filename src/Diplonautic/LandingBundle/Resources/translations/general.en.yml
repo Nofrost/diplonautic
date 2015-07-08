@@ -16,24 +16,24 @@ index :
     electrical : 'of the electrical equipment of your BOAT.'
 
 about :
-    title : 'ELS SEUS PROJECTES,<br>SÓN ELS NOSTRES REPTES'
-    paragraph_one : 'DIPLONAUTIC és una empresa que proveeix al mercat espanyol de solucions altament especialitzades per millorar el confort a la seva embarcació.'
-    paragraph_one_two : 'Líders en el seu sector i amb més de 30 anys d’experiència, ofereix projectes personalitzats amb les majors garatíes de calitat, eficàcia i profesionalitat, aplicant la més moderna tecnología.'
-    paragraph_two : 'Ens avala una dilatada experiència i una constant actualització de coneixements. Si ha pensat en millorar la comoditat de la seva embarcació no dubti en fer-nos una consulta i li prepararem un pressupost adaptat a les seves necessitats, sense compromís. Li garantitzem una atenció personalitzada amb la millor relació qualitat-preu.'
+    title : 'YOUR PROJECTS,<br>ARE OUR CHALLENGES'
+    paragraph_one : 'DIPLONAUTIC is a company that operates in the Spanish market and provides the Spanish market of highly specializing solutions to improve the comfort in your boat.'
+    paragraph_one_two : 'As leading company in the sector with over 30 years of experience, it offers personalized projects with the highest guarantees of quality, efficacy and professionalism, applying the most modern technology.'
+    paragraph_two : 'We are endorsed by an extensive experience and a constant knowledge update. If you have thought to improve the serviceability of your boat,  you do not hesitate to consult contact us. We will prepare a budget adapted to your needs without compromise. We guarantee a personalized attention with the most competitive quality/price ratio.'
 
 products : 
-    ac.title : 'AIRE<br>ACONDICIONAT'
-    ac.paragraph : "Sistemes de climatització per embarcacions d’esbarjo"
-    rs.title : 'SISTEMES FRIGORÍFICS'
-    rs.paragraph : 'Dissenys en neveres i congeladors especialitzats per al sector nàutic'
-    gen.title: 'GENERADOR'
-    gen.paragraph : 'Generadors elèctrics per treballar a ambients marins'
-    wt.title : 'POTABILITZADOR'
-    wt.paragraph : 'Sistemes de potabilització per osmosi inversa'
-    es.title : 'SISTEMES ELÉCTRICS'
-    es.paragraph : 'Instal·lacions elèctriques dissenyades exclusivament pel sector nàutic'
-    ms.title : 'HÉLIX <br>DE MANIOBRA'
-    ms.paragraph : 'Hèlix que li facilitaran l’atracada i el desembarcament de la seva embarcació'
+    ac.title : 'AIR<br>CONDITIONING'
+    ac.paragraph : "Air conditioning systems for pleasure boats"
+    rs.title : 'COOLING SYSTEMS'
+    rs.paragraph : 'Designs in iceboxes and freezers specialized for the nautical sector'
+    gen.title: 'GENERATORS'
+    gen.paragraph : 'Electrical generators to be employed at marine ambiences'
+    wt.title : 'WATER TREATMENT'
+    wt.paragraph : 'Waterworks for inverse osmosis'
+    es.title : 'ELECTRIC SYSTEMS'
+    es.paragraph : 'Electrical facilities designed exclusively for the nautical sector'
+    ms.title : 'MANEUVER <br>SCREWS'
+    ms.paragraph : 'Screws that will facilitate the docking and the casting-off of your boat'
     
 air: 
     intro: 'Diplonautic realitza el projecte de la instal·lació d’aire condicionat que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació.'

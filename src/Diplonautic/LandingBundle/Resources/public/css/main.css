@@ -217,7 +217,7 @@ h4, .h4{
 }
 /*--------------------------------home----------------------------------------*/
 .main{
-    margin: 10% 0;
+    margin: 10% 0 20%;
 }
 .main-description{
     background-color: rgba(0,67,95,0.8);
@@ -316,6 +316,9 @@ h4, .h4{
     text-decoration: none;
 }
 @media only screen and (min-width:768px) {
+    .main{
+        margin: 10% 0;
+    }
     .pictos img{
         height: 35px;
         width: auto;
@@ -419,12 +422,30 @@ h4, .h4{
 .footer{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(0,67,95,0.56);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 0.8125em;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.8);
+}
+.footer a {
+    color: rgb(0,67,95);
 }
 .footer-section{
     margin-left: 40px;
+}
+@media only screen and (min-width:768px) {
+    .footer{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0,67,95,0.56);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.8125em;
+    }
+    .footer a {
+        color: #fff;
+    }
 }

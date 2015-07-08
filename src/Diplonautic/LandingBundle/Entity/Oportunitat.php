@@ -58,6 +58,19 @@ class Oportunitat
      */
     protected $translations;
     
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="string", length=255)
+     */
+    private $img;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="file", type="string", length=255)
+     */
+    private $imgFile;
+    
 
     /**
      * Required for Translatable behaviour
@@ -140,6 +153,48 @@ class Oportunitat
      */
     function getPrice() {
         return $this->price;
+    }
+    
+    
+     /**
+     * Set img
+     *
+     * @param string $img
+     * @return Feature
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+        return $this;
+    }
+    /**
+     * Get img
+     *
+     * @return string 
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
+    /**
+     * Set file
+     *
+     * @param string $file
+     * @return Feature
+     */
+    public function setImgFile($file)
+    {
+        $this->imgFile = $file;
+        return $this;
+    }
+    /**
+     * Get file
+     *
+     * @return string 
+     */
+    public function getImgFile()
+    {
+        return $this->imgFile;
     }
 
     public function getTranslations() {

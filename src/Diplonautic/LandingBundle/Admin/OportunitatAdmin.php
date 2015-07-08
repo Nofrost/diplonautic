@@ -21,6 +21,7 @@ class OportunitatAdmin extends Admin
                 'title' => array(),
                 'description' => array(), 
                 'price' => array())))
+            ->add('imgFile', 'file', array('data_class' => null, 'required' => false))
         ;
     }
 
@@ -58,10 +59,15 @@ class OportunitatAdmin extends Admin
     
     public function prePersist($object) {
         Util::setEntityTranslatableFields($object, $this->getConfigurationPool()->getContainer()->getParameter('locale'));
-
+        $this->saveFile($object);
     }
-
     public function preUpdate($object) {
         Util::setEntityTranslatableFields($object, $this->getConfigurationPool()->getContainer()->getParameter('locale'));
+        $this->saveFile($object);
+    }
+    
+    public function saveFile($object) {
+        Util::upload($object, 'Img', $this->getConfigurationPool()->getContainer()->getParameter('diplonautic.folder.upload.images'), 'opportunities/', array(), array(), array());
     }
 }
+ 
