@@ -385,8 +385,7 @@ h4, .h4{
         padding: 37px 74px;
     }
     .main-description-pictos{
-        padding-top: 57px;
-/*        min-height: 347px;*/
+        padding: 57px 74px 57px 67px;
     }
     .pictos img{
         height: 35px;
