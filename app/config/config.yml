@@ -130,4 +130,7 @@ stof_doctrine_extensions:
             tree: true
             translatable: true
             timestampable: false # not needed: listeners are not enabled by default
-      
+
+parameters:
+    diplonautic.folder.root: %kernel.root_dir%/../web/
+    diplonautic.folder.upload.images: %kernel.root_dir%/../web/uploads/images/      

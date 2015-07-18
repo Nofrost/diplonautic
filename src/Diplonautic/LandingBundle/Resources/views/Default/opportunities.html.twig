@@ -8,45 +8,30 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-11 col-sm-offset-0 main-opportunities">
-                      <div id="owl-demo" class="owl-carousel owl-theme">
-                          <div class="item op-intro">
-                              <h1 class="h4">OPORTUNITATS</h1>
-                              <p>Lorem fistrum sit amet irure llevame al sircoo labore magna no te digo trigo por no llamarte Rodrigor reprehenderit sit amet. Jarl jarl tempor amatomaa pupita.</div>
-                            <div class="item cap-bot">
-                                <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/artaban.JPG") }}">
-                                <div class="caption simple-caption">
-                                    <h3>Peça de control</h3>
-                                    <span class="pull-right">300€</span>
-                                    <div>
-                                        Cosa amb vàlvula, per temes nàutics i tal
-                                    </div>
-                                    
-                                </div>
+                      <div id="owl-demo" class="owl-carousel owl-theme clearfix">
+                            <div class="item op-intro">
+                                <h1 class="h4">OPORTUNITATS</h1>
+                                <p>Lorem fistrum sit amet irure llevame al sircoo labore magna no te digo trigo por no llamarte Rodrigor reprehenderit sit amet. Jarl jarl tempor amatomaa pupita.</p>
                             </div>
-                            <div class="item cap-bot">
-                                <img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/ego.jpg") }}">
-                                <div class="caption simple-caption">
-                                    <h3>Joc d'eines</h3>
-                                    <span class="pull-right">1200€</span>
-                                    <div>
-                                        Estris pel control de la pressió dels aparells de refrigeració
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/yammar.jpg") }}">
-                                <div class="caption simple-caption">
-                                    <h3>Motor</h3>
-                                    <span class="pull-right">1500€</span>
-                                    <div>
-                                        Loasd ansd as dasn ja asdj japwo asd asdr sdf df dfa dfwsd
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/ego.jpg") }}"></div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
-                            <div class="item"><img alt="Diplonautic" src="{{ asset("bundles/diplonauticlanding/images/cyrano.jpg") }}"></div>
+                            
+                            {% set counter = 0 %}
+                                {% for object in opportunities %}
+                                    <div class="item cap-bot">
+                                        <img alt="Diplonautic" src="{{asset('/uploads/images/opportunities/'~object.img)}}">
+                                        <div class="caption simple-caption">
+                                            <div class="text-carousel">
+                                                <h3 class="pull-left caption-title">{{object.title}}</h3>
+                                                <div class="pull-right caption-price">{{object.price}}</div>
+                                            </div>
+                                            
+                                            <p style="display:inline-block">
+                                                {{object.description}}
+                                            </p>
 
+                                        </div>
+                                    </div>
+                                {% set counter = counter + 1 %}
+                            {%endfor%}
                           </div>
                        
                     </div>

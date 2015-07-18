@@ -2,7 +2,7 @@
 namespace Diplonautic\LandingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Diplonautic\LandingBundle\Util\Util;
+//use Diplonautic\LandingBundle\Util\Util;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
@@ -160,7 +160,7 @@ class Oportunitat
      * Set img
      *
      * @param string $img
-     * @return Feature
+     * @return Oportunitat
      */
     public function setImg($img)
     {
@@ -180,7 +180,7 @@ class Oportunitat
      * Set file
      *
      * @param string $file
-     * @return Feature
+     * @return Oportunitat
      */
     public function setImgFile($file)
     {
@@ -200,24 +200,22 @@ class Oportunitat
     public function getTranslations() {
         return $this->translations;
     }
-
-    public function addTranslation(Translation\OportunitatTranslation $t) {
+      public function setTranslations($translations) {
+        $this->translations = $translations;
+    } 
+    
+    public function addTranslations(Translation\OportunitatTranslation $t) {
         $this->translations->add($t);
         $t->setObject($this);
     }
-
-    public function removeTranslation(Translation\OportunitatTranslation $t) {
+    public function removeTranslations(Translation\OportunitatTranslation $t) {
         $this->translations->removeElement($t);
     }
-
-    public function setTranslations($translations) {
-        $this->translations = $translations;
-    }
+  
     
     public function getTranslatableLocale() {
         return $this->locale;
     }
-
     public function setTranslatableLocale($locale) {
         $this->locale = $locale;
     }

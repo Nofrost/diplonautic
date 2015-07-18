@@ -24,6 +24,7 @@ class OportunitatAdmin extends Admin
             ->add('imgFile', 'file', array('data_class' => null, 'required' => false))
         ;
     }
+    
 
     // Fields to be shown on filter forms
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

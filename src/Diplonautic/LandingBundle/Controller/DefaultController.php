@@ -48,7 +48,9 @@ class DefaultController extends Controller
     }
     public function opportunitiesAction()
     {
-        return $this->render('DiplonauticLandingBundle:Default:opportunities.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $opportunities = $em->getRepository('DiplonauticLandingBundle:Oportunitat')->findAll();
+        return $this->render('DiplonauticLandingBundle:Default:opportunities.html.twig', array('opportunities' => $opportunities));
     }
     
 }
