@@ -11,12 +11,12 @@
                             <div class="col-sm-1">
                                 <img src="{{ asset("bundles/diplonauticlanding/images/Picto4.png")}}" alt="">
                             </div>
-                            <div class="col-sm-10 col-sm-offset-1">
+                            <div class="col-sm-10 product-title">
                                 <h1 class="h4">{%trans%}products.gen.title{%endtrans%}</h1>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-5 col-sm-offset-2">
+                            <div class="col-sm-5 product-description">
                                 <p>{%trans%}generators.intro{%endtrans%}
                                     <ul>
                                         <li>{%trans%}generators.mono_grups{%endtrans%}</li>
@@ -27,17 +27,18 @@
                             </div>
                             <div class="col-sm-5">
                                 <p>{%trans%}generators.closing{%endtrans%}</p>
+                                <p class="link-products">{%trans%}generators.message_link{%endtrans%}<a href="#"><strong>LINK</strong></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-1 languages hidden-xs">
                         <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %}>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
                                 CAT
                             </a>
                         </div>
                         <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %}>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
                                 EN
                             </a>
                         </div>

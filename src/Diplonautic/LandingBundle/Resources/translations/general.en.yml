@@ -4,6 +4,7 @@ header :
     products : 'PRODUCTS'
     oportunities : 'OPPORTUNITIES'
     contact : 'CONTACT'
+    go_to : 'Go to '
     
 index :
     title : 'DESIGN AND NAUTICAL <br>INSTALLATIONS'
@@ -34,6 +35,14 @@ products :
     es.paragraph : 'Electrical facilities designed exclusively for the nautical sector'
     ms.title : 'MANEUVER<br>SCREWS'
     ms.paragraph : 'Screws that will facilitate the docking and the casting-off of your boat'
+
+tooltip: 
+    ac: 'Air Conditioning'
+    rs: 'Cooling Systems'
+    gen: 'Generators'
+    wt: "Water Treatment"
+    es: 'Electric Systems'
+    ms: 'Maneuver Screws'
     
 air: 
     intro: 'Diplonautic realitza el projecte de la instal·lació d’aire condicionat que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació.'
@@ -90,3 +99,7 @@ contact :
     offices : 'OFICINES<br>I TALLER'
     
 marks: 'Frigoboat, Cruisair, Tecnicomar, Calpeda, Condaria, Victor Energy, Idromar, Marine Air Systems, U-Line, Vitrifrigo, Sea Recovery, Aqua-base, Frigomar, Max Power, SLCE Watermakers, High Pressure, Climma Marine Air Conditioning, Northern Lights, Gruppi Elettrogeni Fratelli Stamegna'    
+
+languages:
+    cat: Catalan
+    en: English
