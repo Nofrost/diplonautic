@@ -1,16 +1,17 @@
 $(document).ready(function() {
-    'use strict';
-    
+//    'use strict';
+    console.log("DOM is ready");
     $( "li#index_header" ).hover(function() {
         $( "li:after" ).remove;
         console.log( "ready!" );
     });
     //Carousel
     $('.owl-carousel').owlCarousel({
+        
         loop:true,
         margin:10,
-        autoWidht: true,
-        responsiveClass:true,
+        autoHeight: true,
+        stagePadding: 0,
         responsive:{
             0:{
                 items:1,
@@ -18,7 +19,7 @@ $(document).ready(function() {
             },
             600:{
                 items:3,
-                nav:false
+                nav:true
             },
             1000:{
                 items:3,
@@ -26,9 +27,12 @@ $(document).ready(function() {
                 loop:false
             }
         }
+        
     });
-    $( "#test_collapse_manual" ).click(function(e) {
-        console.log('aaa');
-    });
-
+    
+  
+    $(".item.cap-bot").fitImages();
+    $(".main-marks").fitImages({fitMethod: 'resize'});
+        
+    
 });

@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-11 col-sm-offset-0 main-description">
                         <h1 class="h3"><b>{%trans%}about.title{%endtrans%}</b></h1>
-                        <div class="divisory"><div class="sub-div1"></div><div class="sub-div2"></div></div>
+                        <div class="divisory hidden-xs"><div class="sub-div1"></div><div class="sub-div2"></div></div>
                         <div class="col-sm-5 pad-left">
                             <p>{%trans%}about.paragraph_one{%endtrans%}</p>
                             <p>{%trans%}about.paragraph_one_two{%endtrans%}</p>
@@ -21,12 +21,12 @@
                    
                     <div class="col-sm-1 languages hidden-xs">
                         <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %}>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
                                 CAT
                             </a>
                         </div>
                         <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %}>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
                                 EN
                             </a>
                         </div>

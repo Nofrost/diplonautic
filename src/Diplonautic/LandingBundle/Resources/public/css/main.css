@@ -59,28 +59,44 @@ h4, .h4{
     h2, .h2{
         font-size: 20px;
     }
+    h3, .h3{
+        font-size: 18px;
+    }
 }
 @media only screen and (min-width:992px) {
     h2, .h2{
         font-size: 22px;
+    }
+    h3, .h3{
+        font-size: 20px;
+    }
+    p, li{
+        font-size: 14px;
     }
 }
 @media only screen and (min-width:1200px) {
     h2, .h2{
         font-size: 24px;
     }
+    h3, .h3{
+        font-size: 22px;
+    }
+    p, li{
+        font-size: 16px;
+    }
 }
 /*-----------------------------Header--------------------------------------*/
 .navbar-toggle {
     float: left;
-    margin-left: 12%;
+/*    margin-left: 12%;*/
     background-color: rgba(0,67,95,0.5);
     font-size: 31px;
     /* width: 55px; */
     border-radius: 0;
     padding: 0 10px;
-    margin-top: 15px;
-    margin-right: 5px;
+    margin-top: 20px;
+    margin-right: -9px;
+    margin-bottom: 0px;
 }
 .navbar-nav {
     margin: 0;
@@ -98,7 +114,7 @@ h4, .h4{
     font-size: 0.8125em;
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .navbar-diplonautic>.navbar-nav>ul{
     margin: 0;
@@ -108,7 +124,7 @@ h4, .h4{
 }
 .navbar-diplonautic>.navbar-nav>li>a {
     min-width: 187px;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-bottom: 12px;
     font-size: 16px;
     border-bottom: 1px solid #fff;
@@ -134,8 +150,18 @@ h4, .h4{
 .navbar-diplonautic>.navbar-nav>li:first-child>a{
     border-left: none;
 }
-
+.button-xs{
+    float:left;
+}
+.white-anex{
+    min-height: 46px;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.8);
+}
 @media only screen and (min-width:768px) {
+    .button-xs{
+        height: 0px;
+    }
     .nav-logo{
         width: 24.8%;
         padding-top: 29px;
@@ -160,7 +186,7 @@ h4, .h4{
         font-size: 14px;
     }*/
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 114px;
+        min-width: 112px;
         padding-top: 33px;
         padding-bottom: 32px;
         border-bottom: 0px;
@@ -199,7 +225,7 @@ h4, .h4{
         height: 50px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 132px;
+        min-width: 130px;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -211,22 +237,21 @@ h4, .h4{
         height: 60px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 164px;
+        min-width: 158px;
         font-size: 14px;
     }
 }
 /*--------------------------------home----------------------------------------*/
 .main{
-    margin: 10% 0;
+    margin: 4% 0 20%;
 }
 .main-description{
     background-color: rgba(0,67,95,0.8);
-    min-height: 347px;
-    padding: 37px 74px;
+    padding: 15px 30px;
 }
 .main-opportunities{
     background-color: rgba(0,67,95,0.8);
-    min-height: 425px;
+/*    min-height: 425px;*/
     padding: 37px 25px;
 }
 
@@ -238,24 +263,17 @@ h4, .h4{
     padding: 0px;
 }
 .main-marks{
-    background-color: #fff;
-    padding-top: 3px;
-/*    height: 425px;*/
-/*    padding: 30px;*/
+    padding: 0px;
 }
-/*.main-marks td{
-    padding: 5px;
-    text-align: center;
-    vertical-align: middle;
-}*/
+
 .main-marks img{
     width: 100%;
 }
 
+
 .main-description-product{
     background-color: rgba(0,67,95,0.8);
-    min-height: 425px;
-    padding: 37px;
+    padding: 15px 30px;
 }
 .main-description-product img{
     height: 50px;
@@ -269,13 +287,24 @@ h4, .h4{
     background-color: rgba(0,67,95,0.5);
     margin-bottom: 6px;
 }
-.languages a{
-    display: block;
-    padding: 8px;
-}
 
-.main-description.pictos{
-    padding-top: 57px;
+.mob-background{
+    background-color: rgba(0,67,95,0.8);
+    padding: 20px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+    min-height: 150px;
+}
+.pictos img{
+    height: 50px;
+    width: auto;
+}
+.small-picto img{
+    height: 40px;
+    width: auto;
+}
+.main-description-pictos{
+    background-color: transparent;
 }
 .divisory{
     border-bottom: 1px solid #fff;
@@ -305,6 +334,8 @@ h4, .h4{
     /* left: 383px; */
     right: 8px;
 }
+.link-products a:hover,
+.contact a:hover,
 .pictos a:hover {
     font-weight: bold;
     color: white;
@@ -316,6 +347,46 @@ h4, .h4{
     text-decoration: none;
 }
 @media only screen and (min-width:768px) {
+    .main-description-product{
+        padding: 57px 74px;
+    }
+    .main-description-product .h4{
+        margin-top: 0px;
+    }
+    .main-index{
+    position: relative;
+    display: table;
+    }
+    .main-marks{
+        
+        position: absolute;
+        height: 100%;
+        left: 49%;
+        float:left; background-color: #fff; overflow: hidden;
+    }
+
+    .main-marks img{
+        padding: 10px;
+    }
+    .mob-background{
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        min-height: 0;
+    }
+   
+/*    .main-index .main-description{
+        min-height: 392px;
+    }*/
+    
+    .main-description,
+    .main-description-pictos{
+        background-color: rgba(0,67,95,0.8);
+        padding: 37px 74px;
+    }
+    .main-description-pictos{
+        padding: 57px 74px 57px 67px;
+    }
     .pictos img{
         height: 35px;
         width: auto;
@@ -330,7 +401,18 @@ h4, .h4{
         font-size: 12px;
     }
     .main{
-        margin: 16% 0 3%;
+        margin: 12% 0 6%;
+    }
+    .product-title{
+        margin-left: 6%;
+    }
+    .product-description{
+        margin-left: 14.333333%;
+    }
+    .languages a{
+        display: block;
+        padding: 8px;
+        font-size: 14px;
     }
 }
 @media only screen and (min-width:992px) {
@@ -349,6 +431,19 @@ h4, .h4{
     .main{
         margin: 8% 0 3%;
     }
+    .main-index .main-description{
+/*        min-height: 317px;*/
+        padding: 30px 40px;
+    }
+    .product-title{
+        margin-left: 0%;
+    }
+    .product-description{
+        margin-left: 8.333333%;
+    }
+    .languages a{
+        font-size: 16px;
+    }
 }
 @media only screen and (min-width:1200px) {
     .pictos img{
@@ -360,33 +455,52 @@ h4, .h4{
     .pictos p{
         font-size: 14px;
     }
-/*    .main{
-        margin: 8% 0 3%;
+    .main-index .main-description{
+        min-height: 392px;
+        padding: 37px 74px;
+    }
+/*    .product-title{
+        margin-left: 0%;
+    }
+    .product-description{
+        margin-left: 8.33333333%;
     }*/
 }
 
 
-
+.op-intro{
+        padding: 14px;
+        width: 100%;
+    }
 .pad-left{
     padding-left: 0px;
 }
 .main-opportunities .item{
-    display: block;
-    position: relative;
+    
     overflow: hidden;
 }
-.main-opportunities .item img{
+
+.main-opportunities .item img {
+/*  display: block;
+  position: relative;
+   height: 322px; 
+  width: auto;
+  overflow: hidden;
+   margin: 0 auto; */
+    width: 100%;
+}
+.clearfix:after {
+    content: ".";
     display: block;
-    position: relative;
-    height: 322px;
-    width: auto;
-    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 .main-opportunities .item .simple-caption {
     position: absolute; 
-    background: rgba(0,67,95,0.8); 
-    color: white;
-    padding: 10px 20px; 
+    background: rgba(255,255,255,0.9); 
+    color: rgb(0,67,95);
+    padding: 20px; 
     width: 100%;
     opacity: 0;
     bottom: -30%; 
@@ -395,7 +509,9 @@ h4, .h4{
     -moz-transition:    all 0.6s ease;
     -o-transition:      all 0.6s ease;
 }
-
+.owl-item.active{
+    background-color: rgba(255,255,255,0.2);
+}
 .main-opportunities .item:hover .simple-caption {
     opacity: 1;
     bottom: 0;
@@ -403,13 +519,53 @@ h4, .h4{
 .cap-bot .simple-caption { left: 0; bottom: -30%;}
 .cap-bot:hover .simple-caption { bottom: 0; }
 
-.op-intro{
-    padding: 35px;
-    min-height: 250px;
+
+.caption-title{
+    margin-top: 0px;
+    margin-bottom: 14px;
+    width: 70%;
+    font-size: 20px;
+}
+.caption-price{
+    width: 30%;
+    padding-top: 3px;
+}
+.text-carousel{
+    display: inline-block;
+    width: 100%
+        
+}
+@media only screen and (min-width:768px) {
+/*    .main-opportunities .item{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        max-height: 322px;
+    }*/
+
+    .op-intro{
+        min-height: 249px;
+    }
+    
+    .caption-title{
+    font-size: 18px;
+    }
 }
 
-
-
+@media only screen and (min-width:992px) {
+    .caption-title{
+    font-size: 20px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .op-intro{
+        padding: 35px;
+    }
+    
+    .caption-title{
+        font-size: 22px;
+    }
+}
 
 
 
@@ -419,12 +575,31 @@ h4, .h4{
 .footer{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(0,67,95,0.56);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 0.8125em;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.8);
+}
+.footer a {
+    color: rgb(0,67,95);
 }
 .footer-section{
     margin-left: 40px;
 }
+@media only screen and (min-width:768px) {
+    .footer{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0,67,95,0.56);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.8125em;
+    }
+    .footer a {
+        color: #fff;
+    }
+}
+

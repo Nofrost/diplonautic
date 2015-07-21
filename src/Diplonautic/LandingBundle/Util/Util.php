@@ -1,5 +1,5 @@
 <?php
-    namespace Localler\LandingBundle\Util;
+    namespace Diplonautic\LandingBundle\Util;
     use Symfony\Component\HttpFoundation\File\UploadedFile;
 
     class Util

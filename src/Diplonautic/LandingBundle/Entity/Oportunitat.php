@@ -2,7 +2,7 @@
 namespace Diplonautic\LandingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Diplonautic\LandingBundle\Util\Util;
+//use Diplonautic\LandingBundle\Util\Util;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
@@ -57,6 +57,19 @@ class Oportunitat
      * )
      */
     protected $translations;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="string", length=255)
+     */
+    private $img;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="file", type="string", length=255)
+     */
+    private $imgFile;
     
 
     /**
@@ -141,28 +154,68 @@ class Oportunitat
     function getPrice() {
         return $this->price;
     }
+    
+    
+     /**
+     * Set img
+     *
+     * @param string $img
+     * @return Oportunitat
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+        return $this;
+    }
+    /**
+     * Get img
+     *
+     * @return string 
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
+    /**
+     * Set file
+     *
+     * @param string $file
+     * @return Oportunitat
+     */
+    public function setImgFile($file)
+    {
+        $this->imgFile = $file;
+        return $this;
+    }
+    /**
+     * Get file
+     *
+     * @return string 
+     */
+    public function getImgFile()
+    {
+        return $this->imgFile;
+    }
 
     public function getTranslations() {
         return $this->translations;
     }
-
-    public function addTranslation(Translation\OportunitatTranslation $t) {
+      public function setTranslations($translations) {
+        $this->translations = $translations;
+    } 
+    
+    public function addTranslations(Translation\OportunitatTranslation $t) {
         $this->translations->add($t);
         $t->setObject($this);
     }
-
-    public function removeTranslation(Translation\OportunitatTranslation $t) {
+    public function removeTranslations(Translation\OportunitatTranslation $t) {
         $this->translations->removeElement($t);
     }
-
-    public function setTranslations($translations) {
-        $this->translations = $translations;
-    }
+  
     
     public function getTranslatableLocale() {
         return $this->locale;
     }
-
     public function setTranslatableLocale($locale) {
         $this->locale = $locale;
     }
