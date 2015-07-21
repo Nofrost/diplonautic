@@ -13,6 +13,9 @@
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
+            <div class="col-xs-7 col-sm-9 col-md-8 navbar-diplonautic">
+                {%trans%}{{app.request.attributes.get('_route')}}{%endtrans%}
+            </div>
             <div class="col-xs-7 col-sm-9 col-md-8 navbar-diplonautic collapse" id="navbar">
                 <ul class="nav navbar-nav">
                       <li id="index_header"{% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}class="active"{% endif %}>
