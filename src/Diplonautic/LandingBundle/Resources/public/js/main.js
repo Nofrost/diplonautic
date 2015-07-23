@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
     //Carousel
     $('.owl-carousel').owlCarousel({
-        
+//      center: true,
         loop:true,
         margin:10,
         autoHeight: true,
@@ -33,6 +33,6 @@ $(document).ready(function() {
   
     $(".item.cap-bot").fitImages();
     $(".main-marks").fitImages({fitMethod: 'resize'});
-        
-    
+
+    window.dispatchEvent(new Event('resize'));
 });

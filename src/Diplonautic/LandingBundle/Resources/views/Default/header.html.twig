@@ -16,25 +16,53 @@
                     </button>
                 </div>
             </div>
+            <div class="visible-xs col-xs-7 back-mobile">
+                <a class="title-mobile active" href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) }}">
+                    {% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}{%trans%}header.home{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_about" in app.request.attributes.get('_route') %}{%trans%}header.company{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_products" in app.request.attributes.get('_route') %}{%trans%}header.products{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}{%trans%}header.oportunities{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}{%trans%}header.contact{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_air_conditioner" in app.request.attributes.get('_route') %}{%trans%}tooltip.ac{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_refrigeration_systems" in app.request.attributes.get('_route') %}{%trans%}tooltip.rs{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_generators" in app.request.attributes.get('_route') %}{%trans%}tooltip.gen{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_water_treatment" in app.request.attributes.get('_route') %}{%trans%}tooltip.wt{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_electric_systems" in app.request.attributes.get('_route') %}{%trans%}tooltip.es{%endtrans%}{% endif %}
+                    {% if "diplonautic_landing_maneuvering_propeller" in app.request.attributes.get('_route') %}{%trans%}tooltip.ms{%endtrans%}{% endif %}
+                </a>
+            </div>
             <div class="col-xs-7 col-sm-9 col-md-8 navbar-diplonautic collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                      <li id="index_header"{% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}class="active"{% endif %}>
-                          <a href="{{path("diplonautic_landing_homepage")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.home{%endtrans%}">{%trans%}header.home{%endtrans%}</a>
-                      </li>
-                      <li id="about_header"{% if "diplonautic_landing_about" in app.request.attributes.get('_route') %}class="active"{% endif %}>
-                          <a href="{{path("diplonautic_landing_about")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.company{%endtrans%}">{%trans%}header.company{%endtrans%}</a>
-                      </li>
-                      <li id="products_header"{% if "diplonautic_landing_products" in app.request.attributes.get('_route') %}class="active"{% endif %}>
-                          <a href="{{path("diplonautic_landing_products")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.products{%endtrans%}">{%trans%}header.products{%endtrans%}</a>
-                      </li>
-                      <li id="oportunities_header"{% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}class="active"{% endif %}>
-                          <a href="{{path("diplonautic_landing_opportunities")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.oportunities{%endtrans%}">{%trans%}header.oportunities{%endtrans%}</a>
-                      </li>
-                      <li id="contact_header"{% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}class="active"{% endif %}>
-                          <a href="{{path("diplonautic_landing_contact")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.contact{%endtrans%}">{%trans%}header.contact{%endtrans%}</a>
-                      </li>
-
-                  </ul><!--navbar-right-->
+                    
+                        <li id="index_header" {% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}class="active hidden-xs"{% endif %}>
+                            <h1><a href="{{path("diplonautic_landing_homepage")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.home{%endtrans%}">{%trans%}header.home{%endtrans%}</a></h1>
+                        </li>
+                        <li id="about_header" {% if "diplonautic_landing_about" in app.request.attributes.get('_route') %}class="active hidden-xs"{% endif %}>
+                            <h1><a href="{{path("diplonautic_landing_about")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.company{%endtrans%}">{%trans%}header.company{%endtrans%}</a></h1>
+                        </li>
+                    {% if "diplonautic_landing_products" in app.request.attributes.get('_route') %}
+                        <li id="products_header" class="active hidden-xs">
+                            <h1><a href="{{path("diplonautic_landing_products")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.products{%endtrans%}">{%trans%}header.products{%endtrans%}</a></h1>
+                        </li>
+                    {%else%}
+                        <li id="products_header">
+                            <a href="{{path("diplonautic_landing_products")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.products{%endtrans%}">{%trans%}header.products{%endtrans%}</a>
+                        </li>
+                    {% endif %}
+                        <li id="oportunities_header" {% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}class="active hidden-xs"{% endif %}>
+                            <h1><a href="{{path("diplonautic_landing_opportunities")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.oportunities{%endtrans%}">{%trans%}header.oportunities{%endtrans%}</a></h1>
+                        </li>
+                    
+                    {% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}
+                        <li id="contact_header" class="active hidden-xs">
+                            <h1><a href="{{path("diplonautic_landing_contact")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.contact{%endtrans%}">{%trans%}header.contact{%endtrans%}</a></h1>
+                        </li>
+                    {%else%}
+                        <li id="contact_header">
+                            <a href="{{path("diplonautic_landing_contact")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.contact{%endtrans%}">{%trans%}header.contact{%endtrans%}</a>
+                        </li
+                    {% endif %}  
+                </ul><!--navbar-right-->
             </div>
         </div>
     </nav>

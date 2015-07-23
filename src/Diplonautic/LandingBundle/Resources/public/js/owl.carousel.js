@@ -603,6 +603,7 @@
 			this.onDragEnd(e);
 		}, this);
 		this.e._onResize = $.proxy(function(e) {
+                    console.log('resize!');
 			this.onResize(e);
 		}, this);
 		this.e._transitionEnd = $.proxy(function(e) {
@@ -620,6 +621,7 @@
 	Owl.prototype.onThrottledResize = function() {
 		window.clearTimeout(this.resizeTimer);
 		this.resizeTimer = window.setTimeout(this.e._onResize, this.settings.responsiveRefreshRate);
+                console.log('resizeThrottled');
 	};
 
 	/**
@@ -627,6 +629,7 @@
 	 * @protected
 	 */
 	Owl.prototype.onResize = function() {
+            console.log('onResize');
 		if (!this._items.length) {
 			return false;
 		}
