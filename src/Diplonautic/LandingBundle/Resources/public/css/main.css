@@ -258,11 +258,12 @@ h4, .h4{
 }
 @media only screen and (min-width:1200px) {
     .nav-logo{
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 35px;   
     }
     .nav-logo> a > img {
-        height: 60px;
+        height: 56px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
         min-width: 158px;
@@ -349,13 +350,6 @@ h4, .h4{
 .main-description-pictos{
     background-color: transparent;
 }
-.divisory{
-    border-bottom: 1px solid #fff;
-    width: 100%;
-    right: 73px;
-    position: relative;
-    margin-bottom: 22px;
-}
 
 .divisory .sub-div1 {
     width: 31px;
@@ -390,6 +384,14 @@ h4, .h4{
     text-decoration: none;
 }
 @media only screen and (min-width:768px) {
+    .divisory{
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    right: 73px;
+    position: relative;
+    margin-bottom: 22px;
+}
+
     .main-marks-products img.one,
 .main-marks-products img.two,
 .main-marks-products img.three{
@@ -411,7 +413,7 @@ h4, .h4{
 } 
 
     .main-description-product{
-        padding: 54px 10px 54px 74px;
+        padding: 57px 40px;
     }
     .main-description-product .h4{
         margin-top: 0px;
@@ -452,10 +454,10 @@ h4, .h4{
     .main-description,
     .main-description-pictos{
         background-color: rgba(0,67,95,0.8);
-        padding: 37px 74px;
+        padding: 30px 40px;
     }
     .main-description-pictos{
-        padding: 57px 74px 57px 67px;
+        padding: 57px 40px;
     }
     .pictos img{
         height: 35px;
@@ -465,7 +467,7 @@ h4, .h4{
         font-size: 10px;
     }
     .pictos .divisory{
-        width: 120%;
+        width: 110%;
     }
     .pictos p{
         font-size: 12px;
@@ -495,14 +497,12 @@ h4, .h4{
 }
 }
 @media only screen and (min-width:992px) {
+    
     .pictos img{
         height: 40px;
     }
     .pictos h4{
         font-size: 16px;
-    }
-    .pictos .divisory{
-        width: 113%;
     }
     .pictos p{
         font-size: 13px;
@@ -510,10 +510,10 @@ h4, .h4{
     .main{
         margin: 8% 0 3%;
     }
-    .main-index .main-description{
-/*        min-height: 317px;*/
+/*    .main-index .main-description{
+        min-height: 317px;
         padding: 30px 40px;
-    }
+    }*/
     .product-title{
         margin-left: 4%;
     }
@@ -523,19 +523,24 @@ h4, .h4{
     .languages a{
         font-size: 16px;
     }
+    .pictos .divisory{
+        width: 108%;
+    }
 }
 @media only screen and (min-width:1200px) {
+    .main-description-product,
+    .main-description-pictos{
+        padding: 57px 74px;
+    }
     .pictos img{
         height: 50px;
     }
-    .pictos .divisory{
-        width: 110%;
-    }
+    
     .pictos p{
         font-size: 14px;
     }
-    .main-index .main-description{
-        min-height: 392px;
+    .main-index .main-description,
+    .main-description{
         padding: 37px 74px;
     }
 /*    .product-title{
@@ -649,14 +654,13 @@ h4, .h4{
     background-color: rgba(0,67,95,0.7);
     padding: 0px;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
 .title-mobile{
-    min-width: 187px;
-    padding-top: 14px;
-    padding-bottom: 15px;
     font-size: 16px;
     margin-bottom: 0;
-    padding: 15px;
+    padding: 12px;
+    padding-left: 15px;
     text-transform: uppercase;
 }
 
@@ -680,6 +684,9 @@ h4, .h4{
     margin-left: 40px;
 }
 @media only screen and (min-width:768px) {
+    .footer .container{
+        margin-left: 74px;
+    }
     .footer{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -691,6 +698,16 @@ h4, .h4{
     }
     .footer a {
         color: #fff;
+    }
+}
+@media only screen and (min-width:768px) {
+    .footer .container{
+        margin-left: 40px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .footer .container{
+        margin-left: 74px;
     }
 }
 

@@ -23,7 +23,7 @@ about :
 
 products :
     ac.title : 'AIRE<br>CONDICIONAT'
-    ac.paragraph : "Sistemes de climatització per embarcacions d’esbarjo"
+    ac.paragraph : "Sistemes de climatització per embarcacions<br> d’esbarjo"
     rs.title : 'SISTEMES<br>FRIGORÍFICS'
     rs.paragraph : 'Dissenys en neveres i congeladors especialitzats per al sector nàutic'
     gen.title: 'GENERADOR'
@@ -105,3 +105,5 @@ marks: 'Frigoboat, Cruisair, Tecnicomar, Calpeda, Condaria, Victor Energy, Idrom
 languages:
     cat: Català
     en: Anglès
+    
+visit: 'Visitar pàgina web de'    
