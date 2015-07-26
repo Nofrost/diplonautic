@@ -110,12 +110,12 @@ h4, .h4{
     height: 42px;
 }
 .navbar-diplonautic{
-    background-color: rgba(0,67,95,0.7);
+   
     font-size: 0.8125em;
     padding-left: 0px;
     padding-right: 0px;
     /* margin-top: 20px; */
-    margin-left: 22.55555%;
+/*    margin-left: 22.55555%;*/
 }
 .navbar-diplonautic>.navbar-nav>ul{
     margin: 0;
@@ -137,6 +137,7 @@ h4, .h4{
     padding-bottom: 12px;
     font-size: 16px;
     border-top: 1px solid #fff;
+    text-transform: uppercase;
 }
 /*.navbar-diplonautic>.navbar-nav>li:first-child>a {
     border-top: none;
@@ -167,7 +168,15 @@ h4, .h4{
     margin-top: 20px;
     background-color: rgba(255,255,255,0.8);
 }
+.no-pad{
+    padding: 0px;
+    background-color: rgba(0,67,95,0.7);
+    margin-top: 20px;
+}
 @media only screen and (min-width:768px) {
+    .no-pad{
+        margin-top: 0px;
+    }
     .button-xs{
         height: 0px;
     }
@@ -208,6 +217,7 @@ h4, .h4{
         font-size: 12px;
         padding: 36px 10px 0px;
         height: 85px;
+        text-transform: uppercase;
     }
     .navbar-diplonautic>.navbar-nav>li>h1 a:hover{
         text-decoration: none;
@@ -250,7 +260,7 @@ h4, .h4{
         padding-bottom: 17px;
     }
     .nav-logo> a > img {
-        height: 50px;
+        height: 45px;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
         min-width: 130px;
@@ -651,10 +661,8 @@ h4, .h4{
     }
 }
 .back-mobile{
-    background-color: rgba(0,67,95,0.7);
     padding: 0px;
     margin-bottom: 0px;
-    margin-top: 20px;
 }
 .title-mobile{
     font-size: 16px;

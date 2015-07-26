@@ -1,9 +1,9 @@
 header : 
-    home : 'HOME'
-    company : 'ABOUT'
-    products : 'PRODUCTS'
-    oportunities : 'OPPORTUNITIES'
-    contact : 'CONTACT'
+    home : 'Home'
+    company : 'About'
+    products : 'Products'
+    oportunities : 'Opportunities'
+    contact : 'Contact'
     go_to : 'Go to '
     
 index :

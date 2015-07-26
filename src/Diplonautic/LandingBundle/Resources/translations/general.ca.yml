@@ -1,9 +1,9 @@
 header :
-    home : 'INICI'
-    company : 'EMPRESA'
-    products : 'PRODUCTES'
-    oportunities : 'OPORTUNITATS'
-    contact : 'CONTACTE'
+    home : 'Inici'
+    company : 'Empresa'
+    products : 'Productes'
+    oportunities : 'Oportunitats'
+    contact : 'Contacte'
     go_to : 'Anar a '
 
 index :
