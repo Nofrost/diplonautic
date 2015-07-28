@@ -9,31 +9,34 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-11 col-sm-offset-0 main-opportunities">
-                      <div id="owl-demo" class="owl-carousel owl-theme clearfix">
+                        {% if opportunities == null %}
+                        {% else %}    
+                        <div id="owl-demo" class="owl-carousel owl-theme clearfix">
                             <div class="item op-intro">
-                                <h1 class="h4">OPORTUNITATS</h1>
-                                <p>Lorem fistrum sit amet irure llevame al sircoo labore magna no te digo trigo por no llamarte Rodrigor reprehenderit sit amet. Jarl jarl tempor amatomaa pupita.</p>
+                                <h1 class="h3"><b>{%trans%}header.oportunities{%endtrans%}</b></h1>
+                                <p>{%trans%}op.intro{%endtrans%}<a href="mailto:ps@diplonautic.com">ps@diplonautic.com</a></p>
                             </div>
                             
                             {% set counter = 0 %}
-                                {% for object in opportunities %}
-                                    <div class="item cap-bot">
-                                        <img alt="Diplonautic" src="{{asset('/uploads/images/opportunities/'~object.img)}}">
-                                        <div class="caption simple-caption">
-                                            <div class="text-carousel">
-                                                <h3 class="pull-left caption-title">{{object.title}}</h3>
-                                                <div class="pull-right caption-price">{{object.price}}</div>
-                                            </div>
-                                            
-                                            <p style="display:inline-block">
-                                                {{object.description}}
-                                            </p>
-
+                            {% for object in opportunities %}
+                                <div class="item cap-bot">
+                                    <img alt="Diplonautic" src="{{asset('/uploads/images/opportunities/'~object.img)}}">
+                                    <div class="caption simple-caption">
+                                        <div class="text-carousel">
+                                            <h3 class="pull-left caption-title">{{object.title}}</h3>
+                                            <div class="pull-right caption-price">{{object.price}}</div>
                                         </div>
+
+                                        <p style="display:inline-block">
+                                            {{object.description}}
+                                        </p>
+
                                     </div>
-                                {% set counter = counter + 1 %}
+                                </div>
+                            {% set counter = counter + 1 %}
                             {%endfor%}
-                          </div>
+                        {% endif %}  
+                        </div>
                        
                     </div>
                    

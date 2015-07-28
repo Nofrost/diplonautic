@@ -94,6 +94,8 @@ propeller:
     variable: 'Hèlix de propulsió de pas variable'
     closing : "Ens avala una llarga trajectòria en la instal·lació i reforma d'hèlix de maniobra. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Garantim que a Diplonautic trobarà la solució que vostè necessita."
     message_link: 'Per més informació fes clic al '
+    
+op.intro: "Diplonautic ven material de segona mà en bon estat. Si vostè està interessat en la compra d'algun dels articles contacti a"
 
 contact :
     administration : 'DEPARTAMENT<br>ADMINISTRACIÓ'
