@@ -346,6 +346,7 @@ h4, .h4{
 .main-marks img{
     width: 100%;
 }
+
 .main-marks-products img.one,
 .main-marks-products img.two,
 .main-marks-products img.three{
@@ -353,7 +354,18 @@ h4, .h4{
     margin-left: 7%;
     padding: 30px 60px;
 } 
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+    .main-marks-products img.one,
+    .main-marks-products img.two,
+    .main-marks-products img.three{
+        width: 60%;
+        margin-left: 20%;
+        padding: 30px 60px;
+    } 
 
+}
 .main-description-product{
     background-color: rgba(0,67,95,0.8);
     padding: 15px 30px;

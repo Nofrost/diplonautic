@@ -1,6 +1,7 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
 {% block meta_description %}{%trans%}meta.es{%endtrans%}{% endblock %}
+{% block title %}{%trans%}tooltip.es{%endtrans%} - Diplonautic{% endblock %}
 
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
@@ -22,11 +23,9 @@
                                 <div class="col-sm-5 product-description">
                                     <p>{%trans%}electric.intro{%endtrans%}
                                         <ul>
+                                            <li>{%trans%}electric.e_recover{%endtrans%}</li>
                                             <li>{%trans%}electric.battery{%endtrans%}</li>
                                             <li>{%trans%}electric.dc{%endtrans%}</li>
-                                            <li>{%trans%}electric.bombs{%endtrans%}</li>
-                                            <li>{%trans%}electric.fire{%endtrans%}</li>
-                                            <li>{%trans%}electric.heaters{%endtrans%}</li>
                                         </ul>
                                     </p>
                                 </div>

@@ -1,7 +1,7 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
 {% block meta_description %}{%trans%}meta.ac{%endtrans%}{% endblock %}
-
+{% block title %}{%trans%}tooltip.ac{%endtrans%} - Diplonautic{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
     <div class="main">
@@ -48,11 +48,11 @@
                                     </a>
                             </div>
                             <div class="row">
+                                    <a href="http://www.frigomar.com/en/" title="{%trans%}visit{%endtrans%} Frigomar">
+                                        <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Frigomar.gif") }}" alt="Frigomar">
+                                    </a>
                                     <a href="http://www.condaria.com/English/" title="{%trans%}visit{%endtrans%} Condaria">
                                         <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Condaria.jpg") }}" alt="Condaria">
-                                    </a>
-                                    <a href="http://www.frigomar.com/en/" title="{%trans%}visit{%endtrans%} Frigomar">
-                                        <img class="pull-left two" src="{{ asset("bundles/diplonauticlanding/images/Frigomar.gif") }}" alt="Frigomar">
                                     </a>
                             </div>
                         </div>

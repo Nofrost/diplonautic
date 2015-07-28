@@ -70,17 +70,15 @@ generators :
 electric :
     intro : 'Diplonautic projected and performs the electrical installation that best suits your boat . We propose the best solutions to meet their needs. We specialize in:'
     e_recover: 'Machines with / without energy recovery.'
+    battery: 'Groups of batteries, chargers and inverters'
     dc : 'Machines in DC or AC.'
     closing : "We guarantee a long experience in the installation and renovation of electric installations. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high."
 
 water: 
     intro : 'Diplonautic performs the installation of reverse Osmosis project that you need. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
-    battery: 'Groups of batteries, chargers and inverters'
-    dc: 'Switchboards AC and continues'
     bombs: 'Pumps sea water and fresh water'
     fire: 'Central fire and bilge water'
     heaters: "Water Heaters"
-    etc: 'Etc'
     closing : "We guarantee a long experience in the installation and renovation of water treatment. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
 propeller: 
@@ -105,4 +103,15 @@ languages:
     en: English
     
     
-visit: 'Visit website of'       
+visit: 'Visit website of' 
+
+meta:
+    index: 'Diplonautic - Design and nautical installations. We improve your navigation with installation, repair and maintenance of the electrical equipment of your boat.'
+    about: 'Diplonautic is a company that operates in the spanish market and provides the spanish market of highly specializing solutions to improve the comfort in your boat. As leading company in the sector with over 30 years of experience, it offers personalized projects with the highest guarantees of quality, efficacy and professionalism, applying the most modern technology.'
+    products: 'Air conditioning systems for pleasure boats. Designs in iceboxes and freezers specialized for the nautical sector. Electrical generators to be employed at marine ambiences. Waterworks for inverse osmosis. Electrical facilities designed exclusively for the nautical sector. Screws that will facilitate the docking and the casting-off of your boat.'
+    ac: 'Diplonautic implements the project of the installation of air conditioned that you need'
+    rs: 'We work with leading brands in the marine industry to guarantee and provide the best solution for your boat'
+    gn: 'We guarantee a long experience in the installation and renovation of generators'
+    wt: 'Diplonautic performs the installation of reverse Osmosis project that you need'
+    mp: 'Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.'
+    es: 'We guarantee a long experience in the installation and renovation of electric installations'

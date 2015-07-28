@@ -1,6 +1,7 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
 {% block meta_description %}{%trans%}meta.gn{%endtrans%}{% endblock %}
+{% block title %}{%trans%}tooltip.gen{%endtrans%} - Diplonautic{% endblock %}
 
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
@@ -35,23 +36,24 @@
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 main-marks-products">
                             <div class="row">
-                                    <a href="http://www.volpitecno.com/generatori_marini.aspx?language=en" title="{%trans%}visit{%endtrans%} Paguro Generators">
-                                        <img class="pull-left text-center two"src="{{ asset("bundles/diplonauticlanding/images/Paguro-Generators.jpg") }}" alt="Paguro Generators">
-                                    </a>
-                                    <a href="http://www.victronenergy.com.es/" title="{%trans%}visit{%endtrans%} Victron Energy">
-                                        <img class="pull-left text-center two" src="{{ asset("bundles/diplonauticlanding/images/VictronEnergy.jpg") }}" alt="VictronEnergy">
-                                    </a>
-                                    
-                            </div>
-                            <div class="row">
                                     <a href="https://www.northern-lights.com/" title="{%trans%}visit{%endtrans%} Northern Lights">
-                                        <img class="pull-left text-center two"src="{{ asset("bundles/diplonauticlanding/images/NorthernLights.png") }}" alt="Northern Lights">
+                                        <img class="pull-left text-center three"src="{{ asset("bundles/diplonauticlanding/images/NorthernLights.png") }}" alt="Northern Lights">
                                     </a>
                                     
                                     <a href="">
-                                        <img class="pull-left text-center two" src="{{ asset("bundles/diplonauticlanding/images/Stamegna.png") }}" alt="Stamegna">
+                                        <img class="pull-left text-center three" src="{{ asset("bundles/diplonauticlanding/images/Stamegna.png") }}" alt="Stamegna">
+                                    </a>
+                                    <a href="http://www.victronenergy.com.es/" title="{%trans%}visit{%endtrans%} Victron Energy">
+                                        <img class="pull-left text-center three" src="{{ asset("bundles/diplonauticlanding/images/VictronEnergy.jpg") }}" alt="VictronEnergy">
                                     </a>
                             </div>
+                            <div class="row">
+                                    <a href="http://www.volpitecno.com/generatori_marini.aspx?language=en" title="{%trans%}visit{%endtrans%} Paguro Generators">
+                                        <img class="pull-left text-center three"src="{{ asset("bundles/diplonauticlanding/images/Paguro-Generators.jpg") }}" alt="Paguro Generators">
+                                    </a>
+                                    
+                                    
+                            </div>        
                         </div>
                     </div>
                     <div class="col-sm-1 languages hidden-xs">

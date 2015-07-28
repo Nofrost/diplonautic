@@ -1,6 +1,7 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
 {% block meta_description %}{%trans%}meta.wt{%endtrans%}{% endblock %}
+{% block title %}{%trans%}tooltip.wt{%endtrans%} - Diplonautic{% endblock %}
 
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
@@ -22,8 +23,9 @@
                                 <div class="col-sm-5 product-description">
                                     <p>{%trans%}water.intro{%endtrans%}
                                         <ul>
-                                            <li>{%trans%}water.e_recover{%endtrans%}</li>
-                                            <li>{%trans%}water.dc{%endtrans%}</li>
+                                            <li>{%trans%}water.bombs{%endtrans%}</li>
+                                            <li>{%trans%}water.fire{%endtrans%}</li>
+                                            <li>{%trans%}water.heaters{%endtrans%}</li>
                                         </ul>
                                     </p>
                                 </div>
