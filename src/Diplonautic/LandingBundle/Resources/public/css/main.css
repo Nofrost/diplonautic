@@ -100,6 +100,7 @@ h4, .h4{
 }
 .navbar-nav {
     margin: 0;
+    background-color: rgba(0,67,95,0.7);
 }
 .nav-logo{
     background-color: rgba(0,67,95,0.5);
@@ -170,12 +171,37 @@ h4, .h4{
 }
 .no-pad{
     padding: 0px;
-    background-color: rgba(0,67,95,0.7);
+}
+.back-mobile{
+    padding: 0px;
+    margin-bottom: 0px;
     margin-top: 20px;
+    background-color: rgba(0,67,95,0.7);
+}
+.title-mobile{
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 12px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.lang-mobile{
+    margin-top: 20px;
+}
+.lang-mobile li:first-child a{
+    border-top: none;
+}
+.lang-mobile a{
+    color: #fff;
 }
 @media only screen and (min-width:768px) {
     .no-pad{
         margin-top: 0px;
+        background-color: rgba(0,67,95,0.7);
+    }
+    .navbar-nav {
+        margin: 0;
+        background-color: transparent;
     }
     .button-xs{
         height: 0px;
@@ -660,17 +686,7 @@ h4, .h4{
         font-size: 22px;
     }
 }
-.back-mobile{
-    padding: 0px;
-    margin-bottom: 0px;
-}
-.title-mobile{
-    font-size: 16px;
-    margin-bottom: 0;
-    padding: 12px;
-    padding-left: 15px;
-    text-transform: uppercase;
-}
+
 
 
 
