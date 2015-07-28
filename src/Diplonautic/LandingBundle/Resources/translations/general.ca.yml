@@ -71,19 +71,17 @@ generators :
 electric :
     intro : 'Diplonautic projecta i realitza la instal·lació elèctrica que millor s’adapti a la seva embarcació. Proposem la millor de les solucions per satisfer les seves necessitats. Som especialistes en:'
     e_recover: 'Equips amb/sense recuperador d’energia.'
+    battery: 'Grups de bateries, Carregadors i inversors'
     dc : 'Equips a corrent contínua o corrent alterna.'
-    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips potabilització. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma de sistemes elèctrics . El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
     message_link: 'Per més informació fes clic al '
 
 water:
     intro : 'Diplonautic realitza el projecte de la instal·lació de Osmosis Inversa que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
-    battery: 'Grups de bateries, Carregadors i inversors'
-    dc: 'Quadres elèctrics de corrent alterna i continua'
     bombs: 'Bombes d’aigua de mar i dolça'
     fire: 'Centrals contra incendis i buidatge'
     heaters: "Escalfadors d’aigües"
-    etc: 'Etc'
-    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma de sistemes elèctrics. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br> Garantim que a Diplonautic trobarà la solució que vostè necessita'
+    closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips potabilització. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br> Garantim que a Diplonautic trobarà la solució que vostè necessita'
     message_link: 'Per més informació fes clic al '
     
 propeller:
@@ -108,4 +106,15 @@ languages:
     cat: Català
     en: Anglès
     
-visit: 'Visitar pàgina web de'    
+visit: 'Visitar pàgina web de'
+
+meta:
+    index: 'Diplonautic - Disseny i instal·lacions nàutiques. Millorem la seva navegació amb la instal·lació, reparació i manteniment dels equips elèctrics de la seva embarcació.'
+    about: 'Diplonautic és una empresa que proveeix al mercat espanyol de solucions altament especialitzades per millorar el confort a la seva embarcació. Líders en el seu sector I amb més de 30 anys d’experiència, ofereix projectes personalitzats amb les majors garanties de qualitat, eficàcia I professionalitat, aplicant la més moderna tecnologia.'
+    products: 'Sistemes de climatització per embarcacions d’esbarjo. Dissenys en neveres i congeladors especialitzats per al sector nàutic. Generadors elèctrics per treballar a ambients marins. Sistemes de potabilització per osmosi inversa. Instal·lacions elèctriques dissenyades exclusivament pel sector nàutic. Hèlix que li facilitaran l’atracada i el desembarcament de la seva embarcació'
+    ac: 'Diplonautic realitza el projecte de la instal·lació d’aire condicionat que vostè necessiti'
+    rs: 'Treballem amb les marques líders en el sector nàutic assegurant-nos que li proporcionem la millor solució per la seva embarcació: Neveres i congeladors compactes, Mobles frigorífics, Càmeres frigorífiques'
+    gn: 'Ens avala una llarga trajectòria en la instal·lació y reforma de grups electrògens'
+    wt: 'Diplonautic realitza el projecte de la instal·lació de Osmosis Inversa que vostè necessiti'
+    mp: 'El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
+    es: 'Diplonautic projecta i realitza la instal·lació elèctrica que millor s’adapti a la seva embarcació'
