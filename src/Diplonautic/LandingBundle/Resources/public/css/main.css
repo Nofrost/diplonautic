@@ -65,6 +65,9 @@ h4, .h4{
     h3, .h3{
         font-size: 18px;
     }
+    h4, .h4{
+        font-size: 16px;
+    }
 }
 @media only screen and (min-width:992px) {
     h2, .h2{
@@ -72,6 +75,9 @@ h4, .h4{
     }
     h3, .h3{
         font-size: 20px;
+    }
+    h4, .h4{
+        font-size: 16px;
     }
     p, li{
         font-size: 14px;
@@ -83,6 +89,9 @@ h4, .h4{
     }
     h3, .h3{
         font-size: 22px;
+    }
+    h4, .h4{
+        font-size: 18px;
     }
     p, li{
         font-size: 16px;
@@ -97,8 +106,8 @@ h4, .h4{
     /* width: 55px; */
     border-radius: 0;
     padding: 0 10px;
-    margin-top: 20px;
-    margin-right: -9px;
+    margin-top: 0px;
+/*    margin-right: -9px;*/
     margin-bottom: 0px;
 }
 .navbar-nav {
@@ -166,10 +175,14 @@ h4, .h4{
 }
 .button-xs{
     float:left;
+    margin-top: 20px;
+    width: 23.333333%;
 }
 .white-anex{
     min-height: 46px;
-    margin-top: 20px;
+    width: 39.333333%;
+    padding: 0 15px;
+    float: left;
     background-color: rgba(255,255,255,0.8);
 }
 .no-pad{
@@ -197,7 +210,13 @@ h4, .h4{
 .lang-mobile a{
     color: #fff;
 }
+.nav-mobile{
+    width: 68.3333333%;
+}
 @media only screen and (min-width:768px) {
+    .nav-mobile{
+        width: 75%;
+    }
     .no-pad{
         margin-top: 0px;
         background-color: rgba(0,67,95,0.7);
@@ -283,6 +302,9 @@ h4, .h4{
     }
 }
 @media only screen and (min-width:992px) {
+    .nav-mobile{
+        width: 66.66666667%;
+    }
     .nav-logo{
         width: 33.133333%;
         padding-top: 17px;
@@ -337,9 +359,9 @@ h4, .h4{
 .main-marks-products{
     height: 100%;
     float:left; background-color: #fff; overflow: hidden;
+    padding: 30px 0px;
 }
-.main-marks,
-.main-marks-products{
+.main-marks{
     padding: 0px;
 }
 
@@ -355,7 +377,7 @@ h4, .h4{
     padding: 30px 60px;
 } 
 @media only screen and (min-device-width: 480px) 
-                   and (max-device-width: 640px) 
+                   and (max-device-width: 690px) 
                    and (orientation: landscape) {
     .main-marks-products img.one,
     .main-marks-products img.two,
@@ -366,9 +388,12 @@ h4, .h4{
     } 
 
 }
+.no-padding{
+    padding: 0px;
+}
 .main-description-product{
     background-color: rgba(0,67,95,0.8);
-    padding: 15px 30px;
+    padding: 30px;
 }
 .main-description-product img{
     height: 50px;
@@ -434,7 +459,17 @@ h4, .h4{
     color: white;
     text-decoration: none;
 }
+.main-marks-products img.three.big-image{
+    height: 160px;
+  width: auto;
+  margin-left: 55px;
+}
+
 @media only screen and (min-width:768px) {
+    .special-picto{
+    position: relative;
+  left: 45px;
+}
     .divisory{
     border-bottom: 1px solid #fff;
     width: 100%;
@@ -443,25 +478,19 @@ h4, .h4{
     margin-bottom: 22px;
 }
 
+
     .main-marks-products img.one,
 .main-marks-products img.two,
 .main-marks-products img.three{
     margin-left: 0;
     padding: 0px;
 } 
-    .main-marks-products img.three{
-    width: 33%;
-    padding: 10px;
+.main-marks-products img.two,
+.main-marks-products img.three{
+    width: 80%;
+    padding: 15px;
+    margin-left: 10%;
 }
-.main-marks-products img.two{
-    width: 50%;
-    padding: 20px;
-} 
-.main-marks-products img.one{
-      width: 43%;
-  margin-left: 4%;
-  margin-top: 5%;
-} 
 
     .main-description-product{
         padding: 57px 40px;
@@ -480,11 +509,11 @@ h4, .h4{
         float:left; background-color: #fff; overflow: hidden;
     }
     .main-marks{
-        left: 49%;
+        left: 50%;
     }
     .main-marks-products{
-        left: 65%;
-        padding: 15px 30px;
+        left: 83%;
+        padding: 52px 10px;
     }
 
     .main-marks-products img,
@@ -537,17 +566,38 @@ h4, .h4{
         padding: 8px;
         font-size: 14px;
     }
-    .main-marks-products img.three.big-image{
-    height: 96px;
-    margin-left: 26px;
-}
-.main-marks-products img.one.big-image{
-    width: 26%;
-  margin-left: 6%;
-  margin-top: 5%;
-}
+    .main-marks-products img.three.big-image {
+        height: 80px;
+        margin-left: 23px;
+        /* margin-right: 15px; */
+        width: auto;
+      }
+    
+    .main-marks-products img.one.big-image{
+        width: 26%;
+      margin-left: 6%;
+      margin-top: 5%;
+    }
 }
 @media only screen and (min-width:992px) {
+    .main-marks-products img.one, .main-marks-products img.two, .main-marks-products img.three {
+  margin-left: 16px;
+  padding: 0px;
+  width: 50%;
+}
+    .special-picto{
+    position: relative;
+  left: 25px;
+}
+    .frigo{
+        margin-top: 20px;
+    }
+    .main-marks-products img.three.big-image{
+        height: 90px;
+        margin-left: 21px;
+        margin-right: 15px;
+        width: auto;
+    }
     
     .pictos img{
         height: 40px;
@@ -559,7 +609,7 @@ h4, .h4{
         font-size: 13px;
     }
     .main{
-        margin: 8% 0 6%;
+        margin: 7% 0 6%;
     }
 /*    .main-index .main-description{
         min-height: 317px;
@@ -577,12 +627,34 @@ h4, .h4{
     .pictos .divisory{
         width: 108%;
     }
-}
+    .main-marks-products img.three{
+        width: 33%;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    .main-marks-products {
+      left: 66.6666666666%;
+      padding: 52px 40px;}
+    
+    .frigo{
+        margin-top: 20px;
+    }
+    .main-marks-products img.two{
+          width: 50%;
+        padding: 0 20px 15px;
+        margin-left: 0px;
+    } 
+    }
 @media only screen and (min-width:1200px) {
     .main-description-product,
     .main-description-pictos{
         padding: 57px 74px;
     }
+    .main-marks-products {
+        left: 66.6666666666%;
+        padding: 52px;
+    }
+
     .pictos img{
         height: 50px;
     }
