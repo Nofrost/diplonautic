@@ -25,6 +25,7 @@ a{
 }
 a:focus{
     text-decoration: none;
+    color: #fff;
 }
 h1{
     text-transform: uppercase;
@@ -43,7 +44,7 @@ h4, .h4{
     line-height: 21px;
 }
 .margin-text-picto{
-    margin-top: 44px;
+    margin-top: 45px;
 }
 .margin-picto{
     margin-top: 24px;
@@ -376,6 +377,10 @@ h4, .h4{
     margin-left: 7%;
     padding: 30px 60px;
 } 
+.main-marks-products img.three.max{
+    width: 70%;
+  margin-left: 46px;
+}
 @media only screen and (min-device-width: 480px) 
                    and (max-device-width: 690px) 
                    and (orientation: landscape) {
@@ -427,26 +432,7 @@ h4, .h4{
     background-color: transparent;
 }
 
-.divisory .sub-div1 {
-    width: 31px;
-    height: 15px;
-    border-bottom: 1px solid white;
-    -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
-    position: absolute;
-    top: -44px;
-    /* left: 383px; */
-    right: -12px;
-}
-.divisory .sub-div2 {
-    width: 21px;
-    height: 15px;
-    border-bottom: 1px solid white;
-    -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
-    position: absolute;
-    top: -40px;
-    /* left: 383px; */
-    right: 8px;
-}
+
 .link-products a:hover,
 .contact a:hover,
 .pictos a:hover {
@@ -466,41 +452,55 @@ h4, .h4{
 }
 
 @media only screen and (min-width:768px) {
+    .divisory .sub-div1 {
+        width: 21px;
+        height: 22px;
+        border-bottom: 1px solid white;
+        -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
+        position: absolute;
+        top: -45px;
+        /* left: 383px; */
+        right: -2px;
+    }
+    .divisory .sub-div2 {
+        width: 16px;
+        height: 15px;
+        border-bottom: 1px solid white;
+        -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
+        position: absolute;
+        top: -38px;
+        /* left: 383px; */
+        right: 8px;
+    } 
     .special-picto{
-    position: relative;
-  left: 45px;
-}
+        position: relative;
+        left: 45px;
+    }
     .divisory{
-    border-bottom: 1px solid #fff;
-    width: 100%;
-    right: 73px;
-    position: relative;
-    margin-bottom: 22px;
-}
-
-
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        right: 73px;
+        position: relative;
+        margin-bottom: 22px;
+    }
+    .main-marks-products img.three.max,
     .main-marks-products img.one,
-.main-marks-products img.two,
-.main-marks-products img.three{
-    margin-left: 0;
-    padding: 0px;
-} 
-.main-marks-products img.two,
-.main-marks-products img.three{
-    width: 80%;
-    padding: 15px;
-    margin-left: 10%;
-}
+    .main-marks-products img.two,
+    .main-marks-products img.three{
+        width: 80%;
+        padding: 15px;
+        margin-left: 10%;
+    }
 
     .main-description-product{
-        padding: 57px 40px;
+        padding: 57px 40px 47px;;
     }
     .main-description-product .h4{
         margin-top: 0px;
     }
     .main-index{
-    position: relative;
-    display: table;
+        position: relative;
+        display: table;
     }
     .main-marks,
     .main-marks-products{
@@ -534,7 +534,7 @@ h4, .h4{
     .main-description,
     .main-description-pictos{
         background-color: rgba(0,67,95,0.8);
-        padding: 30px 40px;
+        padding: 30px 40px 40px;
     }
     .main-description-pictos{
         padding: 57px 40px;
@@ -580,15 +580,40 @@ h4, .h4{
     }
 }
 @media only screen and (min-width:992px) {
-    .main-marks-products img.one, .main-marks-products img.two, .main-marks-products img.three {
-  margin-left: 16px;
-  padding: 0px;
-  width: 50%;
-}
+    .divisory .sub-div1 {
+        width: 31px;
+        height: 15px;
+        border-bottom: 1px solid white;
+        -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
+        position: absolute;
+        top: -44px;
+        /* left: 383px; */
+        right: -12px;
+    }
+    .divisory .sub-div2 {
+        width: 21px;
+        height: 15px;
+        border-bottom: 1px solid white;
+        -webkit-transform: translateY(20px) translateX(5px) rotate(-60deg);
+        position: absolute;
+        top: -40px;
+        /* left: 383px; */
+        right: 8px;
+    }
+    .main-marks-products img.three.max {
+        width: 31%;
+        margin-left: 0px;
+        padding-top: 8px; 
+      }
+    .main-marks-products img.one{
+        margin-left: 16px;
+        padding: 0px;
+        width: 50%;
+      }
     .special-picto{
-    position: relative;
-  left: 25px;
-}
+        position: relative;
+        left: 25px;
+    }
     .frigo{
         margin-top: 20px;
     }
@@ -634,7 +659,8 @@ h4, .h4{
     }
     .main-marks-products {
       left: 66.6666666666%;
-      padding: 52px 40px;}
+      padding: 52px 40px;
+    }
     
     .frigo{
         margin-top: 20px;
@@ -648,7 +674,7 @@ h4, .h4{
 @media only screen and (min-width:1200px) {
     .main-description-product,
     .main-description-pictos{
-        padding: 57px 74px;
+        padding: 57px 74px 47px;
     }
     .main-marks-products {
         left: 66.6666666666%;
@@ -664,7 +690,7 @@ h4, .h4{
     }
     .main-index .main-description,
     .main-description{
-        padding: 37px 74px;
+        padding: 37px 74px 47px;
     }
 /*    .product-title{
         margin-left: 0%;
