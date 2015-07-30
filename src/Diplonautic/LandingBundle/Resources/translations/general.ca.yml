@@ -72,13 +72,13 @@ electric :
     intro : 'Diplonautic projecta i realitza la instal·lació elèctrica que millor s’adapti a la seva embarcació. Proposem la millor de les solucions per satisfer les seves necessitats. Som especialistes en:'
     e_recover: 'Equips amb/sense recuperador d’energia.'
     dc : 'Equips a corrent contínua o corrent alterna.'
+    battery: 'Grups de bateries, Carregadors i inversors'
+    dc: 'Quadres elèctrics de corrent alterna i continua'
     closing : 'Ens avala una llarga trajectòria en la instal·lació i reforma d’equips potabilització. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
     message_link: 'Per més informació fes clic al '
 
 water:
     intro : 'Diplonautic realitza el projecte de la instal·lació de Osmosis Inversa que vostè necessiti. Treballem amb les marques líders del sector nàutic, assegurant-nos que li proporcionem la millor solució per la seva embarcació:'
-    battery: 'Grups de bateries, Carregadors i inversors'
-    dc: 'Quadres elèctrics de corrent alterna i continua'
     bombs: 'Bombes d’aigua de mar i dolça'
     fire: 'Centrals contra incendis i buidatge'
     heaters: "Escalfadors d’aigües"
