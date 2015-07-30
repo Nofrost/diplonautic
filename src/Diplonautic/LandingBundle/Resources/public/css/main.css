@@ -27,6 +27,7 @@ a:focus{
     text-decoration: none;
     color: #fff;
 }
+
 h1{
     text-transform: uppercase;
 }
@@ -705,12 +706,16 @@ h4, .h4{
     padding: 14px;
     padding-top: 0px;
     width: 100%;
+    background-color: rgba(255,255,255,0.2);
 }
 .item.op-intro > p > a:hover{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }    
+.item.op-intro > p > a{
+    display: inline;
+}  
 .pad-left{
     padding-left: 0px;
 }
@@ -766,13 +771,15 @@ h4, .h4{
     font-size: 20px;
 }
 .caption-price{
-    width: 30%;
     padding-top: 3px;
 }
 .text-carousel{
     display: inline-block;
     width: 100%
         
+}
+.main-description > div > div> p > a{
+    display: inline;
 }
 @media only screen and (min-width:768px) {
 /*    .main-opportunities .item{
@@ -787,20 +794,23 @@ h4, .h4{
     }
     
     .caption-title{
-    font-size: 18px;
+        font-size: 18px;
+        width: 60%;
     }
 }
 
 @media only screen and (min-width:992px) {
     .caption-title{
-    font-size: 20px;
+        font-size: 20px;
+        width: 68%;
+    }
+    .op-intro{
+        padding: 30px;
+        padding-top: 19px;
     }
 }
 @media only screen and (min-width:1200px) {
-    .op-intro{
-        padding: 35px;
-        padding-top: 0px;
-    }
+    
     
     .caption-title{
         font-size: 22px;

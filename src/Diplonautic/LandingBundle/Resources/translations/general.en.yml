@@ -89,7 +89,8 @@ propeller:
     variable: 'Variable pitch propeller propulsion'
     closing : "We guarantee a long experience in the installation and renovation of maneuver screws. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
-op.intro: 'Diplonautic sells second-hand material in good conditions. If you are interested please contact us to'   
+op.intro: 'Diplonautic sells second-hand material in good conditions. If you are interested please contact us on '
+op.alternative: "Currently we don't have items for sale"
     
 contact : 
     administration : 'ADMINISTRATION<br>DEPARTMENT'

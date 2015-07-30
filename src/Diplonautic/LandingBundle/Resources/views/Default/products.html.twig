@@ -1,7 +1,7 @@
 {%trans_default_domain 'general'%}
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block meta_description %}{%trans%}meta.products{%endtrans%}{% endblock %}
-
+{% block meta_title %}{%trans%}header.products{%endtrans%} - Diplonautic{% endblock %}
 {% block title %}{%trans%}header.products{%endtrans%} - Diplonautic{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}

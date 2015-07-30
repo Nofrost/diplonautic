@@ -93,8 +93,8 @@ propeller:
     closing : "Ens avala una llarga trajectòria en la instal·lació i reforma d'hèlix de maniobra. El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.<br><br>Garantim que a Diplonautic trobarà la solució que vostè necessita."
     message_link: 'Per més informació fes clic al '
     
-op.intro: "Diplonautic ven material de segona mà en bon estat. Si vostè està interessat en la compra d'algun dels articles contacti a"
-
+op.intro: "A Diplonautic podrà trobar ofertes de material de segon mà en bon estat.<br> Si vostè està interessat en la compra d'algun article, no dubti en contactar a "
+op.alternative: "En aquests moments no disposem d'articles per a la seva venda"
 contact :
     administration : 'DEPARTAMENT<br>ADMINISTRACIÓ'
     tecnich : 'DEPARTAMENT<br>TÈCNIC'
