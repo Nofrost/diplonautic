@@ -14,7 +14,7 @@ index :
         repair : 'REPAIR'
         maintenance : 'MAINTENANCE'
     
-    electrical : 'of the electrical equipment of your BOAT.'
+    electrical : 'of the electrical equipment of your Yacht.'
 
 about :
     title : 'YOUR PROJECTS,<br>ARE OUR CHALLENGES'
@@ -29,20 +29,20 @@ products :
     rs.paragraph : 'Designs in iceboxes and freezers specialized for the nautical sector'
     gen.title: 'GENERATORS'
     gen.paragraph : 'Electrical generators to be employed at marine ambiences'
-    wt.title : 'WATER<br>TREATMENT'
+    wt.title : 'WATERMAKER'
     wt.paragraph : 'Waterworks for inverse osmosis'
     es.title : 'ELECTRIC<br>SYSTEMS'
     es.paragraph : 'Electrical facilities designed exclusively for the nautical sector'
-    ms.title : 'MANEUVER<br>SCREWS'
-    ms.paragraph : 'Screws that will facilitate the docking and the casting-off of your boat'
+    ms.title : 'BOW<br>THRUSTER'
+    ms.paragraph : 'Thrusters that will facilitate the docking and the casting-off of your yacht'
 
 tooltip: 
     ac: 'Air Conditioning'
     rs: 'Cooling Systems'
     gen: 'Generators'
-    wt: "Water Treatment"
+    wt: "Watermakers"
     es: 'Electric Systems'
-    ms: 'Maneuver Screws'
+    ms: 'Bow thrusters'
     
 air: 
     intro: 'Diplonautic implements the project of the installation of air conditioned that you need.  We work with leading brands in the marine industry to guarantee and provide the best solution for your boat: '
@@ -82,12 +82,12 @@ water:
     closing : "We guarantee a long experience in the installation and renovation of water treatment. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
 propeller: 
-    intro : 'Diplonautic determine the propeller that you need. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
-    proa: 'Bow and stern propeller'
+    intro : 'Diplonautic determine the bow thruster that you need. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
+    proa: 'Bow and stern thruster'
     fixed: 'Fixed or retractable'
     electric: 'Hidraulic or electric'
     variable: 'Variable pitch propeller propulsion'
-    closing : "We guarantee a long experience in the installation and renovation of maneuver screws. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
+    closing : "We guarantee a long experience in the installation and renovation of bow thrusters. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
 op.intro: 'Diplonautic sells second-hand material in good conditions. If you are interested please contact us on '
 op.alternative: "Currently we don't have items for sale"
@@ -116,3 +116,5 @@ meta:
     wt: 'Diplonautic performs the installation of reverse Osmosis project that you need'
     mp: 'Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.'
     es: 'We guarantee a long experience in the installation and renovation of electric installations'
+    
+keywords: 'Diplonautic, Design,Installations ,Electricasl systems, Battery, Air conditioning,firdges,freezers, Watermakers, cooling systems, boats, yachts, Barcelona, bow thusters, chargers, inverters'        

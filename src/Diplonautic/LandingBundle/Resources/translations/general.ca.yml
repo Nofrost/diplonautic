@@ -28,7 +28,7 @@ products :
     rs.paragraph : 'Dissenys en neveres i congeladors especialitzats per al sector nàutic'
     gen.title: 'GENERADOR'
     gen.paragraph : 'Generadors elèctrics per treballar a ambients marins'
-    wt.title : "POTABILITZADORS<br>D'AIGUA"
+    wt.title : "POTABILITZADORS"
     wt.paragraph : 'Sistemes de potabilització per osmosi inversa'
     es.title : 'SISTEMES<br>ELÈCTRICS'
     es.paragraph : 'Instal·lacions elèctriques dissenyades exclusivament pel sector nàutic'
@@ -118,3 +118,5 @@ meta:
     wt: 'Diplonautic realitza el projecte de la instal·lació de Osmosis Inversa que vostè necessiti'
     mp: 'El nostre camp de treball és ampli i comprèn des de petites embarcacions, 6 metres, mega iots, fins a barques superiors als 50 metres.'
     es: 'Diplonautic projecta i realitza la instal·lació elèctrica que millor s’adapti a la seva embarcació'
+
+keywords: 'Diplonautic, Disseny, instal·lacions nàutiques, climatització, sector nàutic, Osmosis Inversa, fred, neveres, vaixells, Barcelona, aire condicionat, frigorífiques, refrigeració, hèlix de maniobra'    

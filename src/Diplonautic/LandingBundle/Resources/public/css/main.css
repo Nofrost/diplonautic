@@ -451,8 +451,17 @@ h4, .h4{
   width: auto;
   margin-left: 55px;
 }
-
+.main-marks-products img.three.hem{
+    height: 175px;
+    width: auto;
+    margin-left: 81px
+}
 @media only screen and (min-width:768px) {
+    .main-marks-products img.three.hem{
+    height: 75px;
+    width: auto;
+    margin-left: 36px;
+}
     .divisory .sub-div1 {
         width: 21px;
         height: 22px;
@@ -606,6 +615,9 @@ h4, .h4{
         margin-left: 0px;
         padding-top: 8px; 
       }
+      .main-marks-products img.two.mastervolt {
+        margin-top: -9px; 
+      }
     .main-marks-products img.one{
         margin-left: 16px;
         padding: 0px;
@@ -617,6 +629,12 @@ h4, .h4{
     }
     .frigo{
         margin-top: 20px;
+    }
+    .main-marks-products img.three.hem{
+        height: 108px;
+        width: auto;
+        margin-top: 3px;
+        margin-right: 18px;
     }
     .main-marks-products img.three.big-image{
         height: 90px;
@@ -635,7 +653,7 @@ h4, .h4{
         font-size: 13px;
     }
     .main{
-        margin: 7% 0 6%;
+        margin: 5% 0 6%;
     }
 /*    .main-index .main-description{
         min-height: 317px;
