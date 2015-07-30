@@ -8,15 +8,17 @@
                 </a>
             </div>
             <div class="division hidden-xs"></div>
-            <div class="button-xs">
-                <div class="col-xs-4 visible-xs white-anex"></div>
-                <div class="col-xs-2 pad-left">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                        <i class="fa fa-bars"></i>
-                    </button>
+            <div class="button-xs no-pad">
+                <div class="row">
+                    <div class="visible-xs white-anex"></div>
+                    <div class="visible-xs col-xs-6 no-pad">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-7 col-sm-9 col-md-8 no-pad">
+            <div class="col-xs-8 col-sm-9 col-md-8 no-pad nav-mobile">
                 <div class="visible-xs back-mobile">
                     <a class="title-mobile active" href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) }}">
                         {% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}{%trans%}header.home{%endtrans%}{% endif %}
@@ -62,9 +64,21 @@
                         {%else%}
                             <li id="contact_header">
                                 <a href="{{path("diplonautic_landing_contact")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.contact{%endtrans%}">{%trans%}header.contact{%endtrans%}</a>
-                            </li
+                            </li>
                         {% endif %}  
                     </ul><!--navbar-right-->
+                    <ul class="visible-xs nav navbar-nav lang-mobile">
+                        <li>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
+                                CAT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
+                                EN
+                            </a>
+                        </li>
+                    </ul>    
                 </div>    
             </div>     
         </div>

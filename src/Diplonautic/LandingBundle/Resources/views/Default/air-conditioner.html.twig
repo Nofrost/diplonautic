@@ -1,6 +1,8 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
-{% block title %}{%trans%}header.products{%endtrans%} - {%trans%}tooltip.ac{%endtrans%} - Diplonautic{% endblock %}
+{% block meta_description %}{%trans%}meta.ac{%endtrans%}{% endblock %}
+{% block meta_title %}{%trans%}tooltip.ac{%endtrans%} - Diplonautic{% endblock %}
+{% block title %}{%trans%}tooltip.ac{%endtrans%} - Diplonautic{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
     <div class="main">
@@ -8,8 +10,8 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="main-index pad-left col-sm-11">
-                        <div class=" col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0 main-description-product">
+                    <div class="main-index no-padding col-sm-11">
+                        <div class=" col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-0 col-md-8 main-description-product">
                             <div class="row">
                                 <div class="col-sm-1 small-picto">
                                     <img src="{{ asset("bundles/diplonauticlanding/images/Picto2.png")}}" alt="{%trans%}products.ac.title{%endtrans%} - Diplonautic">
@@ -34,7 +36,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 main-marks-products">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-0 col-md-4 main-marks-products">
                             <div class="row">
                                     <a href="http://www.cruisair.com/International/" title="{%trans%}visit{%endtrans%} Cruisair">
                                         <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Cruisair.jpg") }}" alt="Cruisair">
@@ -47,11 +49,11 @@
                                     </a>
                             </div>
                             <div class="row">
+                                    <a href="http://www.frigomar.com/en/" title="{%trans%}visit{%endtrans%} Frigomar">
+                                        <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Frigomar.gif") }}" alt="Frigomar">
+                                    </a>
                                     <a href="http://www.condaria.com/English/" title="{%trans%}visit{%endtrans%} Condaria">
                                         <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Condaria.jpg") }}" alt="Condaria">
-                                    </a>
-                                    <a href="http://www.frigomar.com/en/" title="{%trans%}visit{%endtrans%} Frigomar">
-                                        <img class="pull-left two" src="{{ asset("bundles/diplonauticlanding/images/Frigomar.gif") }}" alt="Frigomar">
                                     </a>
                             </div>
                         </div>

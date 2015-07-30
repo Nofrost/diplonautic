@@ -18,7 +18,7 @@ $(document).ready(function() {
                 nav:true
             },
             600:{
-                items:3,
+                items:2,
                 nav:true
             },
             1000:{
@@ -32,6 +32,8 @@ $(document).ready(function() {
     
   
     $(".item.cap-bot").fitImages();
+    var imgWidth = $('.item.cap-bot img').width();
+    $('.caption.simple-caption').css({width: imgWidth});
     $(".main-marks").fitImages({fitMethod: 'resize'});
 
     window.dispatchEvent(new Event('resize'));

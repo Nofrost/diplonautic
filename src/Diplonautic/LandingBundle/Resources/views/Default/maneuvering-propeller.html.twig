@@ -1,14 +1,16 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {%trans_default_domain 'general'%}
-{% block title %}{%trans%}header.products{%endtrans%} - {%trans%}tooltip.ms{%endtrans%} - Diplonautic{% endblock %}
+{% block meta_description %}{%trans%}meta.mp{%endtrans%}{% endblock %}
+{% block meta_title %}{%trans%}tooltip.ms{%endtrans%} - Diplonautic{% endblock %}
+{% block title %}{%trans%}tooltip.ms{%endtrans%} - Diplonautic{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}    
     <div class="main">
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="main-index pad-left col-sm-11">
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0 main-description-product">
+                    <div class="main-index no-padding col-sm-11">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-0 col-md-8 main-description-product">
                             <div class="row">
                                 <div class="col-sm-1">
                                     <img src="{{ asset("bundles/diplonauticlanding/images/Picto6.png")}}" alt="{%trans%}products.ms.title{%endtrans%} - Diplonautic">
@@ -33,14 +35,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 main-marks-products">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-2 col-sm-offset-0 col-md-4 main-marks-products">
                             <div class="row">
-                                    <a href="http://www.max-power.com/" title="{%trans%}visit{%endtrans%} Max Power">
-                                        <img class="pull-left two" src="{{ asset("bundles/diplonauticlanding/images/MAXPower.png") }}" alt="Max Power">
-                                    </a>
-                                    <a href="http://www.wesmar.com/index" title="{%trans%}visit{%endtrans%} Wesmar">
-                                        <img class="pull-left two" src="{{ asset("bundles/diplonauticlanding/images/Wesmar.png") }}" alt="Wesmar">
-                                    </a>
+                                <a href="http://www.max-power.com/" title="{%trans%}visit{%endtrans%} Max Power">
+                                    <img class="pull-left three max" src="{{ asset("bundles/diplonauticlanding/images/MAXPower.png") }}" alt="Max Power">
+                                </a>
+                                <a href="http://www.wesmar.com/index" title="{%trans%}visit{%endtrans%} Wesmar">
+                                    <img class="pull-left three" src="{{ asset("bundles/diplonauticlanding/images/Wesmar.png") }}" alt="Wesmar">
+                                </a>
                             </div>
                         </div>        
                     </div>
