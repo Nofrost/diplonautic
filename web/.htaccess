@@ -7,7 +7,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
 
 
-    RewriteRule ^(.*)$ /symfony/web/app.php [QSA,L]
+    RewriteRule ^(.*)$ /diplonautic/web/app.php [QSA,L]
 
 
 </IfModule>

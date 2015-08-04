@@ -1,13 +1,1 @@
-<IfModule mod_rewrite.c>
-
-
-    RewriteEngine On
-
-
-    RewriteCond %{REQUEST_FILENAME} !-f
-
-
-    RewriteRule ^(.*)$ /symfony/web/app.php [QSA,L]
-
-
-</IfModule>
+deny from all
