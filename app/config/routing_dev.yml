@@ -17,6 +17,3 @@ _errors:
 _main:
     resource: routing.yml
 
-# DiplonauticLandingBundle routes (to be removed)
-_acme_demo:
-    resource: "@DiplonauticLandingBundle/Resources/config/routing.yml"
