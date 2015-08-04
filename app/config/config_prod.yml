@@ -23,3 +23,8 @@ monolog:
             level: debug
         console:
             type:  console
+
+# app/config/config.yml
+accelerator_cache:
+    host: http://diplonautic.hl294.dinaserver.com/
+    web_dir: %kernel.root_dir%/../web
