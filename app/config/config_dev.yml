@@ -23,7 +23,3 @@ monolog:
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
             
-# app/config/config.yml
-accelerator_cache:
-    host: http://diplonautic.hl294.dinaserver.com/
-    web_dir: %kernel.root_dir%/../web
