@@ -6,9 +6,10 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
-#app:
-#    resource: "@AppBundle/Controller/"
-#    type:     annotation
-# app/config/routing.yml
+
+diplonautic_landing:
+    resource: "@DiplonauticLandingBundle/Resources/config/routing.yml"
+    prefix:   /
+    
 _bazinga_jstranslation:
     resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
