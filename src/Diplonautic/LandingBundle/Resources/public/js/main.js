@@ -36,5 +36,5 @@ $(document).ready(function() {
     $('.caption.simple-caption').css({width: imgWidth});
     $(".main-marks").fitImages({fitMethod: 'resize'});
 
-    window.dispatchEvent(new Event('resize'));
+//    window.dispatchEvent(new Event('resize'));
 });

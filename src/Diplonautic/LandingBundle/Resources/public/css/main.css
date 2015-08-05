@@ -650,10 +650,10 @@ h4, .h4{
         font-size: 16px;
     }
     .pictos p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .main{
-        margin: 5% 0 6%;
+        margin: 10% 0 6%;
     }
 /*    .main-index .main-description{
         min-height: 317px;
@@ -703,20 +703,19 @@ h4, .h4{
     .pictos img{
         height: 50px;
     }
-    
+    .pictos h4{
+        font-size: 18px;
+    }
     .pictos p{
-        font-size: 14px;
+        font-size: 16px;
     }
     .main-index .main-description,
     .main-description{
         padding: 37px 74px 47px;
     }
-/*    .product-title{
-        margin-left: 0%;
+    .main{
+        margin: 12% 0 6%;
     }
-    .product-description{
-        margin-left: 8.33333333%;
-    }*/
 }
 
 
