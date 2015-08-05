@@ -3,8 +3,8 @@ parameters:
     database_host:     localhost
     database_port:     ~
     database_name:     diplonautic
-    database_user:     danmarc
-    database_password: 2801Andrea
+    database_user:     ~
+    database_password: ~
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
