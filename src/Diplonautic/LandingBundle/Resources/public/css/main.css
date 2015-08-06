@@ -14,7 +14,6 @@ body{
     background-size: cover;
     min-height: 100%;
     width: 100%;
-    position:absolute;
 }
 .wrapper{
     min-height:100%;
@@ -33,6 +32,7 @@ h1{
 }
 h2, .h2{
     font-size: 24px;
+    margin-bottom: 21px;
 }
 h3, .h3{
     font-size: 22px;
@@ -865,7 +865,7 @@ h4, .h4{
         position: absolute;
         bottom: 0;
         width: 100%;
-        font-size: 0.8125em;
+        font-size: 0.9125em;
     }
     .footer a {
         color: #fff;
