@@ -860,12 +860,7 @@ h4, .h4{
         margin-left: 74px;
     }
     .footer{
-        padding-top: 10px;
-        padding-bottom: 10px;
         background-color: rgba(0,67,95,0.56);
-        position: absolute;
-        bottom: 0;
-        width: 100%;
         font-size: 0.9125em;
     }
     .footer a {
