@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="{{app.request.locale}}">
+    <head>
+    
+        <meta charset="utf-8">
+
+        <title>Diplonautic / Error 404</title>
+        <meta name="Robots" content="noindex, nofollow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/bootstrap.min.css') }}" />
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+         <style>
+            body{
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                color: #fff;
+                min-height: 480px;
+                height:100%;
+                width: 100%;
+            }
+            .wrapper{
+                min-height:100%;
+            }
+            a{
+                color: #fff;
+                display: block;
+            }
+            a:focus{
+                text-decoration: none;
+                color: #fff;
+            }
+            .error{
+                background-image: url('{{ asset('bundles/diplonauticlanding/images/error.jpg')}}');
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                min-height: 100%;
+                width: 100%;
+                position: absolute;
+                background-size: cover;
+                background-position: 50%;
+            }
+            .error-wrapper{
+                position: absolute;
+                bottom: 20%;
+            }
+            .error-wrapper h1{
+                font-size: 50px;
+            }
+            .error-wrapper h3{
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .error-wrapper a {
+                padding: 10px 25px;
+                display: block;
+                line-height: 30px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                margin-top: 50px;
+                border: 1px solid #fff;
+            }
+            .error a:hover{
+                background-color: rgba(255,255,255, 0.2);
+                color: #fff;
+            }
+        </style>
+        
+        {#Favicons#}
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-57x57.png')}}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-60x60.png')}}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-72x72.png')}}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-76x76.png')}}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-114x114.png')}}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-120x120.png')}}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-144x144.png')}}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-152x152.png')}}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-180x180.png')}}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('bundles/diplonauticlanding/images/favicon/android-icon-192x192.png')}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('bundles/diplonauticlanding/images/favicon/favicon-32x32.png')}}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('bundles/diplonauticlanding/images/favicon/favicon-96x96.png')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('bundles/diplonauticlanding/images/favicon/favicon-16x16.png')}}">
+        <link rel="manifest" href="{{ asset('bundles/diplonauticlanding/images/favicon/manifest.json')}}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ asset('bundles/diplonauticlanding/images/favicon/ms-icon-144x144.png')}}">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+        
+        
+</head>
+<body>
+    <div class="error">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 error-wrapper text-center">
+            <h1>ERROR 404</h1>
+            <h3>Pàgina no trobada / Page not found</h3>
+            <a href="{{path("diplonautic_landing_homepage")}}">Anar a la pàgina d'Inici</br>Go to Homepage</a>
+        </div>
+    </div>
+</body>
+</html>
