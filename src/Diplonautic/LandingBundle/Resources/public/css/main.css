@@ -23,7 +23,8 @@ a{
     color: #fff;
     display: block;
 }
-a:focus{
+a:focus,
+a:hover{
     text-decoration: none;
     color: #fff;
 }
@@ -44,6 +45,14 @@ h4, .h4{
     font-size: 18px;
     margin-bottom: 21px;
     line-height: 21px;
+}
+
+.p0{
+    padding: 0px;
+}
+
+.pr0{
+    padding-right: 0px;
 }
 .margin-text-picto{
     margin-top: 45px;
@@ -804,6 +813,9 @@ h4, .h4{
 .main-description > div > div> p > a{
     display: inline;
 }
+.pContact{
+    font-size: 16px;
+}
 @media only screen and (min-width:768px) {
 /*    .main-opportunities .item{
         display: block;
@@ -819,6 +831,12 @@ h4, .h4{
     .caption-title{
         font-size: 18px;
         width: 60%;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    .pContact{
+        font-size: 14px;
     }
 }
 
@@ -861,8 +879,8 @@ h4, .h4{
     margin-left: 40px;
 }
 @media only screen and (min-width:768px) {
-    .footer .container{
-        margin-left: 74px;
+    .footer .container-fluid{
+        margin-left: 40px;
     }
     .footer{
         background-color: rgba(0,67,95,0.56);
@@ -872,11 +890,13 @@ h4, .h4{
         color: #fff;
     }
 }
-@media only screen and (min-width:768px) {
-    .footer .container{
-        margin-left: 40px;
+
+@media only screen and (max-width:800px) {
+    .footer-section{
+        margin-left: 30px;
     }
 }
+
 @media only screen and (min-width:1200px) {
     .footer .container{
         margin-left: 74px;
