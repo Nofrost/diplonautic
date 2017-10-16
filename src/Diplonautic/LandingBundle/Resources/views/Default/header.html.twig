@@ -1,6 +1,6 @@
 {% trans_default_domain "general" %}
 <div class="container-fluid">
-    <nav>
+    <nav> 
         <div class="row">
             <div class="col-xs-12 col-sm-3 text-center nav-logo">
                 <a href="{{path("diplonautic_landing_homepage")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.home{%endtrans%}">
@@ -26,6 +26,7 @@
                         {% if "diplonautic_landing_products" in app.request.attributes.get('_route') %}{%trans%}header.products{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}{%trans%}header.oportunities{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}{%trans%}header.contact{%endtrans%}{% endif %}
+                        {% if "diplonautic_landing_privacy_policy" in app.request.attributes.get('_route') %}{%trans%}header.privacy_policy{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_air_conditioner" in app.request.attributes.get('_route') %}{%trans%}tooltip.ac{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_refrigeration_systems" in app.request.attributes.get('_route') %}{%trans%}tooltip.rs{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_generators" in app.request.attributes.get('_route') %}{%trans%}tooltip.gen{%endtrans%}{% endif %}
@@ -56,6 +57,15 @@
                             <li id="oportunities_header" {% if "diplonautic_landing_opportunities" in app.request.attributes.get('_route') %}class="active hidden-xs"{% endif %}>
                                 <a href="{{path("diplonautic_landing_opportunities")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.oportunities{%endtrans%}">{%trans%}header.oportunities{%endtrans%}</a>
                             </li>
+                        {% if "diplonautic_landing_privacy_policy" in app.request.attributes.get('_route') %}
+                            <li id="privacy_policy_header" class="active hidden">
+                                <h1><a href="{{path("diplonautic_landing_privacy_policy")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.privacy_policy{%endtrans%}">{%trans%}header.privacy_policy{%endtrans%}</a></h1>
+                            </li>
+                        {%else%}
+                            <li id="privacy_policy_header" class="visible-xs">
+                                <a href="{{path("diplonautic_landing_privacy_policy")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.privacy_policy{%endtrans%}">{%trans%}header.privacy_policy{%endtrans%}</a>
+                            </li>
+                        {% endif %} 
 
                         {% if "diplonautic_landing_contact" in app.request.attributes.get('_route') %}
                             <li id="contact_header" class="active hidden-xs">
@@ -66,6 +76,7 @@
                                 <a href="{{path("diplonautic_landing_contact")}}" title="{%trans%}header.go_to{%endtrans%}{%trans%}header.contact{%endtrans%}">{%trans%}header.contact{%endtrans%}</a>
                             </li>
                         {% endif %}  
+                         
                     </ul><!--navbar-right-->
                     <ul class="visible-xs nav navbar-nav lang-mobile">
                         <li>
@@ -80,7 +91,8 @@
                         </li>
                     </ul>    
                 </div>    
-            </div>     
+            </div> 
+             
         </div>
     </nav>
 </div>

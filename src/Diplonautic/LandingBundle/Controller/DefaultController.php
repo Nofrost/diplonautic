@@ -14,6 +14,14 @@ class DefaultController extends Controller
     {
         return $this->render('DiplonauticLandingBundle:Default:about.html.twig');
     }
+    public function privacyPolicyAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:privacy-policy.html.twig');
+    }
+    public function cookiesAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:cookies.html.twig');
+    }
     public function contactAction()
     {
         return $this->render('DiplonauticLandingBundle:Default:contact.html.twig');

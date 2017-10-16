@@ -35,6 +35,15 @@ $(document).ready(function() {
     var imgWidth = $('.item.cap-bot img').width();
     $('.caption.simple-caption').css({width: imgWidth});
     $(".main-marks").fitImages({fitMethod: 'resize'});
-
+    if($(".cookie-bar").length > 0){
+        $( ".cookie-ok" ).click(function(event) {
+          event.preventDefault();
+          $( ".cookie-bar" ).slideUp( "slow");
+        });
+        cookieName = "cookiesAgreement";
+        cookieValue = "true";
+        document.cookie = cookieName +"=" + cookieValue;
+        console.log(document.cookie);
+    }
 //    window.dispatchEvent(new Event('resize'));
 });

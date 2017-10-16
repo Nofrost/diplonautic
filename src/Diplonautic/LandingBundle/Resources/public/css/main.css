@@ -352,6 +352,26 @@ h4, .h4{
         font-size: 14px;
     }
 }
+
+/* Cookie Notification */
+.cookie-bar {border-bottom: 1px solid rgb(0,67,95); font-size: 12px; background: rgba(0,67,95,0.9)}
+.cookie-info, .cookie-ok {color: #fff; display: inline;text-decoration: underline;}
+.cookie-info:hover, .cookie-ok:hover {color: #cacaca;}  
+.cookie-bar p{margin-top: 10px; padding-bottom: 10px}
+@media only screen and (max-width:768px) {
+    .cookie-bar {background: rgba(0,67,95,0.8)}
+}
+/*--------------------------------Privacy-Policy------------------------------*/
+.fixedContainer
+{
+    height: 350px;
+    width:100%; 
+}
+.fixedContainer .content
+{
+    height:340px;
+    overflow:scroll;
+}
 /*--------------------------------home----------------------------------------*/
 .main{
     margin: 4% 0 20%;
@@ -881,6 +901,7 @@ h4, .h4{
 @media only screen and (min-width:768px) {
     .footer .container-fluid{
         margin-left: 40px;
+        margin-right: 40px;
     }
 
     .footer{
@@ -895,11 +916,13 @@ h4, .h4{
 @media only screen and (max-width:800px) {
     .footer-section{
         margin-left: 30px;
+        margin-right: 30px;
     }
 }
 
 @media only screen and (min-width:1200px) {
     .footer .container-fluid{
         margin-left: 74px;
+        margin-right: 74px;
     }
 }

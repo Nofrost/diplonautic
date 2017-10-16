@@ -5,6 +5,14 @@ diplonautic_landing_homepage:
 diplonautic_landing_about: 
     path:     /about
     defaults: { _controller: DiplonauticLandingBundle:Default:about }
+
+diplonautic_landing_privacy_policy: 
+    path:     /privacy-policy
+    defaults: { _controller: DiplonauticLandingBundle:Default:privacyPolicy }
+
+diplonautic_landing_cookies: 
+    path:     /cookies
+    defaults: { _controller: DiplonauticLandingBundle:Default:cookies }
     
 diplonautic_landing_contact: 
     path:     /contact

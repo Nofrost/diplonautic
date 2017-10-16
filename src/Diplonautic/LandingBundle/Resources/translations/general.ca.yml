@@ -5,6 +5,8 @@ header :
     oportunities : 'Oportunitats'
     contact : 'Contacte'
     go_to : 'Anar a '
+    privacy_policy : 'Política de privacitat'
+    cookies: 'Política de cookies'
 
 index :
     title : 'DISSENY I INSTAL·LACIONS <br> NÀUTIQUES'
@@ -106,8 +108,15 @@ languages:
     cat: Català
     en: Anglès
     
-visit: 'Visitar pàgina web de'
+cookies:
+    message: "Utilitzem cookies pròpies i de tercers, analitzant els seus hàbits de navegació en la nostra pàgina web, amb la finalitat de garantir la qualitat, seguretat i millora dels serveis oferts a través de la mateixa. En els casos en què l'usuari no manifesti expressament si accepta o no la instal·lació de les cookies, però continuï utilitzant la nostra pàgina web, s'entendrà que aquest ha donat el seu consentiment, informant-expressament de la possibilitat de bloquejar o eliminar les cookies instal·lades en el seu equip mitjançant la configuració de les opcions del navegador. Podeu obtenir més informació referent a això consultant la nostra 'Política de Cookies'."
+    btn:
+        more: ' Política de Cookies'
+        accept: 'Accepto'
 
+visit: 'Visitar pàgina web de'
+footer:
+    privacy_policy: "Política de privacitat"
 meta:
     index: 'Disseny i instal·lacions nàutiques. Millorem la seva navegació amb la instal·lació, reparació i manteniment dels equips elèctrics de la seva embarcació.'
     about: 'Diplonautic és una empresa que proveeix al mercat espanyol de solucions altament especialitzades per millorar el confort a la seva embarcació. Líders en el seu sector I amb més de 30 anys d’experiència, ofereix projectes personalitzats amb les majors garanties de qualitat, eficàcia I professionalitat, aplicant la més moderna tecnologia.'
