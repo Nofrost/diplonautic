@@ -15,7 +15,8 @@
                     <div class="col-sm-11 main-description">
                         <div class="fixedContainer">
                             <div class="content">
-                                <h1>{%trans%}header.privacy_policy{%endtrans%}</h1>
+                                <h1>{% trans %}header.privacy_policy{% endtrans %}</h1>
+                                {% if app.request.locale == 'ca'%}
                                 <h3>I. INFORMACIÓ EN COMPLIMENT DEL QUE ESTABLEIX LA LLEI 34/2002, D&#39;11 DE
                                 JULIOL, DE SERVEIS DE LA SOCIETAT DE LA INFORMACIÓ I DE COMERÇ
                                 ELECTRÒNIC</h3>
@@ -60,26 +61,26 @@
                                 següents suposits:<ul><li> a) El tractament o la cesió tinguin per objecte la satisfacció d&#39;un interès
                                 legítim del responsable del tractament o del cesionari emparat per aquesta norma;</li><li> b) El
                                 tractament o la cesió de les dades siguin necessaris perquè el responsable del tractament
-                                compleixi un deure que li imposi la norma.</li></ul></p>
-                                <h3>2. PRINCIPI DEL CONSENTIMENT</h3>
+                                compleixi un deure que li imposi la norma.</li></ul><br><br></p>
+                                <h4>2. PRINCIPI DEL CONSENTIMENT</h4>
                                 <p>El consentiment per al tractament de les vostres dades amb les finalitats descrites en l&#39;apartat
                                 anterior s&#39;entén prestat a través del marcatge de les caselles corresponents disposades a
-                                aquest efecte en la nostra pàgina web.</p>
-                                <h3>3. CARÀCTER OBLIGATORI DE LES DADES SOL·LICITADES</h3>
+                                aquest efecte en la nostra pàgina web.<br><br></p>
+                                <h4>3. CARÀCTER OBLIGATORI DE LES DADES SOL·LICITADES</h4>
                                 <p>L’emplenament de tots i cadascun dels camps que apareixen en els formularis disposats a
                                 aquest efecte en la nostra pàgina web té caràcter obligatori (en cas contrari, els camps que
                                 tinguin caràcter obligatori apareixeran marcats amb un asterisc). La negativa a facilitar les
                                 vostres dades comportaria la impossibilitat de mantenir i complir la relació del destinatari del
                                 servei amb la nostra entitat, ja que les dades són necessàries per a la prestació de serveis
-                                derivada d’aquesta.</p>
-                                <h3>4. PRINCIPI DE QUALITAT DE LES DADES</h3>
+                                derivada d’aquesta.<br><br></p>
+                                <h4>4. PRINCIPI DE QUALITAT DE LES DADES</h4>
                                 <p>El destinatari del servei és l&#39;únic responsable de la veracitat i l’exactitud de les dades
                                 aportades, i DIPLONAUTIC S.L. actuarà de bona fe com a mer prestador del servei.<br>
                                 En el supòsit que el destinatari del servei faciliti dades falses o de terceres persones sense que
                                 n’hagi obtingut el consentiment per fer-ho, respondrà personalment de les responsabilitats
                                 derivades d’aquesta circumstància davant de DIPLONAUTIC S.L., dels afectats o interessats,
                                 de l’Agència Espanyola de Protecció de Dades i, si n’hi ha, de les autoritats autonòmiques de
-                                protecció de dades.</p>
+                                protecció de dades.<br><br></p>
                                 <p>
                                 DIPLONAUTIC S.L. no recull dades de persones menors de catorze anys a través de la seva
                                 pàgina web. En el cas que una persona menor de catorze anys faciliti les seves dades a través
@@ -88,8 +89,8 @@
                                 circumstància.<br>
                                 Amb la finalitat de complir el que estableix l&#39;article 4.3 de l’LOPD, el destinatari del servei es
                                 compromet a comunicar a DIPLONAUTIC S.L. els canvis que es produeixin respecte les seves
-                                dades, de manera que responguin amb veracitat a la seva situació actual en tot moment.</p>
-                                <h3>5. PRINCIPI DE SEGURETAT DE LES DADES</h3>
+                                dades, de manera que responguin amb veracitat a la seva situació actual en tot moment.<br><br></p>
+                                <h4>5. PRINCIPI DE SEGURETAT DE LES DADES</h4>
                                 <p>DIPLONAUTIC S.L. es compromet a complir la seva obligació de secret respecte de les dades
                                 de caràcter personal i del seu deure de guardar-les, i ha d’adoptar totes les mesures d&#39;índole
                                 tècnica i organitzativa necessàries que garanteixin la seguretat de les dades de caràcter
@@ -98,17 +99,69 @@
                                 exposades, tant si provenen de l&#39;acció humana com del medi físic o natural, desenvolupades al
                                 títol VIII del Reial decret 1720/2007, de 21 de desembre, pel qual s&#39;aprova el Reglament de
                                 desenvolupament de la Llei orgànica 15/1999, de 13 de desembre, de protecció de dades de
-                                caràcter personal.</p>
-                                <h3>6. EXERCICI DE DRETS</h3>
+                                caràcter personal.<br><br></p>
+                                <h4>6. EXERCICI DE DRETS</h4>
                                 <p>En compliment del que estableixen l’LOPD i el Reial decret 1720/2007, de 21 de desembre, pel
                                 qual s&#39;aprova el Reglament de desenvolupament d’aquella, el destinatari del servei pot
                                 exercitar, en qualsevol moment, els seus drets d&#39;accés, rectificació, cancel·lació i oposició
                                 davant el responsable del fitxer o del tractament, cas en què ha d’adjuntar una fotocòpia del
-                                DNI.</p>
-                                <h3>7. RESPONSABLE DEL FITXER O DEL TRACTAMENT</h3>
+                                DNI.<br><br></p>
+                                <h4>7. RESPONSABLE DEL FITXER O DEL TRACTAMENT</h4>
                                 <p>El responsable del fitxer o del tractament és DIPLONAUTIC S.L., amb domicili a l’efecte de
                                 notificacions a CARRER DE CRISTOBAL DE MOURA,25 BAJOS, 08019 - BARCELONA
-                                (Barcelona).</p>
+                                (Barcelona).<br><br></p>
+                                {% else %}
+                                <h3>I. INFORMATION PURSUANT TO THE PROVISIONS OF SPANISH LAW 34/2002, OF 11 JULY, ON INFORMATION SOCIETY SERVICES AND ELECTRONIC COMMERCE</h3>
+                                <p>In compliance with the provisions of Article 10 of Spanish Law 34/2002, of 11 July, on Information Society Services and Electronic Commerce (hereinafter LSSI-CE), we inform explicitly, precisely and unequivocally, both service recipients as the competent bodies, of the following aspects of the Information Society Services provider:<br><br>
+                                 
+                                NAME / CORPORATE NAME : DIPLONAUTIC S.L.<br>
+                                CIF / NIF: B66501818<br>
+                                ACTIVITY / SOCIAL OBJECT: INSTALACIÓN DE AIRE ACONDICIONADO EN BARCOS<br>
+                                REGISTERED OFFICE: AVENIDA PRINCIPE DE ASTURIAS,48 5º 2ª, 08019 - BARCELONA (Barcelona)<br>
+                                PHONE: 930.106.884; 690.600.449<br>
+                                EMAIL ADDRESS: xs@diplonautic.com; ps@diplonautic.com<br>
+                                WEB ADDRESS: www.diplonautic.com<br><br>
+                                </p>
+
+                                <h3>II. INFORMATION PURSUANT TO THE PROVISIONS OF THE ORGANIC LAW ON THE PROTECTION OF PERSONAL DATA</h3>
+                                 
+                                <h4>1. PRINCIPLE OF INFORMATION</h4>
+
+                                <p>In compliance with the provisions of Article 5 of Spanish ORGANIC LAW 15/1999, of 13 December, on the Protection of Personal Data (hereinafter LOPD), we inform you explicitly, precisely and unequivocally that the data provided by you through the contact form established on our website or any other channel for collecting data, as well as those data generated during your relationship with our organization, will be processed on files company responsibility , duly notified to the General Data Protection Register of the Spanish Data Protection Agency , for the purpose of the compliance and maintenance of the relationship of the recipient of service with our organization and services derivative thereof.<br>
+                                Also, In compliance with the provisions of the LOPD and Spanish Law 34/2002, of 11 July, on Information Society Services and Electronic Commerce (hereinafter LSSI-CE), we inform that your data may be used for the purpose of sending commercial communications and complimentary regarding our company via telephone , regular mail , fax, e-mail or equivalent electronic medias.<br>
+                                Likewise, we inform you that your data will be communicated in all those cases where it is necessary for the development , implementation and control of the relationship of the recipient of service with our organization, or in cases where authorized by a rule having the force of law and in particular, under the concurrence of the following assumptions:<ul><li> a) Treatment or communication of the data is aimed at satisfying a legitimate interest of the controller or the transferee covered by this legal rule;</li><li> b) Treatment or communication of the data is necessary for the controller in order to comply with a duty imposed by that legal rule.</li></ul><br><br>
+                                </p>
+                                <h4>2. PRINCIPLE OF CONSENT</h4>
+                                <p>
+                                The consent to the processing of your data for the purposes described in the previous paragraph is provided through marking the appropriate box provided for this purpose on our website.<br><br></p>
+                                 
+                                <h4>3. OBLIGATORY OR VOLUNTARY NATURE OF THE REQUESTED DATA</h4>
+
+                                <p>The completion of all and each of the fields provided for that purpose on our website forms is obligatory (otherwise, fields that are obligatory will be marked with an asterisk). The refusal to provide data would imply the impossibility of the compliance and maintenance of the relationship of the recipient of service with our organization, since they are necessary for the provision of services derived thereof.<br><br></p>
+                                 
+                                <h4>4. PRINCIPLE OF DATA QUALITY</h4>
+
+                                <p>The recipient of service is solely responsible for the accuracy of the data provided, acting the company in good faith, only as service provider.<br>
+                                In the event that the recipient of service provides false information or data third parties without their consent, he will be personally liable to personally front the company, data subjects, Spanish Data Protection Agency and, where appropriate, regional  data protection authorities, from responsibilities arising from that fact.<br>
+                                The company does not collect data on persons under fourteen years through its website. In the event that a person under fourteen years provides his data through the form provided for that purpose on our website or any other channel for collecting data, it will proceed to immediate destruction of the data at the same time that the company is aware of such circumstances.<br> 
+                                In order to comply with the provisions of Article 4.3 of the LOPD, the recipient of service agrees to notify the company the changes that occur in your data, so that they respond truthfully to his current situation throughout times.<br><br>
+                                </p>
+                                
+                                <h4>5. PRINCIPLE OF DATA SECURITY</h4>
+
+                                <p>The company is committed to fulfilling its obligation of secrecy as regards the personal data and its duty to protect them and adopt the technical and organizational measures necessary to ensure the security of the personal data and prevent their alteration, loss, unauthorized processing or access, having regard to the state of the art, the nature of the data stored and the risks to which they are exposed by virtue of human action or the physical or natural environment, developed in Title VIII of the Royal Decree 1720/2007, of 21 December, which approves the Regulation implementing Organic Law 15/1999, of 13 December, on the Protection of Personal Data.<br><br></p>
+                                 
+                                <h4>6. EXERCISE OF RIGHTS</h4>
+
+                                <p>In compliance with the LOPD, and Royal Decree 1720/2007, of 21 December, approving the Regulations implementing the same, the recipient of service may exercise, at any time, access rights, rectification, cancellation and opposition with regards to the data controller, enclosing a photocopy of his ID.<br><br></p>
+                                 
+                                <h4>7. IDENTITY OF THE CONTROLLER</h4>
+
+                                <p>The identity of the controller is _____________________., with address for notifications purposes at c/ ________________________________________________________________
+                                You agree, through marking this box, the processing of your data for the purposes described in the Privacy Policy.<br>
+                                You object, through marking this box, the processing of your data for commercial or promotional purposes by our organization.
+                                </p>
+                                {% endif %}
 
                             </div>
                         </div>

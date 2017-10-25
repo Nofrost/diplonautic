@@ -16,6 +16,7 @@
                         <div class="fixedContainer">
                             <div class="content">
                                 <h1>{%trans%}header.cookies{%endtrans%}</h1>
+                                {% if app.request.locale == 'ca'%}
                                 <h3>1. NORMATIVA APLICABLE</h3>
                                     <p>
                                     L&#39;apartat segon de l&#39;article 22 de la Llei 34/2002 , de 11 de juliol, de Serveis de la Societat de la
@@ -132,6 +133,128 @@
                                     <p>El responsable del fitxer o del tractament és DIPLONAUTIC S.L., amb adreça a efectes de
                                     notificacions en CARRER DE CRISTOBAL DE MOURA,25 BAJOS, 08019 - BARCELONA
                                     (Barcelona)</p>
+                                    {% else %}
+                                    <h3>1. APPLICABLE LEGISLATION</h3>
+                                    <p>Article 22.2 of Act 34/2002 of 11 July on Information Society Services and Electronic Commerce[Ley
+                                    34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, LSSI-
+                                    CE](hereinafter referred to as the LSSI-CE) stipulates that:<br><ul>
+                                    <li>
+                                        1. Services providers may use storage and data recovery devices on any users’ terminal equipment
+                                        provided that users have given their consent after having been provided with clear and
+                                        comprehensive information regarding its usage and, in particular, data processing, pursuant to the
+                                        provisions laid down in Spanish Organic Law 15/1999 of 13 December on Personal Data Protection.
+                                    </li>
+                                    </ul>
+                                    In circumstances where it is technically possible and effective to do so, users shall be able to provide their
+                                    consent to data processing by means of the correct browser parameters or applications, provided that
+                                    users are able to configure the settings upon installation or update with a specific action to that effect.
+                                    The foregoing shall not prevent potential technical storage or access for the sole purpose of transmitting
+                                    communication via an electronic communications network or where such storage or access is strictly
+                                    necessary for the provision of an information society service that has been expressly requested by the user.</p>
+                                     
+                                    <p>According to the “Guide on the use of cookies” published by the Spanish Data Protection Authority
+                                    (hereinafter referred to as the AEPD) in 2013, the LSSI-CE applies to any file or device that is downloaded
+                                    on to the user’s terminal equipment with the purpose of storing information that can be updated and
+                                    recovered by the organisation responsible for its installation. A cookie is an example of these commonly
+                                    used files and, as such, we will refer to these files as cookies hereinafter.</p>
+                                     
+                                    <p>Cookies used for any of the following purposes are exempt from the provisions laid down in Article 22.2 of
+                                    the LSSI-CE:<br><ul>
+                                     
+                                    <li> Only to allow communication between the user’s equipment and the network.</li>
+                                    <li> Strictly to provide a service expressly requested by the user.</li>
+                                    </ul>
+                                    </p>
+                                    <h3>2. TYPES AND PURPOSES OF COOKIES</h3>
+                                    <p>A cookie is a file that is downloaded on to your computer when accessing certain websites. Cookies enable
+                                    the website to, among other things, store and recover information about a user’s browsing habits or
+                                    equipment, and can be used to recognise the user, depending on the information contained and how these
+                                    cookies use your computer.<br>
+                                    According to the “Guide on the use of cookies” published by the AEPD, depending on the purposes for
+                                    which the information is obtained using cookies, we can classify the different types of cookies as follows:<br>
+                                     
+                                    <ul>
+                                    <li>- Technical cookies: These allow the user to browse through a website, platform or application, and
+                                    benefit from different options or services resulting from these, such as controlling the traffic and
+                                    communication of information, identifying the session, accessing restricted areas, remembering all
+                                    items in a request, carrying out a purchasing process request, carrying out an event registration or
+                                    participation request, enabling security features when browsing, storing content for video or audio
+                                    distribution or sharing content on social networks.</li>
+                                    <li>- Customisation cookies: These allow the user to access the service with some general pre-defined
+                                    features in accordance with some terminal criteria such as language, type of browser used to
+                                    access the service, regional configuration with information about where the service is accessed
+                                    from, etc.</li>
+                                    <li>- Analytical cookies: These allow the party responsible to track and analyse the user’s behaviour on
+                                    the websites linked to them. The information gathered by these cookies is used to measure activity
+                                    on websites, applications or platforms and to create user browsing profiles on those websites,
+                                    applications and platforms, with the aim of improving the analysis of data used by users.</li>
+                                    <li>- Advertising cookies: These allow, in the most effective way possible, the management of all
+                                    advertising sections that the editor may have included on a website, application or platform used
+                                    to provide the requested service in accordance with criteria such as edited content or frequency of
+                                    the adverts displayed.</li>
+                                    <li>- Behavioural advertising cookies: These allow, in the most effective way possible, the management
+                                    of all advertising sections that the editor may have included on a website, application or platform
+                                    used to provide the requested service. These cookies store information about the user’s behaviour
+                                    obtained by analysing browsing habits in order to tailor a specific profile to show relevant adverts.</li></ul>
+                                     </p>
+                                    <h3>3. INFORMATION PRINCIPLE</h3>
+                                    <p>Pursuant to the provisions laid down in Article 5 of Spanish Organic Law 15/1999 of 13 December on
+                                    Personal Data Protection (hereinafter referred to as the LOPD), we hereby inform you expressly, accurately
+                                    and unequivocally that all data obtained by any cookies installed on your computer will be used for the
+                                    following purposes: Help improve the quality of our website, allowing us to monitor which pages our users
+                                    find useful or not useful. Cookies are essential to the functioning of the Internet, providing many
+                                    advantages in terms of providing interactive services and facilitating navigation and usability of our
+                                    website. Note that cookies cannot damage your computer. In fact, activated cookies help us identify and
+                                    resolve errors.</p>
+                                     
+                                    <p>The recipients of any information obtained by cookies installed on your computer are:<br>
+                                    <ul><li>- The editor responsible for the website and data processing: DIPLONAUTIC S.L.</li>
+                                    <li>- If relevant, organisations directly related to the editor responsible for the website, which are
+                                    expressly listed below: DIPLONAUTIC S.L.</li></ul>
+                                    </p>
+                                    <h3>4. CONSENT</h3>
+                                    <p>Consent for installation of cookies is given by ticking the corresponding box in order to accept the “Cookie
+                                    Policy” as shown on our website.</p>
+                                    <p>
+                                    If users do not explicitly confirm that they consent to the installation of cookies but continue to browse our
+                                    website, we will assume that they have agreed and we will accordingly inform them about the possibility of
+                                    blocking or deleting any previously installed cookies by adjusting their browser settings.
+                                    </p>
+                                    <h3>5. OPTIONAL NATURE OF COOKIE INSTALLATION</h3>
+                                    <p>Whilst the installation of cookies on your computer is optional, not enabling them could considerably limit
+                                    or prevent the functionality of the website, which would make it impossible to receive any services from
+                                    our organisation through the website.</p>
+                                    <h3>6. DISABLING COOKIES</h3>
+                                    <p>User can modify, block or disable the cookie settings at any time. For further information, please check the
+                                    settings for the relevant browser.<br><ul>
+                                    <li>CHROME: <a href="https://support.google.com/chrome/answer/95647?hl=en" target="_blank">https://support.google.com/chrome/answer/95647?hl=en</a></li>
+                                    <li>EXPLORER: <a href="http://windows.microsoft.com/en-gb/windows-vista/Block-or-allow-cookies" target="_blank">http://windows.microsoft.com/en-gb/windows-vista/Block-or- allow-cookies</a></li>
+                                    <li>FIREFOX: <a href="http://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">http://support.mozilla.org/en-US/kb/enable- and-disable-cookies-website-preferences</a></li>
+                                    <li>SAFARI: <a href="http://www.apple.com/uk/privacy/use-of-cookies/" target="_blank">http://www.apple.com/uk/privacy/use-of-cookies/</a></li>
+                                    </ul><br>
+                                     
+                                    See also the Google AdWords third party cookies
+                                    policy: http://www.google.es/intl/en/policies/technologies/cookies/<br>
+                                     
+                                    DIPLONAUTIC S.L. will not be held liable for the content and authenticity of cookies policies from third
+                                    parties.</p>
+                                    <h3>7. DATA SECURITY</h3>
+                                    <p>DIPLONAUTIC S.L. is committed to complying with its obligation of confidentiality regarding personal data
+                                    and its duty to protect such information, and will therefore put any necessary technical and organisational
+                                    measures in place in order to guarantee the protection of any personal data and prevent any modification,
+                                    loss, handling or unauthorised access, in view of the state of technology, the nature of the data stored and
+                                    the risks that the data might be exposed to, whether this is caused by human action or natural or physical
+                                    influences, as detailed in the Title VIII of Royal Decree 1720/2007 of 21 December, which approves the
+                                    Regulation implementing Organic Law 15/1999 of 13 December on Personal Data Protection.</p>
+                                    <h3>8. EXERCISE OF RIGHTS</h3>
+                                    <p>Pursuant to the provisions laid down in the LOPD and Royal Decree 1720/2007 of 21 December, which
+                                    approves the Regulation implementing the aforementioned Organic Law, users may exercise their rights of
+                                    access, correction, cancellation and objection, at any time by notifying the company responsible for the file
+                                    or for processing the data, enclosing a photocopy of their ID..</p>
+                                    <h3>9. COMPANY RESPONSIBLE FOR THE FILE OR DATA PROCESSING</h3>
+                                    <p>The company responsible for the file is DIPLONAUTIC S.L. AVENIDA PRINCIPE DE ASTURIAS,48 5º 2ª,
+                                    08019 - BARCELONA (Barcelona)</p>
+                                    {% endif %}
                             </div>
                         </div>
                     </div>
