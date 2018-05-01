@@ -400,6 +400,7 @@ h4, .h4{
 }
 .main-marks{
     padding: 0px;
+    background-color: white;
 }
 
 .main-marks img{
@@ -898,6 +899,21 @@ h4, .h4{
 .footer-section{
     margin-left: 40px;
 }
+
+.table {display: table; height: 100%;}
+.table-row {display: table-row;}
+.table-cell {display: table-cell; padding: 2px; vertical-align: middle;}
+.w20{
+    width: 15%;
+    min-width: 15% !important;
+    max-width: 15% !important;
+}
+.w16{
+    width: 16.667%;
+    min-width: 16.667% !important;
+    max-width: 16.667% !important;
+}
+
 @media only screen and (min-width:768px) {
     .footer .container-fluid{
         margin-left: 40px;

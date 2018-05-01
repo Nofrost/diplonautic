@@ -34,7 +34,7 @@ $(document).ready(function() {
     $(".item.cap-bot").fitImages();
     var imgWidth = $('.item.cap-bot img').width();
     $('.caption.simple-caption').css({width: imgWidth});
-    $(".main-marks").fitImages({fitMethod: 'resize'});
+    // $(".main-marks").fitImages();
     if($(".cookie-bar").length > 0){
         $( ".cookie-ok" ).click(function(event) {
           event.preventDefault();
