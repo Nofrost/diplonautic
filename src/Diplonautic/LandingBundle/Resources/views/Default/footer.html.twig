@@ -2,7 +2,7 @@
 <footer class="footer">
     {% if app.request.cookies.get('cookiesAgreement')!= 'true' %}
               <!-- Cookie Notification -->  
-              <div class="container-fluid cookie-bar" style="padding-left: 15px;padding-right: 15px;margin: 0;margin-top: -10px;"> 
+              <div class="container-fluid cookie-bar"> 
                       <div class="row white mt10">
                         <div class="col-md-12 tac fs15 cookie-p">
                           <p>{% trans %}cookies.message{% endtrans %}<br> <a href="{{path("diplonautic_landing_cookies")}}" class="ttuc cookie-info white tdul" title="Cookies" target="_blank"><b>{% trans %}cookies.btn.more{% endtrans %}</b></a> | <a href="#" class="ttuc cookie-ok white tdul" title="{% trans %}cookies.btn.accept{% endtrans %}"><b>{% trans %}cookies.btn.accept{% endtrans %}</b></a></p>
@@ -11,7 +11,7 @@
                 </div>
               <!--header-->
             {% endif %}  
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 10px">
         <div class="row">
             <div class="hidden-xs">
                 <div class="pull-left mail" style="margin-right: 40px">moc.cituanolpid@sp</div>
