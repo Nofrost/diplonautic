@@ -2,6 +2,16 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block meta_title %}{%trans%}header.oportunities{%endtrans%} - Diplonautic{% endblock %}
 {% block title %}{%trans%}header.oportunities{%endtrans%} - Diplonautic{% endblock %}
+{% block stylesheet %}
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/font-awesome.min.css') }}" />
+        {% if opportunities %}
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.carousel.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.theme.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.transitions.css') }}" />
+        {% endif %}
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/main.min.css') }}" />
+{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
     <div class="main">

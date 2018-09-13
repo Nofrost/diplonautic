@@ -19,13 +19,12 @@
         <link rel="canonical" href="http://www.diplonautic.com/" />
         <link href="https://plus.google.com/+Diplonautic" rel="publisher">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {% block stylesheet %}
         <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/bootstrap.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/font-awesome.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.carousel.css') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.theme.css') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/owl.transitions.css') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/main.css') }}" />
-        
+        <link rel="stylesheet" href="{{ asset('bundles/diplonauticlanding/css/main.min.css') }}" />
+        {% endblock %}
         {#Favicons#}
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-57x57.png')}}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('bundles/diplonauticlanding/images/favicon/apple-icon-60x60.png')}}">
