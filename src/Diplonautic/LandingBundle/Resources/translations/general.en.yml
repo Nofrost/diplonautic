@@ -20,9 +20,9 @@ index :
 
 about :
     title : 'YOUR PROJECTS,<br>ARE OUR CHALLENGES'
-    paragraph_one : 'DIPLONAUTIC is a company that operates in the Spanish market and provides the Spanish market of highly specializing solutions to improve the comfort in your boat.'
-    paragraph_one_two : 'As leading company in the sector with over 30 years of experience, it offers personalized projects with the highest guarantees of quality, efficacy and professionalism, applying the most modern technology.'
-    paragraph_two : 'We are endorsed by an extensive experience and a constant knowledge update. If you have thought to improve the serviceability of your boat,  you do not hesitate to consult contact us. We will prepare a budget adapted to your needs without compromise. We guarantee a personalized attention with the most competitive quality/price ratio.'
+    paragraph_one : 'DIPLONAUTIC operates in the Spanish market and abroad upon request. We provide highly specialized solutions to improve the comfort in your boat.'
+    paragraph_one_two : 'As leading company in the sector with over 30 years of experience, we offer personalized projects with the highest guarantees of quality, efficacy, efficiency and professionalism, applying the most modern technology.'
+    paragraph_two : 'We are endorsed by an extensive experience and a constant knowledge update. If you have thought to improve, repair or do maintenance work of your boat, you do not hesitate to contact us. We will prepare a budget adapted to your needs without compromise. We guarantee a personalized attention with the most competitive quality/price ratio.'
 
 products : 
     ac.title : 'AIR<br>CONDITIONING'
@@ -47,30 +47,30 @@ tooltip:
     ms: 'Bow thrusters'
     
 air: 
-    intro: 'Diplonautic implements the project of the installation of air conditioned that you need.  We work with leading brands in the marine industry to guarantee and provide the best solution for your boat: '
+    intro: 'Diplonautic design the project and execute the installation of air conditioned that you need. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat: '
     compact_machine: 'Compact machine'
     split_machine: 'Split machine'
     chiller_machine: "Chiller machine"
-    closing: 'We guarantee a long experience in the installation and renovation of air conditioning . Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>'
+    closing: 'We guarantee long experience in the installation and renovation of air conditioning. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>'
    
 refrigeration : 
-    intro : 'Diplonautic projected refrigeration installation that you need . We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
+    intro : 'Diplonautic can project refrigeration installation that you need. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
     fridge: 'Fridges and compact freezers'
     furniture: 'Refrigerators furniture'
     rooms : 'Refrigeration rooms'
     systems: 'Systems condensation seawater air at 220Vac or DC .'
-    closing: "We guarantee a long experience in the installation and renovation of refrigeration equipment . Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high. <br><br>We guarantee that in Diplonautic you'll find the solution that you need.<br><br>"
+    closing: "We guarantee a long experience in the installation and renovation of refrigeration equipment. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high. <br><br>We guarantee that in Diplonautic you'll find the solution that you need.<br><br>"
    
     
 generators :
-    intro : 'Diplonautic generator determines that you need.  We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
+    intro : 'Diplonautic works with a huge variety of generator. We work with leading brands in the marine industry to guarantee and provide the best solution for your boat:'
     mono_grups: 'Single-phase groups'
     tri_grups : 'Three-phase groups'
     paralel: 'Paralel systems'
     closing : "We guarantee a long experience in the installation and renovation of generators. Our field of work is broad, from small powers from 3KVA to 150kVA.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
 electric :
-    intro : 'Diplonautic projected and performs the electrical installation that best suits your boat . We propose the best solutions to meet their needs. We specialize in:'
+    intro : 'Diplonautic performs the electrical installation that best suits your boat. We propose you the best solutions to meet your needs. We are specialized in:'
     e_recover: 'Machines with / without energy recovery.'
     battery: 'Groups of batteries, chargers and inverters'
     dc : 'Machines in DC or AC.'
@@ -91,7 +91,7 @@ propeller:
     variable: 'Variable pitch propeller propulsion'
     closing : "We guarantee a long experience in the installation and renovation of bow thrusters. Our field of work is broad and ranges from small boats six meters, mega yachts, boats up to 50 meters high.<br><br>We guarantee that in Diplonautic you'll find the solution that you need."
 
-op.intro: 'Diplonautic sells second-hand material in good conditions. If you are interested please contact us on '
+op.intro: 'Diplonautic sells second-hand material in good conditions. If you are interested please contact us on ps@diplonautic.com'
 op.alternative: "Currently we don't have items for sale"
     
 contact : 

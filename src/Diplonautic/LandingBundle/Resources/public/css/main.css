@@ -367,6 +367,7 @@ h4, .h4{
 .cookie-bar p{margin-top: 10px; padding-bottom: 10px}
 @media only screen and (max-width:768px) {
     .cookie-bar {background: rgba(0,67,95,0.8)}
+    .cookie-info, .cookie-ok {color: #fff !important; display: inline;text-decoration: underline;}
 }
 /*--------------------------------Privacy-Policy------------------------------*/
 .fixedContainer
@@ -991,7 +992,9 @@ h4, .h4{
 
 @media only screen and (min-width:1200px) {
     .footer .container-fluid{
-        margin-left: 74px;
-        margin-right: 74px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 74px;
+        padding-right: 74px;
     }
 }
