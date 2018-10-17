@@ -1,0 +1,27 @@
+{% trans_default_domain "general" %}
+<div class={% if app.request.cookies.get('cookiesAgreement')!= 'true' %}"modal show"{% else %}"modal"{% endif %} tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center">{% trans %}cookies.title{% endtrans %}</h5>
+      </div>
+      <div class="modal-body">
+         <div class="row white mt10">
+            <div class="col-md-12 tac fs15 cookie-p">
+              <p>{% trans %}cookies.message{% endtrans %}<br/></p>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-sm-6 text-center btn-cookie">
+            <a href="#" class="cookie-accept">ACCEPTAR</a>
+          </div>
+          <div class="col-sm-6 text-center btn-cookie">
+            <a href="#" class="cookie-decline">REBUTJAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

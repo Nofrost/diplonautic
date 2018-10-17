@@ -914,6 +914,54 @@ h4, .h4{
     margin-left: 40px;
 }
 
+/*-------------------------------Modal-------------------------------------*/
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.modal-content{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: rgb(0,67,95);
+    border: none;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-footer{
+    padding: 0px;
+}
+
+.btn-cookie{
+    padding: 0px;
+}
+
+.btn-cookie:first-child{
+    border-right: 1px solid #fff;
+}
+
+.btn-cookie a{
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.btn-cookie a:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+
 .table {display: table; height: 100%; width: initial;}
 .table-row {display: table-row;}
 .table-cell {display: table-cell; vertical-align: middle;}

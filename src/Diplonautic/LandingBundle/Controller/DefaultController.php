@@ -18,6 +18,10 @@ class DefaultController extends Controller
     {
         return $this->render('DiplonauticLandingBundle:Default:privacy-policy.html.twig');
     }
+    public function dataProtectionAction()
+    {
+        return $this->render('DiplonauticLandingBundle:Default:data-protection.html.twig');
+    }
     public function cookiesAction()
     {
         return $this->render('DiplonauticLandingBundle:Default:cookies.html.twig');
