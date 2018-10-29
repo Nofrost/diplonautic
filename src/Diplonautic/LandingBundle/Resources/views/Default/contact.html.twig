@@ -30,8 +30,8 @@
                                 <p class="pContact">POL SERVENT<br>+34 690 600 449<br><a class="mail" href="mailto:ps@diplonautic.com">moc.cituanolpid@sp</a></p>
                             </div>
                             <div class="col-sm-3 col-sm-offset-1">
-                                <a href="https://www.google.es/maps/place/Av.+Manuel+Fern%C3%A1ndez+M%C3%A1rquez,+73,+08930+Sant+Adri%C3%A0+de+Bes%C3%B2s,+Barcelona/@41.420322,2.2202205,14.69z/data=!4m5!3m4!1s0x12a4a3556c3be9e9:0x89a0c106ac1d55ed!8m2!3d41.41819!4d2.22269"  target="_blank" title="Av. Manuel Fernández Márquez 73">
-                                <p class="pContact">Av. Manuel Fernández Márquez 73 Local 6<br>08930 Sant Adrià del Besòs</p>
+                                <a href="https://www.google.es/maps/place/Diplonautic/@41.4180532,2.2226292,15z/data=!4m2!3m1!1s0x0:0x1aa5682ba848837b?ved=2ahUKEwjJpfGXmqzeAhWDTMAKHUvsCkAQ_BIwDnoECAUQCw"  target="_blank" title="Carrer de Neus Català, 9">
+                                <p class="pContact">Carrer de Neus Català, 9<br/> 08930 Sant Adrià de Besòs<br/>Barcelona</p>
                                 </a>
                             </div>
                         </div>
@@ -48,25 +48,14 @@
                             </div>
                             <div class="col-xs-12">
                                 <h2>{%trans%}contact.offices{%endtrans%}</h2>
-                                <a href="https://www.google.es/maps/place/Av.+Manuel+Fern%C3%A1ndez+M%C3%A1rquez,+73,+08930+Sant+Adri%C3%A0+de+Bes%C3%B2s,+Barcelona/@41.420322,2.2202205,14.69z/data=!4m5!3m4!1s0x12a4a3556c3be9e9:0x89a0c106ac1d55ed!8m2!3d41.41819!4d2.22269" target="_blank" title="Av. Manuel Fernández Márquez 73">
-                                <p>Av. Manuel Fernández Márquez 73 Local 6<br>08930 Sant Adrià del Besòs</p>
+                                <a href="https://www.google.es/maps/place/Diplonautic/@41.4180532,2.2226292,15z/data=!4m2!3m1!1s0x0:0x1aa5682ba848837b?ved=2ahUKEwjJpfGXmqzeAhWDTMAKHUvsCkAQ_BIwDnoECAUQCw" target="_blank" title="Carrer de Neus Català, 9">
+                                <p>Carrer de Neus Català, 9<br/> 08930 Sant Adrià de Besòs<br/>Barcelona</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                    
-                    <div class="col-sm-1 languages hidden-xs">
-                        <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
-                                CAT
-                            </a>
-                        </div>
-                        <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
-                                ENG
-                            </a>
-                        </div>
-                    </div>
+                    {% include "DiplonauticLandingBundle:Default:language.html.twig" %}
                 </div>
             </div>
         </section>

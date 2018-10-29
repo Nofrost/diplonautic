@@ -50,10 +50,20 @@ h4, .h4{
 .p0{
     padding: 0px;
 }
+.padding-10{
+    padding: 10px;
+}
 
 .pr0{
     padding-right: 0px;
 }
+.p-r-5{padding-right: 5px}
+.p-l-5{padding-left: 5px}
+.p-t-30{padding-top:30px;}
+.m-t-10{margin-top: 10px;}
+.m-t-30{margin-top: 30px;}
+.m-r-40{margin-right: 40px;}
+.inline-block{display: inline-block;}
 .margin-text-picto{
     margin-top: 45px;
 }
@@ -384,10 +394,16 @@ h4, .h4{
 .main{
     margin: 4% 0 20%;
 }
-.main-description{
+.main-description, .main-legal{
     background-color: rgba(0,67,95,0.8);
     padding: 15px 30px;
 }
+
+.main-legal h4{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 .main-opportunities{
     background-color: rgba(0,67,95,0.8);
 /*    min-height: 425px;*/
@@ -400,6 +416,11 @@ h4, .h4{
 .main-description ul{
     list-style: none;
     padding: 0px;
+}
+
+.legal ul{
+    list-style-type: disc !important;
+    padding-left: 20px !important;
 }
 .main-marks-products{
     height: 100%;
@@ -590,7 +611,7 @@ h4, .h4{
 /*    .main-index .main-description{
         min-height: 392px;
     }*/
-    
+    .main-legal,
     .main-description,
     .main-description-pictos{
         background-color: rgba(0,67,95,0.8);
@@ -760,6 +781,7 @@ h4, .h4{
         font-size: 16px;
     }
     .main-index .main-description,
+    .main-legal,
     .main-description{
         padding: 37px 74px 47px;
     }
@@ -845,6 +867,7 @@ h4, .h4{
     width: 100%
         
 }
+.main-legal a,
 .main-description > div > div> p > a{
     display: inline;
 }
@@ -965,6 +988,11 @@ h4, .h4{
 .table {display: table; height: 100%; width: initial;}
 .table-row {display: table-row;}
 .table-cell {display: table-cell; vertical-align: middle;}
+.cookies__tableStyle{
+    border-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+}
 .w20{
     position: relative;
     width: 15%;
@@ -975,6 +1003,15 @@ h4, .h4{
     width: 16.667%;
     min-width: 16.667% !important;
     max-width: 16.667% !important;
+}
+
+.width80{
+    width: 80%;
+}
+
+.table-marks{
+    margin: 0 auto;
+    padding: 10px 20px 20px;
 }
 
 @media only screen and (min-width: 768px){

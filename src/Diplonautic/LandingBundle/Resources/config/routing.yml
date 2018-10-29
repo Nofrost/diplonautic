@@ -10,7 +10,7 @@ diplonautic_landing_privacy_policy:
     path:     /privacy-policy
     defaults: { _controller: DiplonauticLandingBundle:Default:privacyPolicy }
 
-diplonautic_landing_data-protection: 
+diplonautic_landing_data_protection: 
     path:     /data-protection
     defaults: { _controller: DiplonauticLandingBundle:Default:dataProtection }
 

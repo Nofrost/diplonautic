@@ -47,18 +47,7 @@
                             </div>
                         </div>        
                     </div>
-                    <div class="col-sm-1 languages hidden-xs">
-                        <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
-                                CAT
-                            </a>
-                        </div>
-                        <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
-                                ENG
-                            </a>
-                        </div>
-                    </div>
+                    {% include "DiplonauticLandingBundle:Default:language.html.twig" %}
                 </div>
             </div>
         </section>

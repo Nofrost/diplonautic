@@ -1,0 +1,13 @@
+{% trans_default_domain "general" %}
+<div class="col-sm-1 languages hidden-xs">
+    <div id="cat">
+        <a href="{{path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'ca' }))}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
+            CAT
+        </a>
+    </div>
+    <div id="en">
+        <a href="{{path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en' }))}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
+            ENG
+        </a>
+    </div>
+</div>

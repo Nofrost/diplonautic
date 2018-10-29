@@ -20,6 +20,8 @@
             </div>
             <div class="col-xs-8 col-sm-9 col-md-8 no-pad nav-mobile">
                 <div class="visible-xs back-mobile">
+                    {% if "diplonautic_landing_privacy_policy" not in app.request.attributes.get('_route') and "diplonautic_landing_data_protection" not in app.request.attributes.get('_route') and 
+                    "diplonautic_landing_cookies" not in app.request.attributes.get('_route') %}
                     <a class="title-mobile active" href="{{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) }}">
                         {% if "diplonautic_landing_homepage" in app.request.attributes.get('_route') %}{%trans%}header.home{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_about" in app.request.attributes.get('_route') %}{%trans%}header.company{%endtrans%}{% endif %}
@@ -34,6 +36,7 @@
                         {% if "diplonautic_landing_electric_systems" in app.request.attributes.get('_route') %}{%trans%}tooltip.es{%endtrans%}{% endif %}
                         {% if "diplonautic_landing_maneuvering_propeller" in app.request.attributes.get('_route') %}{%trans%}tooltip.ms{%endtrans%}{% endif %}
                     </a>
+                    {% endif %}
                 </div>
                 <div class="navbar-diplonautic collapse" id="navbar">
                     <ul class="nav navbar-nav">

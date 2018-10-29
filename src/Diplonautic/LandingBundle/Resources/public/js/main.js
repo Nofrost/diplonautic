@@ -1,9 +1,7 @@
 $(document).ready(function() {
 //    'use strict';
-    console.log("DOM is ready");
     $( "li#index_header" ).hover(function() {
         $( "li:after" ).remove;
-        console.log( "ready!" );
     });
     //Carousel
     $('.owl-carousel').owlCarousel({

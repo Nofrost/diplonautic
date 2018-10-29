@@ -5,8 +5,9 @@ header :
     oportunities : 'Oportunitats'
     contact : 'Contacte'
     go_to : 'Anar a '
-    privacy_policy : 'Política de privacitat'
-    cookies: 'Política de cookies'
+    privacy_policy : 'Política de Privacitat'
+    cookies: 'Política de Cookies'
+    data_protection: 'Política de Protecció de Dades'
 
 index :
     title : 'DISSENY I INSTAL·LACIONS <br> NÀUTIQUES'
@@ -119,6 +120,7 @@ visit: 'Visitar pàgina web de'
 footer:
     privacy_policy: "Política de privacitat"
     cookies: "Política de Cookies"
+    data_protection: 'Protecció de Dades'
     
 meta:
     index: 'Disseny i instal·lacions nàutiques. Millorem la seva navegació amb la instal·lació, reparació i manteniment dels equips elèctrics de la seva embarcació.'

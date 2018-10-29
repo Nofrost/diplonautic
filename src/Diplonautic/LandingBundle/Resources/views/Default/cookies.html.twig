@@ -12,256 +12,329 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-11 main-description">
+                    <div class="col-sm-11 main-legal">
                         <div class="fixedContainer">
                             <div class="content">
                                 <h1>{%trans%}header.cookies{%endtrans%}</h1>
                                 {% if app.request.locale == 'ca'%}
-                                <h3 dir="ltr"><span>Informaci&oacute; pel cumplimient de la normativa de protecci&oacute; de dades personals</span></h3>
-                                    <p dir="ltr"><b>&bull; Qu&egrave; s&oacute;n les&nbsp;cookies&nbsp;i&nbsp;per a qu&egrave;&nbsp;les usem?</b></p>
-                                    <p dir="ltr"><span>Una&nbsp;cookie&nbsp;o galeta inform&agrave;tica &eacute;s un petit arxiu d'informaci&oacute; que es guarda en el seu navegador cada vegada que visita la nostra p&agrave;gina web.</span><span><br class="kix-line-break" /></span><span>La utilitat de les&nbsp;cookies&nbsp;&eacute;s guardar l'historial de la seva activitat a la nostra p&agrave;gina web, de manera que, quan la visiti novament, aquesta pugui identificar-li i configurar el contingut de la mateixa sobre la base dels seus h&agrave;bits de navegaci&oacute;, identitat i prefer&egrave;ncies.</span><span><br class="kix-line-break" /></span><span>Una&nbsp;cookie&nbsp;&eacute;s inofensiva, no cont&eacute; codi malici&oacute;s o malintencionat (ex. virus,&nbsp;troyanos, cucs, etc.) que pugui danyar la seva terminal (ordinador,&nbsp;smartphone,&nbsp;tableta, etc.), per&ograve;&nbsp;s&iacute;&nbsp;t&eacute; cert impacte sobre el seu dret a la protecci&oacute; de les seves dades, doncs recull determinada informaci&oacute; concernent a la seva persona (h&agrave;bits de navegaci&oacute;, identitat, prefer&egrave;ncies, etc.).</span></p>
-                                    <p dir="ltr"><span><br class="kix-line-break" /></span><b>&bull; Quina informaci&oacute; guarda una&nbsp;cookie?</b></p>
-                                    <p dir="ltr"><span>Les&nbsp;cookies&nbsp;no solen recollir categories especials de dades personals (dades sensibles). Les dades que guarden s&oacute;n de car&agrave;cter t&egrave;cnic, prefer&egrave;ncies personals, personalitzaci&oacute; de continguts, etc.</span></p>
-                                    <p dir="ltr"><span><br class="kix-line-break" /></span><span>&bull; </span><b>Quin tipus de&nbsp;cookies&nbsp;existeixen?</b></p>
-                                    <p dir="ltr"><span>Amb car&agrave;cter general, existeixen cinc tipus de&nbsp;cookies:</span></p><br/>
-                                    <ul style="padding-left: 50px;">
-                                          <li><p dir="ltr"><b>o&nbsp;Cookies&nbsp;t&egrave;cniques:</b></p>
-                                    <p dir="ltr"><span>S&oacute;n les&nbsp;cookies&nbsp;m&eacute;s b&agrave;siques. Permeten a l'usuari la navegaci&oacute; a trav&eacute;s d'una p&agrave;gina web, plataforma o aplicaci&oacute; i la utilitzaci&oacute; de les diferents opcions o serveis que en ella existeixin com, per exemple, controlar el tr&agrave;fic i la comunicaci&oacute; de dades, identificar la sessi&oacute;, accedir a parts d'acc&eacute;s restringit, recordar els elements que integren una comanda, realitzar el proc&eacute;s de compra d'una comanda, realitzar la sol&middot;licitud d'inscripci&oacute; o participaci&oacute; en un esdeveniment, utilitzar elements de seguretat durant la navegaci&oacute;, emmagatzemar continguts per a la difusi&oacute; de&nbsp;v&iacute;deos&nbsp;o so o compartir continguts a trav&eacute;s de xarxes socials.</span></p></li><br/>
-                                          <li><p dir="ltr"><b>o&nbsp;Cookies&nbsp;de personalitzaci&oacute;:</b></p>
-                                          <p dir="ltr"><span>S&oacute;n aquelles que permeten a l'usuari accedir al servei amb algunes caracter&iacute;stiques de car&agrave;cter general predefinides en funci&oacute; d'una s&egrave;rie de criteris en el terminal de l'usuari com per exemple serien l'idioma, el tipus de navegador a trav&eacute;s&nbsp;del qual&nbsp;accedeix al servei, la configuraci&oacute; regional des d'on accedeix al servei, etc.</span></p></li><br/>
-                                          <li><p dir="ltr"><b>o&nbsp;Cookies&nbsp;d'an&agrave;lisi:</b></p>
-                                    <p dir="ltr"><span>S&oacute;n aquelles que permeten al responsable&nbsp;d'aquestes, el seguiment i an&agrave;lisi del comportament dels usuaris dels llocs web als quals estan vinculades. La informaci&oacute; recollida mitjan&ccedil;ant aquest tipus de&nbsp;cookies&nbsp;s'utilitza en el mesurament de l'activitat dels llocs web, aplicaci&oacute; o plataforma i per a l'elaboraci&oacute; de perfils de navegaci&oacute; dels usuaris d'aquests llocs, aplicacions i plataformes, amb la finalitat d'introduir millores en funci&oacute; de l'an&agrave;lisi de les dades d'&uacute;s que fan els usuaris del servei.</span><span><br class="kix-line-break" /></span><span><br class="kix-line-break" /></span><b>o&nbsp;Cookies&nbsp;publicit&agrave;ries:</b></p></li>
-                                          <li><p dir="ltr"><span>S&oacute;n aquelles que permeten la gesti&oacute;, de la forma m&eacute;s efica&ccedil; possible, dels espais publicitaris que, si escau, el responsable hagi incl&ograve;s en una p&agrave;gina web, aplicaci&oacute; o plataforma des de la qual presta el servei sol&middot;licitat sobre la base de criteris com el contingut editat o la freq&uuml;&egrave;ncia en la qual es mostren els anuncis.</span><span><br class="kix-line-break" /></span><span><br class="kix-line-break" /></span></p></li>
-                                                <li><p><b>o&nbsp;Cookies&nbsp;de publicitat comportamental:</b></p>
-                                          <p dir="ltr"><span>S&oacute;n aquelles que permeten la gesti&oacute;, de la forma m&eacute;s efica&ccedil; possible, dels espais publicitaris que, si escau, el responsable hagi incl&ograve;s en una p&agrave;gina web, aplicaci&oacute; o plataforma des de la qual presta el servei sol&middot;licitat. Aquestes&nbsp;cookies&nbsp;emmagatzemen informaci&oacute; del comportament dels usuaris obtinguda a trav&eacute;s de l'observaci&oacute; continuada dels seus h&agrave;bits de navegaci&oacute;, la qual cosa permet desenvolupar un perfil espec&iacute;fic per mostrar publicitat en funci&oacute; del mateix.</span></p></li>
-                                    </ul>
-                                    <p dir="ltr"><span><br class="kix-line-break" /></span><span><br class="kix-line-break" /></span><b>&bull; Qu&egrave; s&oacute;n les&nbsp;cookies&nbsp;pr&ograve;pies i les de tercers?</b></p>
-                                    <ul style="padding-left: 70px;">
-                                          <li dir="ltr">
-                                          <p dir="ltr"><b>- Cookies&nbsp;de pr&ograve;pies:</b></p>
-                                          
-                                          <p dir="ltr"><span>Les&nbsp;cookies&nbsp;pr&ograve;pies s&oacute;n aquelles que es generen i gestionen pel mateix responsable&nbsp;que presta el servei sol&middot;licitat per l'usuari.</span></p>
-                                          </li>
-                                          <li dir="ltr">
-                                          <p dir="ltr"><b>- Cookies&nbsp;de tercers:</b></p>
-                                          
-                                          <p dir="ltr"><span>S&oacute;n aquelles que es generen per altres entitats diferents al mateix responsable&nbsp;(serveis o prove&iuml;dors externs, com per exemple Google).</span></p>
-                                          </li>
-                                    </ul>
-                                    <br/>
-                                    <p dir="ltr"><b>&bull; Quin tipus de&nbsp;cookies&nbsp;guarda la nostra p&agrave;gina web?</b></p>
-                                    <p dir="ltr"><span>A continuaci&oacute;, procedim a relacionar el tipus de&nbsp;cookies&nbsp;que guarda la nostra p&agrave;gina web i la finalitat de les mateixes:</span></p>
-                                    <p><span><span>&nbsp;</span></span></p>
-                                    <div dir="ltr">
-                                    <table style="border-color: #fff; border-width: 1px; border-style: solid;" border="1">
-                                    <tbody>
-                                    <tr>
-                                    <td>
-                                    <p class="text-center"><b>Tipus de cookie</b></p>
-                                    </td>
-                                    <td>
-                                    <p class="text-center"><b>Finalitat</b></p>
-                                    </td>
-                                    <td>
-                                    <p class="text-center"><b>Quant i com es guarda</b></p>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                    <td>
-                                          <p class="text-center">_ga</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">Es fa servir per distingir els usuaris.</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">2 anys</p>
-                                    </td>
-                                    <tr>
-                                    <td>
-                                          <p class="text-center">_gid</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">Es fa servir per distingir els usuaris.</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">24 hores</p>
-                                    </td>
-                              </tr>
-                              <tr>
-                                    <td>
-                                          <p class="text-center">_gat</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">S'utilitza per limitar el percentatge de sol·licituds.</p>
-                                    </td>
-                                    <td>
-                                          <p class="text-center">1 minut</p>
-                                    </td>
-                                    </tr>
-                                    </tbody>
-                                    </table>
-                                    </div>
-                                    <p><span><span>&nbsp;</span></span></p>
-                                    <p dir="ltr"><b>&bull; Qu&egrave; puc fer amb les&nbsp;cookies?</b></p>
-                                    <p dir="ltr"><span>Les&nbsp;cookies&nbsp;poden ser esborrades, acceptades o bloquejades, segons desitgi, per a aix&ograve; nom&eacute;s ha de configurar convenientment el navegador web.</span></p>
-                                    <p dir="ltr"><span>A qualsevol moment, pot impedir la instal&middot;laci&oacute; de&nbsp;cookies&nbsp;(bloqueig) en el seu equip mitjan&ccedil;ant l'opci&oacute; corresponent del seu navegador, per&ograve; en aquest cas no podrem assegurar-li el correcte funcionament de les diferents funcionalitats de la nostra p&agrave;gina web.</span></p>
-                                    <p dir="ltr"><span>A continuaci&oacute;, li facilitem els enlla&ccedil;os per a la gesti&oacute; i bloqueig de&nbsp;cookies&nbsp;depenent del navegador que utilitzi:</span></p>
-                                    <p><span><span>&nbsp;</span></span></p>
-                                    <ul>
-                                    <li dir="ltr">
-                                    <p dir="ltr"><b>Internet Explorer:</b><a href="http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10"><span>http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10</span></a></p>
-                                    </li>
-                                    <li dir="ltr">
-                                    <p dir="ltr"><b>FireFox:</b><span>&nbsp;</span><a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"><span>http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</span></a></p>
-                                    </li>
-                                    <li dir="ltr">
-                                    <p dir="ltr"><b>Chrome:</b><span>&nbsp;</span><a href="https://support.google.com/chrome/answer/95647?hl=es"><span>https://support.google.com/chrome/answer/95647?hl=es</span></a></p>
-                                    </li>
-                                    <li dir="ltr">
-                                    <p dir="ltr"><b>Safari:</b><span>&nbsp;https://www.apple.com/legal/privacy/es/cookies/</span></p>
-                                    </li>
-                                    </ul>
-                                    <p><span><span>&nbsp;</span></span></p>
-                                    <p dir="ltr"><span>Tamb&eacute; pot esborrar les&nbsp;cookies&nbsp;que tingui guardades en el seu navegador acudint a les opcions de configuraci&oacute;&nbsp;d'aquest.</span></p>
-                                    <p><span>&nbsp;</span></p>
-                                                                   {% else %}
-                                    <h3>1. APPLICABLE LEGISLATION</h3>
-                                    <p>Article 22.2 of Act 34/2002 of 11 July on Information Society Services and Electronic Commerce[Ley
-                                    34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, LSSI-
-                                    CE](hereinafter referred to as the LSSI-CE) stipulates that:<br><ul>
+                                <h3>Informaci&oacute; pel cumplimient de la normativa de protecci&oacute; de dades personals</h3>
+                                <ul>
                                     <li>
-                                        1. Services providers may use storage and data recovery devices on any users’ terminal equipment
-                                        provided that users have given their consent after having been provided with clear and
-                                        comprehensive information regarding its usage and, in particular, data processing, pursuant to the
-                                        provisions laid down in Spanish Organic Law 15/1999 of 13 December on Personal Data Protection.
+                                        <b>Qu&egrave; s&oacute;n les&nbsp;cookies&nbsp;i&nbsp;per a qu&egrave;&nbsp;les usem?</b>
                                     </li>
-                                    </ul>
-                                    In circumstances where it is technically possible and effective to do so, users shall be able to provide their
-                                    consent to data processing by means of the correct browser parameters or applications, provided that
-                                    users are able to configure the settings upon installation or update with a specific action to that effect.
-                                    The foregoing shall not prevent potential technical storage or access for the sole purpose of transmitting
-                                    communication via an electronic communications network or where such storage or access is strictly
-                                    necessary for the provision of an information society service that has been expressly requested by the user.</p>
-                                     
-                                    <p>According to the “Guide on the use of cookies” published by the Spanish Data Protection Authority
-                                    (hereinafter referred to as the AEPD) in 2013, the LSSI-CE applies to any file or device that is downloaded
-                                    on to the user’s terminal equipment with the purpose of storing information that can be updated and
-                                    recovered by the organisation responsible for its installation. A cookie is an example of these commonly
-                                    used files and, as such, we will refer to these files as cookies hereinafter.</p>
-                                     
-                                    <p>Cookies used for any of the following purposes are exempt from the provisions laid down in Article 22.2 of
-                                    the LSSI-CE:<br><ul>
-                                     
-                                    <li> Only to allow communication between the user’s equipment and the network.</li>
-                                    <li> Strictly to provide a service expressly requested by the user.</li>
-                                    </ul>
-                                    </p>
-                                    <h3>2. TYPES AND PURPOSES OF COOKIES</h3>
-                                    <p>A cookie is a file that is downloaded on to your computer when accessing certain websites. Cookies enable
-                                    the website to, among other things, store and recover information about a user’s browsing habits or
-                                    equipment, and can be used to recognise the user, depending on the information contained and how these
-                                    cookies use your computer.<br>
-                                    According to the “Guide on the use of cookies” published by the AEPD, depending on the purposes for
-                                    which the information is obtained using cookies, we can classify the different types of cookies as follows:<br>
-                                     
-                                    <ul>
-                                    <li>- Technical cookies: These allow the user to browse through a website, platform or application, and
-                                    benefit from different options or services resulting from these, such as controlling the traffic and
-                                    communication of information, identifying the session, accessing restricted areas, remembering all
-                                    items in a request, carrying out a purchasing process request, carrying out an event registration or
-                                    participation request, enabling security features when browsing, storing content for video or audio
-                                    distribution or sharing content on social networks.</li>
-                                    <li>- Customisation cookies: These allow the user to access the service with some general pre-defined
-                                    features in accordance with some terminal criteria such as language, type of browser used to
-                                    access the service, regional configuration with information about where the service is accessed
-                                    from, etc.</li>
-                                    <li>- Analytical cookies: These allow the party responsible to track and analyse the user’s behaviour on
-                                    the websites linked to them. The information gathered by these cookies is used to measure activity
-                                    on websites, applications or platforms and to create user browsing profiles on those websites,
-                                    applications and platforms, with the aim of improving the analysis of data used by users.</li>
-                                    <li>- Advertising cookies: These allow, in the most effective way possible, the management of all
-                                    advertising sections that the editor may have included on a website, application or platform used
-                                    to provide the requested service in accordance with criteria such as edited content or frequency of
-                                    the adverts displayed.</li>
-                                    <li>- Behavioural advertising cookies: These allow, in the most effective way possible, the management
-                                    of all advertising sections that the editor may have included on a website, application or platform
-                                    used to provide the requested service. These cookies store information about the user’s behaviour
-                                    obtained by analysing browsing habits in order to tailor a specific profile to show relevant adverts.</li></ul>
-                                     </p>
-                                    <h3>3. INFORMATION PRINCIPLE</h3>
-                                    <p>Pursuant to the provisions laid down in Article 5 of Spanish Organic Law 15/1999 of 13 December on
-                                    Personal Data Protection (hereinafter referred to as the LOPD), we hereby inform you expressly, accurately
-                                    and unequivocally that all data obtained by any cookies installed on your computer will be used for the
-                                    following purposes: Help improve the quality of our website, allowing us to monitor which pages our users
-                                    find useful or not useful. Cookies are essential to the functioning of the Internet, providing many
-                                    advantages in terms of providing interactive services and facilitating navigation and usability of our
-                                    website. Note that cookies cannot damage your computer. In fact, activated cookies help us identify and
-                                    resolve errors.</p>
-                                     
-                                    <p>The recipients of any information obtained by cookies installed on your computer are:<br>
-                                    <ul><li>- The editor responsible for the website and data processing: DIPLONAUTIC S.L.</li>
-                                    <li>- If relevant, organisations directly related to the editor responsible for the website, which are
-                                    expressly listed below: DIPLONAUTIC S.L.</li></ul>
-                                    </p>
-                                    <h3>4. CONSENT</h3>
-                                    <p>Consent for installation of cookies is given by ticking the corresponding box in order to accept the “Cookie
-                                    Policy” as shown on our website.</p>
                                     <p>
-                                    If users do not explicitly confirm that they consent to the installation of cookies but continue to browse our
-                                    website, we will assume that they have agreed and we will accordingly inform them about the possibility of
-                                    blocking or deleting any previously installed cookies by adjusting their browser settings.
+                                        Una&nbsp;cookie&nbsp;o galeta inform&agrave;tica &eacute;s un petit arxiu d'informaci&oacute; que es guarda en el seu navegador cada vegada que visita la nostra p&agrave;gina web.<br/>
+                                        La utilitat de les&nbsp;cookies&nbsp;&eacute;s guardar l'historial de la seva activitat a la nostra p&agrave;gina web, de manera que, quan la visiti novament, aquesta pugui identificar-li i configurar el contingut de la mateixa sobre la base dels seus h&agrave;bits de navegaci&oacute;, identitat i prefer&egrave;ncies.<br/>
+                                        Una&nbsp;cookie&nbsp;&eacute;s inofensiva, no cont&eacute; codi malici&oacute;s o malintencionat (ex. virus,&nbsp;troyanos, cucs, etc.) que pugui danyar la seva terminal (ordinador,&nbsp;smartphone,&nbsp;tableta, etc.), per&ograve;&nbsp;s&iacute;&nbsp;t&eacute; cert impacte sobre el seu dret a la protecci&oacute; de les seves dades, doncs recull determinada informaci&oacute; concernent a la seva persona (h&agrave;bits de navegaci&oacute;, identitat, prefer&egrave;ncies, etc.).
                                     </p>
-                                    <h3>5. OPTIONAL NATURE OF COOKIE INSTALLATION</h3>
-                                    <p>Whilst the installation of cookies on your computer is optional, not enabling them could considerably limit
-                                    or prevent the functionality of the website, which would make it impossible to receive any services from
-                                    our organisation through the website.</p>
-                                    <h3>6. DISABLING COOKIES</h3>
-                                    <p>User can modify, block or disable the cookie settings at any time. For further information, please check the
-                                    settings for the relevant browser.<br><ul>
-                                    <li>CHROME: <a href="https://support.google.com/chrome/answer/95647?hl=en" target="_blank">https://support.google.com/chrome/answer/95647?hl=en</a></li>
-                                    <li>EXPLORER: <a href="http://windows.microsoft.com/en-gb/windows-vista/Block-or-allow-cookies" target="_blank">http://windows.microsoft.com/en-gb/windows-vista/Block-or- allow-cookies</a></li>
-                                    <li>FIREFOX: <a href="http://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">http://support.mozilla.org/en-US/kb/enable- and-disable-cookies-website-preferences</a></li>
-                                    <li>SAFARI: <a href="http://www.apple.com/uk/privacy/use-of-cookies/" target="_blank">http://www.apple.com/uk/privacy/use-of-cookies/</a></li>
-                                    </ul><br>
-                                     
-                                    See also the Google AdWords third party cookies
-                                    policy: http://www.google.es/intl/en/policies/technologies/cookies/<br>
-                                     
-                                    DIPLONAUTIC S.L. will not be held liable for the content and authenticity of cookies policies from third
-                                    parties.</p>
-                                    <h3>7. DATA SECURITY</h3>
-                                    <p>DIPLONAUTIC S.L. is committed to complying with its obligation of confidentiality regarding personal data
-                                    and its duty to protect such information, and will therefore put any necessary technical and organisational
-                                    measures in place in order to guarantee the protection of any personal data and prevent any modification,
-                                    loss, handling or unauthorised access, in view of the state of technology, the nature of the data stored and
-                                    the risks that the data might be exposed to, whether this is caused by human action or natural or physical
-                                    influences, as detailed in the Title VIII of Royal Decree 1720/2007 of 21 December, which approves the
-                                    Regulation implementing Organic Law 15/1999 of 13 December on Personal Data Protection.</p>
-                                    <h3>8. EXERCISE OF RIGHTS</h3>
-                                    <p>Pursuant to the provisions laid down in the LOPD and Royal Decree 1720/2007 of 21 December, which
-                                    approves the Regulation implementing the aforementioned Organic Law, users may exercise their rights of
-                                    access, correction, cancellation and objection, at any time by notifying the company responsible for the file
-                                    or for processing the data, enclosing a photocopy of their ID..</p>
-                                    <h3>9. COMPANY RESPONSIBLE FOR THE FILE OR DATA PROCESSING</h3>
-                                    <p>The company responsible for the file is DIPLONAUTIC S.L. AVENIDA PRINCIPE DE ASTURIAS,48 5º 2ª,
-                                    08019 - BARCELONA (Barcelona)</p>
-                                    {% endif %}
+
+                                    <li>
+                                        <b>Quina informaci&oacute; guarda una&nbsp;cookie?</b>
+                                    </li>
+                                    <p>
+                                        Les&nbsp;cookies&nbsp;no solen recollir categories especials de dades personals (dades sensibles). Les dades que guarden s&oacute;n de car&agrave;cter t&egrave;cnic, prefer&egrave;ncies personals, personalitzaci&oacute; de continguts, etc.
+                                    </p>
+
+                                    <li>
+                                        <b>Quin tipus de&nbsp;cookies&nbsp;existeixen?</b>
+                                    </li>
+                                    <p>
+                                        Amb car&agrave;cter general, existeixen cinc tipus de&nbsp;cookies:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Cookies&nbsp;t&egrave;cniques:</b>
+                                        </li>
+                                        <p>
+                                            S&oacute;n les&nbsp;cookies&nbsp;m&eacute;s b&agrave;siques. Permeten a l'usuari la navegaci&oacute; a trav&eacute;s d'una p&agrave;gina web, plataforma o aplicaci&oacute; i la utilitzaci&oacute; de les diferents opcions o serveis que en ella existeixin com, per exemple, controlar el tr&agrave;fic i la comunicaci&oacute; de dades, identificar la sessi&oacute;, accedir a parts d'acc&eacute;s restringit, recordar els elements que integren una comanda, realitzar el proc&eacute;s de compra d'una comanda, realitzar la sol&middot;licitud d'inscripci&oacute; o participaci&oacute; en un esdeveniment, utilitzar elements de seguretat durant la navegaci&oacute;, emmagatzemar continguts per a la difusi&oacute; de&nbsp;v&iacute;deos&nbsp;o so o compartir continguts a trav&eacute;s de xarxes socials.
+                                        </p>
+
+                                        <li>
+                                            <b>Cookies&nbsp;de personalitzaci&oacute;:</b>
+                                        </li>
+                                        <p>
+                                            S&oacute;n aquelles que permeten a l'usuari accedir al servei amb algunes caracter&iacute;stiques de car&agrave;cter general predefinides en funci&oacute; d'una s&egrave;rie de criteris en el terminal de l'usuari com per exemple serien l'idioma, el tipus de navegador a trav&eacute;s&nbsp;del qual&nbsp;accedeix al servei, la configuraci&oacute; regional des d'on accedeix al servei, etc.
+                                        </p>
+
+                                        <li>
+                                            <b>Cookies&nbsp;d'an&agrave;lisi:</b>
+                                        </li>
+                                        <p>
+                                            S&oacute;n aquelles que permeten al responsable&nbsp;d'aquestes, el seguiment i an&agrave;lisi del comportament dels usuaris dels llocs web als quals estan vinculades. La informaci&oacute; recollida mitjan&ccedil;ant aquest tipus de&nbsp;cookies&nbsp;s'utilitza en el mesurament de l'activitat dels llocs web, aplicaci&oacute; o plataforma i per a l'elaboraci&oacute; de perfils de navegaci&oacute; dels usuaris d'aquests llocs, aplicacions i plataformes, amb la finalitat d'introduir millores en funci&oacute; de l'an&agrave;lisi de les dades d'&uacute;s que fan els usuaris del servei.
+                                        </p>
+                                        <li>
+                                            <b>Cookies&nbsp;publicit&agrave;ries:</b>
+                                        </li>
+                                        <p>
+                                            S&oacute;n aquelles que permeten la gesti&oacute;, de la forma m&eacute;s efica&ccedil; possible, dels espais publicitaris que, si escau, el responsable hagi incl&ograve;s en una p&agrave;gina web, aplicaci&oacute; o plataforma des de la qual presta el servei sol&middot;licitat sobre la base de criteris com el contingut editat o la freq&uuml;&egrave;ncia en la qual es mostren els anuncis.
+                                        </p>
+
+                                        <li>
+                                            <b>Cookies&nbsp;de publicitat comportamental:</b>
+                                        </li>
+                                        <p>
+                                            S&oacute;n aquelles que permeten la gesti&oacute;, de la forma m&eacute;s efica&ccedil; possible, dels espais publicitaris que, si escau, el responsable hagi incl&ograve;s en una p&agrave;gina web, aplicaci&oacute; o plataforma des de la qual presta el servei sol&middot;licitat. Aquestes&nbsp;cookies&nbsp;emmagatzemen informaci&oacute; del comportament dels usuaris obtinguda a trav&eacute;s de l'observaci&oacute; continuada dels seus h&agrave;bits de navegaci&oacute;, la qual cosa permet desenvolupar un perfil espec&iacute;fic per mostrar publicitat en funci&oacute; del mateix.
+                                        </p>
+                                    </ul>
+                                    <li>
+                                        <b>Qu&egrave; s&oacute;n les&nbsp;cookies&nbsp;pr&ograve;pies i les de tercers?</b>
+                                    </li>
+                                    <ul>
+                                        <li><b>Cookies&nbsp;de pr&ograve;pies:</b></li>
+                                        <p>
+                                            Les&nbsp;cookies&nbsp;pr&ograve;pies s&oacute;n aquelles que es generen i gestionen pel mateix responsable&nbsp;que presta el servei sol&middot;licitat per l'usuari.
+                                        </p>
+                                        <li><b>Cookies&nbsp;de tercers:</b></li>
+                                        <p>
+                                            S&oacute;n aquelles que es generen per altres entitats diferents al mateix responsable&nbsp;(serveis o prove&iuml;dors externs, com per exemple Google).
+                                        </p>
+                                    </ul>
+                                    <li>
+                                        <b>Quin tipus de&nbsp;cookies&nbsp;guarda la nostra p&agrave;gina web?</b>
+                                    </li>
+                                    <p>
+                                        A continuaci&oacute;, procedim a relacionar el tipus de&nbsp;cookies&nbsp;que guarda la nostra p&agrave;gina web i la finalitat de les mateixes:
+                                    </p>
+                                    <table class="cookies__tableStyle" border="1">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Tipus de cookie</b></p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Finalitat</b></p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Vigència</b></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_ga</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">Aquesta cookie està associada amb Google Analytics. Registre una identificació única que s’utilitza per generar dades estadístiques sobre com el visitant utilitza el lloc web.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">2 anys</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_gid</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">Aquesta cookie està associada amb Google Analytics. Registre una identificació única que s’utilitza per generar dades estadístiques sobre com el visitant utilitza el lloc web.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">24 hores</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_gat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">Aquesta cookie està associada amb Google Analytics. S’utilitza per accelerar el percentatge de sol·licituds, limitant la recopilació de dades als llocs de trànsit elevats.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">1 minut</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <li><b>Qu&egrave; puc fer amb les&nbsp;cookies?</b></li>
+                                    <p>
+                                        Les&nbsp;cookies&nbsp;poden ser esborrades, acceptades o bloquejades, segons desitgi, per a aix&ograve; nom&eacute;s ha de configurar convenientment el navegador web.
+                                    </p>
+                                    <p>
+                                        A qualsevol moment, pot impedir la instal&middot;laci&oacute; de&nbsp;cookies&nbsp;(bloqueig) en el seu equip mitjan&ccedil;ant l'opci&oacute; corresponent del seu navegador, per&ograve; en aquest cas no podrem assegurar-li el correcte funcionament de les diferents funcionalitats de la nostra p&agrave;gina web.
+                                    </p>
+                                    <p>
+                                        A continuaci&oacute;, li facilitem els enlla&ccedil;os per a la gesti&oacute; i bloqueig de&nbsp;cookies&nbsp;depenent del navegador que utilitzi:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Internet Explorer:</b><a href="http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10"> http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10</a>
+                                        </li>
+                                        <li>
+                                            <b>FireFox:</b><a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"> http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</a>
+                                        </li>
+                                        <li>
+                                            <b>Chrome:</b><a href="https://support.google.com/chrome/answer/95647?hl=es"> https://support.google.com/chrome/answer/95647?hl=es</a>
+                                        </li>
+                                        <li>
+                                            <b>Safari:</b><a href="https://www.apple.com/legal/privacy/es/cookies/"> https://www.apple.com/legal/privacy/es/cookies/</a>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Tamb&eacute; pot esborrar les&nbsp;cookies&nbsp;que tingui guardades en el seu navegador acudint a les opcions de configuraci&oacute;&nbsp;d'aquest.
+                                    </p>
+                                </ul>
+                                {% else %}
+                                <h3>Information for compliance with the regulations for the protection of personal data</h3>
+                                <ul>
+                                    <li>
+                                        <b>What are cookies and why do we use them?</b>
+                                    </li>
+                                    <p>
+                                        A cookie or cookie is a small archive of information that is stored in your browser each time you visit our website.<br/>
+                                        The utility of cookies is to keep the history of your activity on our website, so that when you visit it again, it can identify and configure its contents based on your browsing habits, identity and preferences.<br/>
+                                        A cookie is harmless, it does not contain malicious or malicious code (eg viruses, trojans, worms, etc.) that could damage your terminal (computer, smartphone, tablet, etc.), but it does have some impact on your right to The protection of your data, because it collects certain information concerning your person (browsing habits, identity, preferences, etc.).
+                                    </p>
+
+                                    <li>
+                                        <b>What information does a cookie keep?</b>
+                                    </li>
+                                    <p>
+                                        Cookies do not usually collect special categories of personal data (sensitive data). The data they keep is of a technical nature, personal preferences, personalization of contents, etc.
+                                    </p>
+
+                                    <li>
+                                        <b>What types of cookies exist?</b>
+                                    </li>
+                                    <p>
+                                        In general, there are five types of cookies:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Technical Cookies:</b>
+                                        </li>
+                                        <p>
+                                            They are the most basic cookies. They allow the user to navigate through a web page, platform or application, and the use of the different options or services that exist there, such as controlling the traffic and communication of data, identifying the session, accessing to parts of restricted access, remember the elements that make up an order, perform the process of purchase of an order, perform the application for registration or participation in an event, use security elements during navigation, store content for to the dissemination of videos or sound or to share content through social networks.
+                                        </p>
+
+                                        <li>
+                                            <b>Customization cookies:</b>
+                                        </li>
+                                        <p>
+                                            These are those that allow the user to access the service with some general characteristics predefined according to a series of criteria in the user's terminal such as the language, the type of browser through which accesses to the service, the regional configuration from where you access the service, etc.
+                                        </p>
+
+                                        <li>
+                                            <b>Analysis Cookies:</b>
+                                        </li>
+                                        <p>
+                                            They are those that allow the person in charge of them, tracking and analyzing the behavior of the users of the websites to which they are linked. The information collected through this type of cookies is used in the measurement of the activity of the websites, application or platform and for the elaboration of navigation profiles of users of these sites, applications and platforms, in order to 'to introduce improvements based on the analysis of the use data that users of the service make.
+                                        </p>
+                                        <li>
+                                            <b>Advertising Cookies:</b>
+                                        </li>
+                                        <p>
+                                            They are those that allow the management, as effectively as possible, of advertising spaces that, in his case, the person in charge has included in a web page, application or platform from which he provides the requested service based on criteria such as the content edited or the frequency at which the ads are displayed.
+                                        </p>
+
+                                        <li>
+                                            <b>Behavioral Advertising Cookies:</b>
+                                        </li>
+                                        <p>
+                                            They are those that allow the management, as effectively as possible, of the advertising spaces that, in his case, the person in charge has included in a web page, application or platform from which he provides the requested service. These cookies store user behavior information obtained through continuous observation of their browsing habits, which allows them to develop a specific profile to show advertising based on them.
+                                        </p>
+                                    </ul>
+                                    <li>
+                                        <b>What are your own cookies and those of third parties?</b>
+                                    </li>
+                                    <ul>
+                                        <li><b>Own cookies:</b></li>
+                                        <p>
+                                            The own cookies are those that are generated and managed by the responsible person who provides the service requested by the user.
+                                        </p>
+                                        <li><b>Third-party cookies:</b></li>
+                                        <p>
+                                            They are those that are generated by other entities than the same responsible (services or external providers, such as Google).
+                                        </p>
+                                    </ul>
+                                    <li>
+                                        <b>What kind of cookies does our webpage keep?</b>
+                                    </li>
+                                    <p>
+                                        Next, we proceed to relate the type of cookies stored on our website and the purpose of the same:                                    </p>
+                                    <table class="cookies__tableStyle" border="1">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Kind of cookies</b></p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Purpose</b></p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10"><b>Expiration Time</b></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_ga</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">This cookie is associated with Google Analytics. It register a unique identification used to generate statistical data on how the visitor uses the website.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">2 years</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_gid</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">This cookie is associated with Google Analytics. It register a unique identification used to generate statistical data on how the visitor uses the website.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">24 hours</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="text-center padding-10">_gat</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">This cookie is associated with Google Analytics. It is used to accelerate the percentage of applications, limiting the collection of data to high traffic sites.</p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-center padding-10">1 minut</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                    <br/>
+                                    <li><b>What can I do with cookies?</b></li>
+                                    <p>
+                                        Cookies may be deleted, accepted or blocked, as desired, for this you only have to configure the web browser conveniently.
+                                    </p>
+                                    <p>
+                                        At any time, it may prevent the installation of cookies (lock) on your computer through the corresponding option of your browser, but in this case we can not guarantee the correct operation of the different functionalities of our web page.
+                                    </p>
+                                    <p>
+                                        Next, we provide you with the links for the management and blocking of cookies depending on the browser you use:                                    
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <b>Internet Explorer:</b><a href="http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10"> http://windows.microsoft.com/es-xl/internet-explorer/delete-manage-cookies#ie=ie-10</a>
+                                        </li>
+                                        <li>
+                                            <b>FireFox:</b><a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"> http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</a>
+                                        </li>
+                                        <li>
+                                            <b>Chrome:</b><a href="https://support.google.com/chrome/answer/95647?hl=es"> https://support.google.com/chrome/answer/95647?hl=es</a>
+                                        </li>
+                                        <li>
+                                            <b>Safari:</b><a href="https://www.apple.com/legal/privacy/es/cookies/"> https://www.apple.com/legal/privacy/es/cookies/</a>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        You can also delete the cookies that you have saved in your browser by going to the configuration options of the same.
+                                    </p>
+                                </ul>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                    
-                    <div class="col-sm-1 languages hidden-xs">
-                        <div id="cat">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "ca" })}}" {% if app.request.locale == 'ca'%}class="active"{% endif %} title="{%trans%}languages.cat{%endtrans%}">
-                                CAT
-                            </a>
-                        </div>
-                        <div id="en">
-                            <a href="{{path("diplonautic_landing_homepage", { "_locale" : "en" })}}" {% if app.request.locale == 'en'%}class="active"{% endif %} title="{%trans%}languages.en{%endtrans%}">
-                                ENG
-                            </a>
-                        </div>
-                    </div>
+                    {% include "DiplonauticLandingBundle:Default:language.html.twig" %}
                 </div>
             </div>
         </section>
