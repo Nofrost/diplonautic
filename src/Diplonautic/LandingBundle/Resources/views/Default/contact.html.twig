@@ -2,6 +2,12 @@
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
 {% block title %}{%trans%}header.contact{%endtrans%} - Diplonautic{% endblock %}
 {% block meta_title %}{%trans%}header.contact{%endtrans%} - Diplonautic{% endblock %}
+{% block meta %}
+    <meta property="og:title" content="{%trans%}header.contact{%endtrans%} - Diplonautic" />
+    <meta property="og:url" content="http://www.diplonautic.com{{path(app.request.attributes.get('_route'),
+                       app.request.attributes.get('_route_params'))}}" />
+    <meta property="og:site_name" content="Diplonautic" />
+{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
     <div class="main">

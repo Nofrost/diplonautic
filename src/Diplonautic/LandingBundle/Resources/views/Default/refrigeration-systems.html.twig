@@ -3,7 +3,13 @@
 {% block meta_description %}{%trans%}meta.rs{%endtrans%}{% endblock %}
 {% block meta_title %}{%trans%}tooltip.rs{%endtrans%} - Diplonautic{% endblock %}
 {% block title %}{%trans%}tooltip.rs{%endtrans%} - Diplonautic{% endblock %}
-
+{% block meta %}
+    <meta property="og:title" content="{%trans%}tooltip.rs{%endtrans%} - Diplonautic" />
+    <meta property="og:url" content="http://www.diplonautic.com{{path(app.request.attributes.get('_route'),
+                       app.request.attributes.get('_route_params'))}}" />
+    <meta property="og:description" content="{%trans%}meta.rs{%endtrans%}" />
+    <meta property="og:site_name" content="Diplonautic" />
+{% endblock %}
 {% block content %}
     {% include "DiplonauticLandingBundle:Default:header.html.twig" %}
     <div class="main">

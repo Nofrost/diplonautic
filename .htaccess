@@ -2,4 +2,6 @@
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ web/$1 [QSA,L]
+    RewriteEngine On RewriteBase / RewriteCond %{HTTP_HOST} ^www.diplonautic.com [NC] RewriteRule ^(.*)$ 
+http://diplonautic.com/$1 [L,R=301]
 </IfModule>
