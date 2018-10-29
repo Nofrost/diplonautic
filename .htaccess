@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTP_HOST} ^www\.diplonautic\.com [NC]
-    RewriteRule ^(.*)$ http://diplonautic.com/$1 [L,R=301]
+    RewriteRule ^(.*)$ RewriteRule ^(.*)$ web/$1 [QSA,L]
 </IfModule>
