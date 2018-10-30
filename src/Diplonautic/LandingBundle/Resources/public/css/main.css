@@ -962,6 +962,7 @@ h4, .h4{
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+  width: 75%;
 }
 
 .modal-footer{
@@ -1031,6 +1032,38 @@ h4, .h4{
         height: 300px;
         width: 100%;
     }
+
+    /* Important part */
+    .modal-dialog{
+        overflow-y: initial !important;
+        width: 90%;
+    }
+    .modal-content{
+        font-size: 0.48em;
+    }
+
+    .modal-body{
+        height: 300px;
+        overflow-y: auto;
+    }
+    .btn-cookie{
+        padding: 0px;
+    }
+
+    .btn-cookie:first-child{
+        border-right: 1px solid #fff;
+    }
+
+    .btn-cookie a{
+        padding: 15px 0px;
+        width: 100%;
+        color: #fff !important;
+    }
+
+    .btn-cookie a:hover{
+        background-color: rgba(255,255,255,0.6);
+    }
+
 }
 
 @media only screen and (min-width: 1400px){
