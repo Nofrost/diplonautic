@@ -110,7 +110,7 @@ languages:
     en: Anglès
     
 cookies:
-    title: "INFORMACIÓ BÁSICA SOBRE COOKIES"
+    title: "INFORMACIÓ BÀSICA SOBRE COOKIES"
     message: "Una cookie o galeta informàtica és un petit arxiu d'informació que es guarda en el seu navegador cada vegada que visita la nostra pàgina web.<br/><br/>La utilitat de les cookies és guardar l'historial de la seva activitat a la nostra pàgina web, de manera que, quan la visiti novament, aquesta pugui identificar-li i configurar el contingut de la mateixa sobre la base dels seus hàbits de navegació, identitat i preferències.<br/><br/>Les cookies poden ser acceptades, rebutjades, bloquejades i esborrades, segons desitgi. Això podrà fer-ho mitjançant les opcions disponibles en la present finestra o a través de la configuració del seu navegador, segons el cas.<br/><br/>En cas que rebutgi les cookies no podrem assegurar-li el correcte funcionament de les diferents funcionalitats de la nostra pàgina web.<br/><br/>Més informació a l'apartat 'POLÍTICA DE COOKIES' de la nostra pàgina web."
     btn:
         more: ' Política de Cookies'
