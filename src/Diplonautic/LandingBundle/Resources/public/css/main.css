@@ -59,10 +59,12 @@ h4, .h4{
 }
 .p-r-5{padding-right: 5px}
 .p-l-5{padding-left: 5px}
+.p-l-20{padding-left: 20px}
 .p-t-30{padding-top:30px;}
 .m-t-10{margin-top: 10px;}
 .m-t-30{margin-top: 30px;}
 .m-r-40{margin-right: 40px;}
+.fs-30{font-size: 30px;}
 .inline-block{display: inline-block;}
 .margin-text-picto{
     margin-top: 45px;
@@ -140,6 +142,7 @@ h4, .h4{
 .navbar-nav {
     margin: 0;
     background-color: rgba(0,67,95,0.7);
+    width: 100%;
 }
 .nav-logo{
     background-color: rgba(0,67,95,0.5);
@@ -163,7 +166,14 @@ h4, .h4{
 .navbar-diplonautic>.navbar-nav>li{
     text-align: left;
 }
-.navbar-diplonautic>.navbar-nav>li>h1 a {
+/*.social{
+    padding-top: 28px;
+    height: 85px;
+}*/
+/*.navbar-diplonautic>.navbar-nav>li:last-child{
+    min-width: 11.92%;
+}*/
+.navbar-diplonautic>.navbar-nav>li>h1 a{
     min-width: 187px;
     padding-top: 13px;
     padding-bottom: 12px;
@@ -171,14 +181,33 @@ h4, .h4{
     border-top: 1px solid #fff;
     margin: 0;
 }
+.social{
+    border-top: 1px solid #fff;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+.fb-header,
+.insta-header{
+    padding: 0px 15px;
+    width: 49%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.fb-header{
+    border-right: 1px solid #fff;
+}
 .navbar-diplonautic>.navbar-nav>li>a {
-    min-width: 187px;
+    
     padding-top: 13px;
     padding-bottom: 12px;
     font-size: 16px;
     border-top: 1px solid #fff;
     text-transform: uppercase;
 }
+
+
 /*.navbar-diplonautic>.navbar-nav>li:first-child>a {
     border-top: none;
 }*/
@@ -240,6 +269,31 @@ h4, .h4{
 .nav-mobile{
     width: 68.3333333%;
 }
+
+
+.fb-header, .insta-header{
+    display: inline-block;
+    vertical-align: middle;
+}
+.fb-header i{
+    font-size: 23px;
+    padding-right: 5px;
+}
+
+.fb-header i:hover{
+    color: #3b5998;
+}
+.insta-header i:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insta-header i{
+    font-size: 30px;
+}
 @media only screen and (min-width:768px) {
     .nav-mobile{
         width: 75%;
@@ -251,6 +305,8 @@ h4, .h4{
     .navbar-nav {
         margin: 0;
         background-color: transparent;
+        width: 100%;
+        padding-right: 15px;
     }
     .button-xs{
         height: 0px;
@@ -273,16 +329,17 @@ h4, .h4{
     }
     .navbar-diplonautic>.navbar-nav>li{
         text-align: center;
+        width: 17%;
     }
-/*    .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 106px;
-        padding-top: 33px;
-        padding-bottom: 32px;
-        border-bottom: 0px;
-        font-size: 14px;
-    }*/
- .navbar-diplonautic>.navbar-nav>li>h1{
-     margin:0;
+    #oportunities_header{
+        width: 19%;
+    }
+    .navbar-diplonautic>.navbar-nav>li:last-child{
+        width: 13%;
+    }
+    
+    .navbar-diplonautic>.navbar-nav>li>h1{
+        margin:0;
     }
     .navbar-diplonautic>.navbar-nav>li>h1 a{
         min-width: 112px;
@@ -299,13 +356,38 @@ h4, .h4{
         color: #fff;
     }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 112px;
-        padding-top: 33px;
-        padding-bottom: 32px;
+        /*min-width: 90px;*/
+        width: 100%;
         border-top: 0px;
         font-size: 12px;
         padding: 34px 10px 33px;
         height: 85px;
+    }
+
+    .social{
+        padding-top: 30px;
+        height: 85px;
+        border-top: 0px;
+    }
+    
+
+    .fb-header i{
+        font-size: 18px;
+    }
+
+    .insta-header i{
+        padding-top: 1px;
+        font-size: 23px;
+    }
+
+    .fb-header,
+    .insta-header{
+        width: auto;
+        padding: unset;
+    }
+    .fb-header{
+        border-right: none;
+        padding-right: 2px;
     }
     .division{
         width: 0.2%;
@@ -320,10 +402,7 @@ h4, .h4{
         right: 0px;
         top: 33px;
     }
-/*    .navbar-diplonautic>.navbar-nav>li.active:after{
-        border-right: 0px;
-    }*/
-    
+
     .navbar-diplonautic>.navbar-nav>li:last-child:after{
         border-right: none;
     }
@@ -337,12 +416,22 @@ h4, .h4{
         padding-top: 17px;
         padding-bottom: 17px;
     }
+    .navbar-diplonautic>.navbar-nav>li{
+        width: 17.61%;
+    }
+    #oportunities_header{
+        width: 17.61%;
+    }
+    .navbar-diplonautic>.navbar-nav>li:last-child{
+        width: 11.92%;
+    }
     .nav-logo> a > img {
         height: 45px;
+    }      
+    .fb-header{
+        padding-right: 5px;
     }
-    .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 130px;
-    }
+    
 }
 @media only screen and (min-width:1200px) {
     .nav-logo{
@@ -353,12 +442,14 @@ h4, .h4{
     .nav-logo> a > img {
         height: 56px;
     }
+    .navbar-nav {
+        padding-right: 35px;
+    }
     .navbar-diplonautic>.navbar-nav>li>a{
-        min-width: 158px;
+        /*min-width: 158px;*/
         font-size: 14px;
     }
     .navbar-diplonautic>.navbar-nav>li>h1 a{
-        min-width: 158px;
         font-size: 14px;
     }
 }
@@ -481,7 +572,7 @@ h4, .h4{
 }
 .languages #cat,
 .languages #en{
-    background-color: rgba(0,67,95,0.5);
+    background-color: rgba(0,67,95,0.9);
     margin-bottom: 6px;
 }
 
@@ -617,6 +708,7 @@ h4, .h4{
         background-color: rgba(0,67,95,0.8);
         padding: 30px 40px 40px;
     }
+    
     .main-description-pictos{
         padding: 57px 40px;
     }
