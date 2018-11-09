@@ -38,7 +38,7 @@ $(document).ready(function() {
             event.preventDefault();
             cookieName = "cookiesAgreement";
             cookieValue = "true";
-            document.cookie = cookieName +"=" + cookieValue;
+            document.cookie = cookieName +"=" + cookieValue+ ";domain=."+ document.location.host +";path=/";
             $(".modal").removeClass("show");
             $(".modal").modal("hide");
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +52,7 @@ $(document).ready(function() {
             event.preventDefault();
             cookieName = "cookiesAgreement";
             cookieValue = "false";
-            document.cookie = cookieName +"=" + cookieValue;
+            document.cookie = cookieName +"=" + cookieValue+ ";domain=."+ document.location.host +";path=/";
             $(".modal").removeClass("show");
             $(".modal").modal("hide");
         });
