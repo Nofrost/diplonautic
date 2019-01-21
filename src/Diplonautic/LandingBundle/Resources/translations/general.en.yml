@@ -107,10 +107,12 @@ languages:
     en: English
 
 cookies:
+    title: "BASIC INFORMATION ON COOKIES"
     message: 'We use our own and third party cookies, analyzing your browsing habits in our website, in order to guarantee the quality, safety and improvement of services offered through it. In cases where the user does not expressly state whether accept or not the installation of the cookies, but continue to use our website, that he has given his consent, expressly informing to block or delete the cookies installed on your computer by configuring the options. You can get more information on this by consulting our "Cookies policy".'
     btn:
         more: ' Cookies Policy'
-        accept: 'Accept'
+        accept: 'AGREE'
+        decline: 'NOT AGREE'
     
 visit: 'Visit website of' 
 footer:
