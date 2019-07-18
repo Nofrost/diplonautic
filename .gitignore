@@ -7,6 +7,9 @@ vendor/*
 */cache/*
 web/uploads/*
 web/bundles/*
+app/SymfonyRequirements.php
+app/check.php
+
 
 # Configuration files
 app/config/parameters.ini
