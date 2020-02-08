@@ -518,19 +518,14 @@ h4, .h4{
     float:left; background-color: #fff; overflow: hidden;
     padding: 30px 0px;
 }
-.main-marks{
-    padding: 0px;
+.main-marks {
+    flex: 1.75;
+    padding: 0 25px;
     background-color: white;
-}
-
-.main-marks img{
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
 }
 
 .main-marks-products img.one,
@@ -671,25 +666,27 @@ h4, .h4{
         margin-top: 0px;
     }
     .main-index{
-        position: relative;
-        display: table;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
     }
     .main-marks,
     .main-marks-products{
-        position: absolute;
-        height: 100%;
-        float:left; background-color: #fff; overflow: hidden;
+        background-color: #fff;
     }
-    .main-marks{
-        left: 50%;
-    }
+
     .main-marks-products{
         left: 83%;
         padding: 52px 10px;
+        position: absolute;
+        height: 100%;
+        float:left; 
+        overflow: hidden;
     }
 
-    .main-marks-products img,
-    .main-marks img{
+    .main-marks-products img {
         padding: 10px;
     }
     .mob-background{
@@ -699,13 +696,21 @@ h4, .h4{
         min-height: 0;
     }
    
-/*    .main-index .main-description{
-        min-height: 392px;
-    }*/
+    .main-index .main-description{
+        flex: 1;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .main-legal,
     .main-description,
     .main-description-pictos{
         background-color: rgba(0,67,95,0.8);
+    }
+
+    .main-legal,
+    .main-description-pictos{
         padding: 30px 40px 40px;
     }
     
@@ -772,6 +777,9 @@ h4, .h4{
         top: -40px;
         /* left: 383px; */
         right: 8px;
+    }
+    .main-marks {
+        flex: 1;
     }
     .main-marks-products img.three.max {
         width: 31%;
@@ -1092,6 +1100,32 @@ h4, .h4{
     min-width: 15% !important;
     max-width: 15% !important;
 }
+.marks__row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    flex-flow: row wrap;
+}
+
+.marks__item {
+    flex-basis: 20%;
+    padding: 5px 20px;
+} 
+
+.marks__row.six .marks__item{
+    flex-basis: 16.66%;
+} 
+
+.marks__item a {
+    display: flex;
+    justify-content: center;
+} 
+.marks__item img {
+    width: 100%;
+}  
 .w16{
     width: 16.667%;
     min-width: 16.667% !important;
@@ -1108,18 +1142,12 @@ h4, .h4{
 }
 
 @media only screen and (min-width: 768px){
-    .main-marks img {
-        padding: 5px;
-    }
     .table-marks{
         width: 90%;
         height: 100%
     }
 }
 @media only screen and (max-width: 768px){
-    .main-marks img {
-        padding: 5px;
-    }
     .table-marks{
         height: 300px;
         width: 100%;
@@ -1162,22 +1190,8 @@ h4, .h4{
     .table-marks{
         width: 80%;
     }
-    .main-marks img {
-        padding: 10px;
-    }
 }
 
-@media only screen and (min-width: 1700px){
-    .main-marks img {
-        padding: 20px;
-    }
-}
-
-@media only screen and (min-width: 2200px){
-    .main-marks img {
-        padding: 40px;
-    }
-}
 @media only screen and (min-width:768px) {
     .footer .container-fluid{
         margin-left: 40px;
@@ -1201,6 +1215,9 @@ h4, .h4{
 }
 
 @media only screen and (min-width:1200px) {
+    .marks__row {
+        padding: 5px 0;
+    }
     .footer .container-fluid{
         margin-left: 0px;
         margin-right: 0px;
@@ -1208,3 +1225,19 @@ h4, .h4{
         padding-right: 74px;
     }
 }
+@media (max-width: 767px) {
+    .main-description,
+    .main-marks {
+        margin-left: 8.33333333%;
+        margin-right: 8.33333333%;
+    } 
+    .main-marks {
+        padding-bottom: 15px;
+        padding-top: 15px; 
+    }
+    .marks__item,
+    .marks__row.six .marks__item {
+        padding: 20px;
+    }
+} 
+
