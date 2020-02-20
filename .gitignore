@@ -9,6 +9,7 @@ web/uploads/*
 web/bundles/*
 app/SymfonyRequirements.php
 app/check.php
+bin/
 
 
 # Configuration files
@@ -19,3 +20,4 @@ app/config/parameters.yml
 composer.phar
 /nbproject/private/
 /web/licenses/
+.DS_Store
