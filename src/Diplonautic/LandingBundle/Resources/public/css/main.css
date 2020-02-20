@@ -59,8 +59,10 @@ h4, .h4{
 }
 .p-r-5{padding-right: 5px}
 .p-l-5{padding-left: 5px}
+.p-l-10{padding-left: 10px}
 .p-l-20{padding-left: 20px}
-.p-t-30{padding-top:30px;}
+.p-l-30{padding-left: 30px;}
+.p-t-30{padding-top: 30px;}
 .m-t-10{margin-top: 10px;}
 .m-t-30{margin-top: 30px;}
 .m-r-40{margin-right: 40px;}
@@ -487,7 +489,7 @@ h4, .h4{
 }
 .main-description, .main-legal{
     background-color: rgba(0,67,95,0.8);
-    padding: 15px 30px;
+    padding: 30px 40px 40px;
 }
 
 .main-legal h4{
@@ -514,9 +516,8 @@ h4, .h4{
     padding-left: 20px !important;
 }
 .main-marks-products{
-    height: 100%;
-    float:left; background-color: #fff; overflow: hidden;
-    padding: 30px 0px;
+    background-color: #fff;
+    padding: 30px 45px;
 }
 .main-marks {
     flex: 1.75;
@@ -537,7 +538,7 @@ h4, .h4{
 } 
 .main-marks-products img.three.max{
     width: 70%;
-  margin-left: 46px;
+    margin-left: 46px;
 }
 @media only screen and (min-device-width: 480px) 
                    and (max-device-width: 690px) 
@@ -605,8 +606,8 @@ h4, .h4{
 }
 .main-marks-products img.three.big-image{
     height: 160px;
-  width: auto;
-  margin-left: 55px;
+    width: auto;
+    margin-left: 55px;
 }
 .main-marks-products img.three.hem{
     height: 175px;
@@ -615,10 +616,10 @@ h4, .h4{
 }
 @media only screen and (min-width:768px) {
     .main-marks-products img.three.hem{
-    height: 75px;
-    width: auto;
-    margin-left: 36px;
-}
+        height: 75px;
+        width: auto;
+        margin-left: 36px;
+    }
     .divisory .sub-div1 {
         width: 21px;
         height: 22px;
@@ -678,17 +679,11 @@ h4, .h4{
     }
 
     .main-marks-products{
-        left: 83%;
+        align-self: stretch;
+        flex: 0.45;
         padding: 52px 10px;
-        position: absolute;
-        height: 100%;
-        float:left; 
-        overflow: hidden;
     }
 
-    .main-marks-products img {
-        padding: 10px;
-    }
     .mob-background{
         background-color: transparent;
         padding: 0;
@@ -696,13 +691,22 @@ h4, .h4{
         min-height: 0;
     }
    
-    .main-index .main-description{
-        flex: 1;
+    .main-index .main-description,
+    .main-index .main-description-product {
         align-self: stretch;
         display: flex;
-        flex-direction: column;
+        flex: 1;
         justify-content: center;
     }
+
+    .main-index .main-description {
+        flex-direction: column;
+    }
+
+    .main-index .main-description-product {
+        flex-direction: row;
+    } 
+
     .main-legal,
     .main-description,
     .main-description-pictos{
@@ -737,7 +741,12 @@ h4, .h4{
         margin-left: 6%;
     }
     .product-description{
-        margin-left: 14.333333%;
+        margin-left: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-decription__text {
+        display: flex;
     }
     .languages a{
         display: block;
@@ -833,9 +842,6 @@ h4, .h4{
     .product-title{
         margin-left: 4%;
     }
-    .product-description{
-        margin-left: 12.333333%;
-    }
     .languages a{
         font-size: 16px;
     }
@@ -848,7 +854,6 @@ h4, .h4{
         margin-left: 0px;
     }
     .main-marks-products {
-      left: 66.6666666666%;
       padding: 52px 40px;
     }
     
@@ -867,7 +872,6 @@ h4, .h4{
         padding: 57px 74px 47px;
     }
     .main-marks-products {
-        left: 66.6666666666%;
         padding: 52px;
     }
 
@@ -1112,11 +1116,24 @@ h4, .h4{
 
 .marks__item {
     flex-basis: 20%;
-    padding: 5px 20px;
+    padding: 5px 10px;
 } 
 
 .marks__row.six .marks__item{
     flex-basis: 16.66%;
+} 
+.main-marks-products .marks__row {
+    justify-content: left;
+
+}
+.marks__row.three .marks__item { 
+    padding: 5px;
+} 
+.marks__row.three .marks__item { 
+    flex-basis: 33.33%;
+} 
+.marks__row.two .marks__item { 
+    flex-basis: 50%;
 } 
 
 .marks__item a {
@@ -1225,9 +1242,35 @@ h4, .h4{
         padding-right: 74px;
     }
 }
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .main-marks-products {
+        flex: 0.2;
+    } 
+    .main-marks-products .marks__row {
+        justify-content: center;
+    }
+    .marks__row.three .marks__item { 
+        flex-basis: 100%;
+        padding: 10px 5px;
+    } 
+    .marks__row.three .marks__item img { 
+        width: auto;
+        height: 35px;
+    }
+    .marks__row.three .marks__item img.stable { 
+        width: 100%;
+        height: auto;
+    }
+    .marks__row.two .marks__item { 
+        flex-basis: 100%;
+        padding: 10px 30px;
+    } 
+} 
 @media (max-width: 767px) {
     .main-description,
-    .main-marks {
+    .main-marks,
+    .main-description-product,
+    .main-marks-products {
         margin-left: 8.33333333%;
         margin-right: 8.33333333%;
     } 
