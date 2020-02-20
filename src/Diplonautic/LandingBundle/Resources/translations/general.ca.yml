@@ -115,7 +115,7 @@ cookies:
     btn:
         more: ' Política de Cookies'
         accept: 'ACCEPTAR'
-        decline: 'REBUTJAR'
+        decline: 'CONFIGURACIÓ DE GALETES'
 
 visit: 'Visitar pàgina web de'
 footer:

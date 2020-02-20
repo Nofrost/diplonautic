@@ -112,7 +112,7 @@ cookies:
     btn:
         more: ' Cookies Policy'
         accept: 'AGREE'
-        decline: 'NOT AGREE'
+        decline: 'COOKIES CONFIGURATION'
     
 visit: 'Visit website of' 
 footer:
