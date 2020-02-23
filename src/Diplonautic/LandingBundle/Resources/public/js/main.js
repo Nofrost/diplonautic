@@ -107,9 +107,9 @@ const acceptGCookies = () => {
 }
 
 const declineGCookies = () => {
-    document.cookie = `_ga=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
-    document.cookie = `_gat=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
-    document.cookie = `_gid=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
+    document.cookie = `_ga=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.diplonautic.com;`;
+    document.cookie = `_gat=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.diplonautic.com;`;
+    document.cookie = `_gid=; expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.diplonautic.com;`;
     window['ga-disable-UA-67738816-1'] = true;
 }
 
