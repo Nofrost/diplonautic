@@ -1,27 +1,29 @@
 {% trans_default_domain "general" %}
 <footer class="footer">
     {% include "DiplonauticLandingBundle:Default:modal.html.twig" %}
-    <div class="container-fluid m-t-10">
-        <div class="row">
-            <div class="hidden-xs">
-                <div class="pull-left mail m-r-40">moc.cituanolpid@sp</div>
-                <div class="pull-left hidden-lg m-r-40">+34 930 247 180</div>
-                <div class="pull-left visible-lg">
-                    <a href="https://www.google.es/maps/place/Diplonautic/@41.4180532,2.2226292,15z/data=!4m2!3m1!1s0x0:0x1aa5682ba848837b?ved=2ahUKEwjJpfGXmqzeAhWDTMAKHUvsCkAQ_BIwDnoECAUQCw" target="_blank" title="Carrer de Neus Català, 9, 08930 Sant Adrià de Besòs">
-                        <span class="visible-sm">Carrer de Neus Català, 9, 08930 Sant Adrià de Besòs</span><span class="hidden-sm">Carrer de Neus Català, 9, 08930 Sant Adrià de Besòs (BCN)</span>
+    <div class="m-t-10">
+        <div class="hidden-xs footer-sm">
+            <div class="flex-start">
+                <div class="pull-left mail">moc.cituanolpid@sp</div>
+                <span class="pull-left p-l-5 hidden-sm hidden-lg"><span class="p-r-5 p-l-5">|</span>+34 930 247 180</span>
+                <div class="pull-left p-l-5 visible-lg ">
+                    <a class="text-ellipsis" href="https://www.google.es/maps/place/Diplonautic/@41.4180532,2.2226292,15z/data=!4m2!3m1!1s0x0:0x1aa5682ba848837b?ved=2ahUKEwjJpfGXmqzeAhWDTMAKHUvsCkAQ_BIwDnoECAUQCw" target="_blank" title="Carrer de Neus Català, 9, 08930 Sant Adrià de Besòs">
+                        <span class="p-r-5 p-l-5">|</span> C. de Neus Català, 9, 08930 Sant Adrià de Besòs (BCN)
                     </a>
                 </div>
-                <div class="pull-right">
-                    <span class="inline-block"><a href="{{path("diplonautic_landing_privacy_policy")}}" class="p-r-5" title="{% trans from 'general' %}footer.privacy_policy{% endtrans %}">{% trans from 'general' %}footer.privacy_policy{% endtrans %}</a></span>
-                    | 
-                    <span class="inline-block"><a href="{{path("diplonautic_landing_data_protection")}}" class="p-r-5 p-l-5" title="{% trans from 'general' %}footer.data_protection{% endtrans %}">{% trans from 'general' %}footer.data_protection{% endtrans %}</a></span>
-                    |
-                    <span class="inline-block"><a href="{{path("diplonautic_landing_cookies")}}" class="p-l-5" title="{% trans from 'general' %}footer.cookies{% endtrans %}">{% trans from 'general' %}footer.cookies{% endtrans %}</a></span>
-                </div>
             </div>
-            <div class="visible-xs">
-                <a href="tel:+34930247180"><i class="fa fa-phone"></i> 930 247 180</a>
+            <div class="flex-end">
+                <span class="inline-block"><a href="{{path("diplonautic_landing_privacy_policy")}}" class="p-r-5" title="{% trans from 'general' %}footer.privacy_policy{% endtrans %}">{% trans from 'general' %}footer.privacy_policy{% endtrans %}</a></span>
+                | 
+                <span class="inline-block"><a href="{{path("diplonautic_landing_data_protection")}}" class="p-r-5 p-l-5" title="{% trans from 'general' %}footer.data_protection{% endtrans %}">{% trans from 'general' %}footer.data_protection{% endtrans %}</a></span>
+                |
+                <span class="inline-block"><a href="{{path("diplonautic_landing_cookies")}}" class="p-r-5 p-l-5" title="{% trans from 'general' %}footer.cookies{% endtrans %}">{% trans from 'general' %}footer.cookies{% endtrans %}</a></span>
+                |
+                <span class="inline-block"><div class="p-l-5 footer__cookies" title="{% trans from 'general' %}cookies.btn.conf{% endtrans %}">{% trans from 'general' %}cookies.btn.conf{% endtrans %}</div></span>
             </div>
+        </div>
+        <div class="visible-xs">
+            <a href="tel:+34930247180"><i class="fa fa-phone"></i> 930 247 180</a>
         </div>
     </div>
 </footer>
