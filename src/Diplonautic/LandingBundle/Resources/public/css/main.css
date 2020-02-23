@@ -19,6 +19,11 @@ body{
 .wrapper{
     min-height:100%;
 }
+
+.table>tbody>tr>td.align-middle {
+    vertical-align: middle;
+}
+
 a{
     color: #fff;
     display: block;
@@ -60,9 +65,11 @@ h4, .h4{
 .p-r-5{padding-right: 5px}
 .p-l-5{padding-left: 5px}
 .p-l-10{padding-left: 10px}
+.p-r-10{padding-right: 10px}
 .p-l-20{padding-left: 20px}
 .p-l-30{padding-left: 30px;}
 .p-t-30{padding-top: 30px;}
+.m-b-0{margin-bottom: 0;}
 .m-t-10{margin-top: 10px;}
 .m-t-30{margin-top: 30px;}
 .m-r-40{margin-right: 40px;}
@@ -506,6 +513,10 @@ h4, .h4{
 .main-description img{
     width: 100%;
 }
+.main-description-product img{
+    height: 50px;
+    width: auto;
+}
 .main-description ul{
     list-style: none;
     padding: 0px;
@@ -529,39 +540,12 @@ h4, .h4{
     align-self: stretch;
 }
 
-.main-marks-products img.one,
-.main-marks-products img.two,
-.main-marks-products img.three{
-    width: 84%;
-    margin-left: 7%;
-    padding: 30px 60px;
-} 
-.main-marks-products img.three.max{
-    width: 70%;
-    margin-left: 46px;
-}
-@media only screen and (min-device-width: 480px) 
-                   and (max-device-width: 690px) 
-                   and (orientation: landscape) {
-    .main-marks-products img.one,
-    .main-marks-products img.two,
-    .main-marks-products img.three{
-        width: 60%;
-        margin-left: 20%;
-        padding: 30px 60px;
-    } 
-
-}
 .no-padding{
     padding: 0px;
 }
 .main-description-product{
     background-color: rgba(0,67,95,0.8);
     padding: 30px;
-}
-.main-description-product img{
-    height: 50px;
-    width: auto;
 }
 .languages{
     padding-right: 0px;
@@ -604,22 +588,7 @@ h4, .h4{
     color: white;
     text-decoration: none;
 }
-.main-marks-products img.three.big-image{
-    height: 160px;
-    width: auto;
-    margin-left: 55px;
-}
-.main-marks-products img.three.hem{
-    height: 175px;
-    width: auto;
-    margin-left: 81px
-}
 @media only screen and (min-width:768px) {
-    .main-marks-products img.three.hem{
-        height: 75px;
-        width: auto;
-        margin-left: 36px;
-    }
     .divisory .sub-div1 {
         width: 21px;
         height: 22px;
@@ -650,14 +619,6 @@ h4, .h4{
         right: 73px;
         position: relative;
         margin-bottom: 22px;
-    }
-    .main-marks-products img.three.max,
-    .main-marks-products img.one,
-    .main-marks-products img.two,
-    .main-marks-products img.three{
-        width: 80%;
-        padding: 15px;
-        margin-left: 10%;
     }
 
     .main-description-product{
@@ -753,18 +714,6 @@ h4, .h4{
         padding: 8px;
         font-size: 14px;
     }
-    .main-marks-products img.three.big-image {
-        height: 80px;
-        margin-left: 23px;
-        /* margin-right: 15px; */
-        width: auto;
-      }
-    
-    .main-marks-products img.one.big-image{
-        width: 26%;
-      margin-left: 6%;
-      margin-top: 5%;
-    }
 }
 @media only screen and (min-width:992px) {
     .divisory .sub-div1 {
@@ -790,37 +739,12 @@ h4, .h4{
     .main-marks {
         flex: 1;
     }
-    .main-marks-products img.three.max {
-        width: 31%;
-        margin-left: 0px;
-        padding-top: 8px; 
-      }
-      .main-marks-products img.two.mastervolt {
-        margin-top: -9px; 
-      }
-    .main-marks-products img.one{
-        margin-left: 16px;
-        padding: 0px;
-        width: 50%;
-      }
     .special-picto{
         position: relative;
         left: 25px;
     }
     .frigo{
         margin-top: 20px;
-    }
-    .main-marks-products img.three.hem{
-        height: 108px;
-        width: auto;
-        margin-top: 3px;
-        margin-right: 18px;
-    }
-    .main-marks-products img.three.big-image{
-        height: 90px;
-        margin-left: 21px;
-        margin-right: 15px;
-        width: auto;
     }
     
     .pictos img{
@@ -848,11 +772,6 @@ h4, .h4{
     .pictos .divisory{
         width: 108%;
     }
-    .main-marks-products img.three{
-        width: 33%;
-        padding: 10px;
-        margin-left: 0px;
-    }
     .main-marks-products {
       padding: 52px 40px;
     }
@@ -860,12 +779,7 @@ h4, .h4{
     .frigo{
         margin-top: 20px;
     }
-    .main-marks-products img.two{
-          width: 50%;
-        padding: 0 20px 15px;
-        margin-left: 0px;
-    } 
-    }
+}
 @media only screen and (min-width:1200px) {
     .main-description-product,
     .main-description-pictos{
@@ -1034,12 +948,23 @@ h4, .h4{
     font-size: 30px;
     background-color: rgba(255,255,255,0.8);
 }
+
+.footer-sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+} 
 .footer a {
     color: rgb(0,67,95);
 }
 .footer-section{
     margin-left: 40px;
 }
+
+.footer__cookies {
+    cursor: pointer;
+} 
 
 /*-------------------------------Modal-------------------------------------*/
 .modal:before {
@@ -1134,6 +1059,7 @@ h4, .h4{
 } 
 .marks__row.two .marks__item { 
     flex-basis: 50%;
+    padding: 5px 25px;
 } 
 
 .marks__item a {
@@ -1192,6 +1118,7 @@ h4, .h4{
     }
 
     .btn-cookie a{
+        font-size: 10px;
         padding: 15px 0px;
         width: 100%;
         color: #fff !important;
@@ -1200,7 +1127,11 @@ h4, .h4{
     .btn-cookie a:hover{
         background-color: rgba(255,255,255,0.6);
     }
-
+    .modal-content__configuration {
+        height: 500px;
+        max-height: 500px;
+        overflow: auto;
+    }
 }
 
 @media only screen and (min-width: 1400px){
@@ -1280,7 +1211,128 @@ h4, .h4{
     }
     .marks__item,
     .marks__row.six .marks__item {
-        padding: 20px;
+        padding: 15px 5px;
     }
+    .modal-content__configuration tbody {
+        display: initial;
+        height: 385px;
+        overflow-y: scroll;
+    } 
 } 
 
+.modal-content__configuration table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-color: #fff;
+} 
+.table-bordered>tbody>tr>td {
+    border-color: #fff;
+} 
+.modal-content__configuration tbody {
+    display: block;
+    height: 385px;
+    overflow-y: scroll;
+} 
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid #FFFFFF;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #00435f;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #00435f;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.cookies__btn-save {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cookies__btn-save:hover,
+.cookies__btn-save:active,
+.cookies__btn-save:focus {
+    background: #fff;
+    color: #00435f;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
