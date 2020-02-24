@@ -1,5 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* 
     Created on : 24/05/2015, 20:28:35
     Author     : dan
@@ -19,11 +21,7 @@ body{
     min-height:100%;
 }
 
-.table>tbody>tr>td.align-middle {
-    vertical-align: middle;
-}
-
-a{
+a {
     color: #fff;
     display: block;
 }
@@ -1156,11 +1154,55 @@ h4, .h4{
     margin: 0 auto;
     padding: 10px 20px 20px;
 }
-.modal-content__configuration tbody {
-    display: block;
-    height: 385px;
-    overflow-y: scroll;
+
+.flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #fff;
 }
+
+.flex-cell {
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column
+}
+.flex-cell.one {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+}
+.flex-cell.two {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+}
+.flex-cell.medium {
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
+}
+.flex-cell:last-child {
+    border-right: none;
+}
+
+.modal-content__configuration .modal-body {
+    padding: 0;
+    height: 400px;
+    overflow-y: scroll;
+} 
 @media only screen and (min-width: 768px){
     .table-marks{
         width: 90%;
@@ -1203,11 +1245,6 @@ h4, .h4{
 
     .btn-cookie a:hover{
         background-color: rgba(255,255,255,0.6);
-    }
-    .modal-content__configuration {
-        height: 500px;
-        max-height: 500px;
-        overflow: auto;
     }
 }
 
@@ -1296,19 +1333,13 @@ h4, .h4{
     .marks__row.six .marks__item {
         padding: 15px 5px;
     }
-    .modal-content__configuration tbody {
-        display: unset;
-    } 
-} 
-
-.modal-content__configuration table {
-    border-spacing: 0;
-    border-collapse: separate;
-    border-color: #fff;
-} 
-.table-bordered>tbody>tr>td {
-    border-color: #fff;
-} 
+    .flex-cell .f10 {
+        font-size: 0.8em;
+    }
+    .cookies__btn-save {
+        line-height: 10px;
+    }
+}
 
 /* Styling Checkbox Starts */
 .checkbox-label {

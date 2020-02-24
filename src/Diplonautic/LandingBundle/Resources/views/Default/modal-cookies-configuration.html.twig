@@ -1,72 +1,81 @@
 {% trans_default_domain "general" %}
-<div class="modal-content__configuration form-group hidden">
-  <table class="table table-bordered m-b-0">
-    <thead>
-      <tr>
-        <th class="text-center" colspan="3">
-          {% trans %}cookies.configuration.title{% endtrans %}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="text-center col-xs-2 col-sm-3 align-middle">
-          <p>{% trans %}cookies.configuration.tech_cookies.title{% endtrans %}</p>
+<div class="modal-content__configuration hidden">
+  <div class="modal-header">
+    <h5 class="modal-title text-center">{% trans %}cookies.configuration.title{% endtrans %}</h5>
+  </div>
+  <div class="modal-body">
+    <div class="flex-row">
+      <div class="flex-cell one">
+        <div>
+          <p class="f10">{% trans %}cookies.configuration.tech_cookies.title{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.tech_cookies.subtitle{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-9 col-sm-8 align-middle">
-         <p>{% trans %}cookies.configuration.tech_cookies.description_one{% endtrans %}</p>
-         <p>{% trans %}cookies.configuration.tech_cookies.description_two{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-1 align-middle">
-          <label class="checkbox-label">
-              <input type="checkbox" name="techCookies" checked>
-              <span class="checkbox-custom rectangular"></span>
-          </label>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-center col-xs-2 col-sm-3 align-middle">
-          <p>{% trans %}cookies.configuration.anal_cookies.title{% endtrans %}</p>
+        </div>
+      </div>
+      <div class="flex-cell two">
+        <div>
+          <p>{% trans %}cookies.configuration.tech_cookies.description_one{% endtrans %}</p>
+          <p>{% trans %}cookies.configuration.tech_cookies.description_two{% endtrans %}</p>
+        </div>
+      </div>
+      <div class="flex-cell medium">
+        <label class="checkbox-label">
+          <input type="checkbox" name="techCookies" checked>
+          <span class="checkbox-custom rectangular"></span>
+        </label>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="flex-cell one">
+        <div>
+          <p class="f10">{% trans %}cookies.configuration.anal_cookies.title{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.anal_cookies.subtitle{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-9 col-sm-8 align-middle">
+        </div>
+      </div>
+      <div class="flex-cell two">
+        <div>
           <p>{% trans %}cookies.configuration.anal_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.anal_cookies.description_two{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.anal_cookies.description_three{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-1 align-middle">
-          <label class="checkbox-label">
-              <input type="checkbox" name="analCookies" {% if app.request.cookies.get('analyticsCookiesAgreement')== 'true' %}checked{% endif %}>
-              <span class="checkbox-custom rectangular"></span>
-          </label>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-center col-xs-2 col-sm-3 align-middle">
-          <p>{% trans %}cookies.configuration.func_cookies.title{% endtrans %}</p>
+        </div>
+      </div>
+      <div class="flex-cell medium">
+        <label class="checkbox-label">
+          <input type="checkbox" name="analCookies" {% if app.request.cookies.get('analyticsCookiesAgreement')== 'true' %}checked{% endif %}>
+          <span class="checkbox-custom rectangular"></span>
+        </label>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="flex-cell one">
+        <div>
+          <p class="f10">{% trans %}cookies.configuration.func_cookies.title{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.func_cookies.subtitle{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-9 col-sm-8 align-middle">
+        </div>
+      </div>
+      <div class="flex-cell two">
+        <div>
           <p>{% trans %}cookies.configuration.func_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.func_cookies.description_two{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.func_cookies.description_three{% endtrans %}</p>
-        </td>
-        <td class="text-center col-xs-1 align-middle">
-          <label class="checkbox-label">
-              <input type="checkbox" name="funcCookies" {% if app.request.cookies.get('funcCookiesAgreement')== 'true' %}checked{% endif %}>
-              <span class="checkbox-custom rectangular"></span>
-          </label>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        </div>
+      </div>
+      <div class="flex-cell medium">
+        <label class="checkbox-label">
+          <input type="checkbox" name="funcCookies" {% if app.request.cookies.get('funcCookiesAgreement')== 'true' %}checked{% endif %}>
+          <span class="checkbox-custom rectangular"></span>
+        </label>
+      </div>
+    </div>
+  </div>
   <div class="modal-footer">
     <div class="row">
-      <div class="col-xs-5 col-sm-6 text-center btn-cookie">
-        <a href="#" class="cookies__btn-back">{% trans %}cookies.btn.back{% endtrans %}</a>
+      <div class="col-xs-4 col-sm-6 text-center btn-cookie">
+        <a href="#" class="cookies__btn-back">
+          <span class="hidden-xs">{% trans %}cookies.btn.back{% endtrans %}</span>
+          <i class="text-center fas fa-long-arrow-alt-left visible-xs"></i>
+        </a>
       </div>
-      <div class="col-xs-7 col-sm-6 text-center btn-cookie">
+      <div class="col-xs-8 col-sm-6 text-center btn-cookie">
         <a href="#" class="cookies__btn-save">{% trans %}cookies.configuration.save{% endtrans %}</a>
       </div>
     </div>
