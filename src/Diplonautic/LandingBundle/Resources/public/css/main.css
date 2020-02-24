@@ -1156,7 +1156,11 @@ h4, .h4{
     margin: 0 auto;
     padding: 10px 20px 20px;
 }
-
+.modal-content__configuration tbody {
+    display: block;
+    height: 385px;
+    overflow-y: scroll;
+}
 @media only screen and (min-width: 768px){
     .table-marks{
         width: 90%;
@@ -1293,9 +1297,7 @@ h4, .h4{
         padding: 15px 5px;
     }
     .modal-content__configuration tbody {
-        display: initial;
-        height: 385px;
-        overflow-y: scroll;
+        display: unset;
     } 
 } 
 
@@ -1307,11 +1309,7 @@ h4, .h4{
 .table-bordered>tbody>tr>td {
     border-color: #fff;
 } 
-.modal-content__configuration tbody {
-    display: block;
-    height: 385px;
-    overflow-y: scroll;
-} 
+
 /* Styling Checkbox Starts */
 .checkbox-label {
     display: block;
