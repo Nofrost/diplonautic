@@ -27,6 +27,10 @@ $(document).ready(function() {
         }
         
     });
+
+    if ($(".modal.show").length) {
+        $('body').css('position','fixed');
+    }
     
   
     $(".item.cap-bot").fitImages();
@@ -40,11 +44,10 @@ $(document).ready(function() {
     if($(".btn-cookie").length > 0){
         $( ".cookie-accept" ).click(function(event) {
             event.preventDefault();
-            acceptTCookies();
-            declineGCookies();
-            declineFCookies();
+            checkCookies();
             $(".modal").removeClass("show");
             $(".modal").modal("hide");
+            $('body').css('position','unset');
         });
         $( ".cookie-conf" ).click(function(event) {
             event.preventDefault();
@@ -56,46 +59,16 @@ $(document).ready(function() {
             $('.modal-content__configuration').addClass('hidden');
         });
         $('.cookies__btn-save').on('click', () => {
-            if ($('[name=techCookies]').is(":checked")) {
-                acceptTCookies();
-            } else {
-                declineTCookies();
-            }
-
-            if ($('[name=analCookies]').is(":checked")) {
-                acceptGCookies();
-            } else {
-                declineGCookies();
-                cookieName = "analyticsCookiesAgreement";
-                cookieValue = "false";
-                document.cookie = cookieName +"=" + cookieValue;
-            }
-
-            if ($('[name=funcCookies]').is(":checked")) {
-                acceptFCookies();
-            } else {
-                declineFCookies();
-            }
+            checkCookies();
             $(".modal").removeClass("show");
             $(".modal").modal("hide");
+            $('body').css('position','unset');
         });
     }
 });
 
-const acceptTCookies = () => {
-    cookieName = "cookiesAgreement";
-    cookieValue = "true";
-    document.cookie = cookieName +"=" + cookieValue;
-}
-
-const declineTCookies = () => {
-    cookieName = "cookiesAgreement";
-    cookieValue = "false";
-    document.cookie = cookieName +"=" + cookieValue;
-} 
-
 const acceptGCookies = () => {
-    cookieName = "analyticsCookiesAgreement";
+    cookieName = "analytics_agreement";
     cookieValue = "true";
     document.cookie = cookieName +"=" + cookieValue;
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -114,12 +87,28 @@ const declineGCookies = () => {
 }
 
 
-const acceptFCookies = () => {
-    cookieName = "funcCookiesAgreement";
-    cookieValue = "true";
-    document.cookie = cookieName +"=" + cookieValue;
+const acceptCookies = (name) => {
+    if (name === "analytics_agreement") {
+        acceptGCookies();
+    } else {
+        document.cookie = name +"=" + true;
+    }
+}
+const declineCookies = (name) => {
+    if (name === "analytics_agreement") {
+        declineGCookies();
+    } else {
+        document.cookie = `${name}=; expires = Thu, 01 Jan 1970 00:00:00 GMT`;
+    }
 }
 
-const declineFCookies = () => {
-    document.cookie = `funcCookiesAgreement=; expires = Thu, 01 Jan 1970 00:00:00 GMT`;
+const checkCookies = () => {
+    $(':checkbox').each(function() {
+        const name = $(this).attr('name');
+        if($(this).is(":checked")) {
+            acceptCookies(name);
+        } else {
+            declineCookies(name);
+        }
+    });
 }
