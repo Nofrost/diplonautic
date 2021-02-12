@@ -110,7 +110,7 @@ languages:
     en: Anglès
     
 cookies:
-    title: "INFORMACIÓ BÀSICA SOBRE COOKIES"
+    title: "INFORMACIÓ BÀSICA SOBRE COOKIES O GALETES"
     message: "Una cookie o galeta informàtica és un petit arxiu d'informació que es guarda en el seu navegador cada vegada que visita la nostra pàgina web.<br/><br/>La utilitat de les cookies és guardar l'historial de la seva activitat a la nostra pàgina web, de manera que, quan la visiti novament, aquesta pugui identificar-li i configurar el contingut de la mateixa sobre la base dels seus hàbits de navegació, identitat i preferències.<br/><br/>Les cookies poden ser acceptades, rebutjades, bloquejades i esborrades, segons desitgi. Això podrà fer-ho mitjançant les opcions disponibles en la present finestra o a través de la configuració del seu navegador, segons el cas.<br/><br/>En cas que rebutgi les cookies no podrem assegurar-li el correcte funcionament de les diferents funcionalitats de la nostra pàgina web.<br/><br/>Més informació a l'apartat 'POLÍTICA DE COOKIES' de la nostra pàgina web."
     btn:
         more: 'Política de Cookies'
@@ -122,20 +122,42 @@ cookies:
         tech_cookies:
             title: 'GALETES TÈCNIQUES NECESSÀRIES'
             subtitle: 'Perquè la nostra pàgina web pugui funcionar. Activades per defecte.'
-            description_one: 'Les galetes tècniques són estrictament necessàries perquè la nostra pàgina web funcioni i hi puguis navegar. Aquest tipus de galetes són les que, per exemple, ens permeten identificar-te, donar-te accés a determinades parts restringides de la pàgina si fos necessari, o recordar diferents opcions o serveis que ja has seleccionat, com les teves preferències de privacitat. Per això, estan activades per defecte, i no és necessària la teva autorització al respecte.'
+            description_one: 'Les galetes tècniques són estrictament necessàries perquè la nostra pàgina web funcioni i hi puguis navegar. Aquest tipus de galetes són les que, per exemple, ens permeten identificar-te, donar-te accés a determinades parts restringides de la pàgina si fos necessari, o recordar diferents opcions o serveis que ja has seleccionat, com les teves preferències de privacitat. Per això,'
+            description_one_one: ' estan activades per defecte, i no és necessària la teva autorització al respecte.'
             description_two: ' A través de la configuració del teu navegador, pots bloquejar o alertar de la presència d’aquest tipus de galetes, si bé aquest bloqueig afectarà el correcte funcionament de les diferents funcionalitats de la nostra pàgina web.'
         anal_cookies:
             title: 'GALETES D’ANÀLISI'
             subtitle: 'Per a la millora continua de la nostra pàgina web. Pots activar-les o desactivar-les.'
             description_one: 'Les galetes d’anàlisi ens permeten estudiar la navegació dels usuaris de la nostra pàgina web en general (per exemple, quines seccions de la pàgina són les més visitades, quins serveis s’utilitzen més i si funcionen correctament, etc.).'
-            description_two: 'A partir de la informació estadística sobre la navegació a la nostra pàgina web, podem millorar tant el propi funcionament de la pàgina com els diferents serveis que ofereix. Per tant, aquestes galetes no tenen una finalitat publicitària, sinó que únicament serveixen perquè la nostra pàgina web funcioni millor i s’adapti als nostres usuaris en general. Activant-les contribuiràs a aquesta millora continua.'
-            description_three: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent, ja que estan desactivades per defecte.'
+            description_two: 'A partir de la informació estadística sobre la navegació a la nostra pàgina web, podem millorar tant el propi funcionament de la pàgina com els diferents serveis que ofereix. Per tant, aquestes galetes '
+            description_two_one: 'no tenen una finalitat publicitària'
+            description_two_two: ', sinó que únicament serveixen perquè la nostra pàgina web funcioni millor i s’adapti als nostres usuaris en general. Activant-les contribuiràs a aquesta millora continua.'
+            description_three: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent'
+            description_three_one: ', ja que estan desactivades per defecte.'
         func_cookies:
             title: 'GALETES DE FUNCIONALITAT I PERSONALITZACIÓ'
             subtitle: 'Per millorar la funcionalitat i personalització de la nostra pàgina web d’acord amb les teves preferències. Pots activar-les o desactivar-les.'
             description_one: 'Les galetes de funcionalitat ens permeten recordar les teves preferències, per personalitzar a la teva mida determinades característiques i opcions generals de la nostra pàgina web, cada vegada que hi accedeixis (per exemple, l’idioma en què se’t presenta la informació, les seccions marcades com a favorites, el teu tipus de navegador, etc.).'
-            description_two: 'Per tant, aquest tipus de galetes no tenen una finalitat publicitària, sinó que activant-les milloraràs la funcionalitat de la pàgina web (per exemple, adaptant-se al teu tipus de navegador) i la seva personalització d’acord amb les teves preferències (per exemple, presentant la informació en l’idioma que hagis triat en anteriors ocasions), fet que contribuirà a la facilitat, usabilitat i comoditat de la nostra pàgina durant la teva navegació.'
-            description_three: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent, ja que estan desactivades per defecte.'
+            description_two: 'Per tant, aquest tipus de galetes '
+            description_two_one: 'no tenen una finalitat publicitària'
+            description_two_two: ', sinó que activant-les milloraràs la funcionalitat de la pàgina web (per exemple, adaptant-se al teu tipus de navegador) i la seva personalització d’acord amb les teves preferències (per exemple, presentant la informació en l’idioma que hagis triat en anteriors ocasions), fet que contribuirà a la facilitat, usabilitat i comoditat de la nostra pàgina durant la teva navegació.'
+            description_three: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent'
+            description_three_one: ', ja que estan desactivades per defecte.'
+        publ_cookies:
+            title: 'GALETES DE PUBLICITAT'
+            subtitle: 'Per millorar la gestió de la publicitat mostrada a la nostra pàgina web, a fi que  sigui més útil i diversa, i menys repetitiva. Pots activar-les o desactivar-les.'
+            description_one: 'Les galetes de publicitat ens permeten la gestió dels espais publicitaris inclosos a la nostra pàgina web d’acord amb criteris com el contingut mostrat o la freqüència en què es mostren els anuncis.'
+            description_two: 'Així per exemple, si se t’ha mostrat vàries vegades un mateix anunci a la nostra pàgina web, i no has mostrat un interès personal fent-hi clic, aquest no tornarà a aparèixer. En resum, activant aquest tipus de galetes, la publicitat mostrada a la nostra pàgina web serà més útil i diversa, i menys repetitiva.'
+            description_three: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent'
+            description_three_one: ', ja que estan desactivades per defecte.'
+        compl_cookies:
+            title: 'GALETES DE PUBLICITAT COMPORTAMENTAL'
+            subtitle: 'Per mostrar-te publicitat ajustada a les teves cerques, gustos i interessos personals. Pots activar-les o desactivar-les.'
+            description_one: 'Les galetes de publicitat comportamental ens permeten obtenir informació basada en l’observació dels teus hàbits i comportaments de navegació per la web, a fi de poder mostrar-te continguts publicitaris que s’ajustin millor als teus gustos i interessos personals.'
+            description_two: 'Perquè ho entenguis de forma molt senzilla, et posarem un exemple fictici: si les teves últimes cerques a la web estiguessin relacionades amb la literatura de suspens, et mostraríem publicitat sobre llibres de suspens.'
+            description_three: 'Por tant, activant aquest tipus de galetes, la publicitat que et mostrem a la nostra pàgina web no serà genèrica, sinó que estarà orientada a les teves cerques, gustos i interessos, i per tant, ajustades exclusivament a tu.'
+            description_four: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent'
+            description_four_one: ', ja que estan desactivades per defecte.'
         save: 'DESAR LES MEVES PREFERÈNCIES'
 visit: 'Visitar pàgina web de'
 footer:
