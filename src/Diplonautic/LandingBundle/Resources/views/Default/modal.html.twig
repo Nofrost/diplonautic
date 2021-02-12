@@ -1,5 +1,5 @@
 {% trans_default_domain "general" %}
-<div class={% if app.request.cookies.get('cookiesAgreement')!= 'true' %}"modal show"{% else %}"modal"{% endif %} tabindex="-1" role="dialog">
+<div class={% if app.request.cookies.get('cookies_agreement')!= 'true' %}"modal show"{% else %}"modal"{% endif %} tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-content__info">
@@ -30,10 +30,10 @@
         <div class="modal-footer">
           <div class="row">
             <div class="col-xs-5 col-sm-6 text-center btn-cookie">
-              <a href="#" class="cookie-accept">{% trans %}cookies.btn.accept{% endtrans %}</a>
+              <a href="#" class="cookie-accept" title='{% trans %}cookies.btn.accept{% endtrans %}'>{% trans %}cookies.btn.accept{% endtrans %}</a>
             </div>
             <div class="col-xs-7 col-sm-6 text-center btn-cookie">
-              <a href="#" class="cookie-conf">{% trans %}cookies.configuration.title{% endtrans %}</a>
+              <a href="#" class="cookie-conf" title='{% trans %}cookies.configuration.title{% endtrans %}'>{% trans %}cookies.configuration.title{% endtrans %}</a>
             </div>
           </div>
         </div>
