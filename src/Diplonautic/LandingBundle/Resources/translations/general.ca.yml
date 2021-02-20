@@ -155,10 +155,11 @@ cookies:
             subtitle: 'Per mostrar-te publicitat ajustada a les teves cerques, gustos i interessos personals. Pots activar-les o desactivar-les.'
             description_one: 'Les galetes de publicitat comportamental ens permeten obtenir informació basada en l’observació dels teus hàbits i comportaments de navegació per la web, a fi de poder mostrar-te continguts publicitaris que s’ajustin millor als teus gustos i interessos personals.'
             description_two: 'Perquè ho entenguis de forma molt senzilla, et posarem un exemple fictici: si les teves últimes cerques a la web estiguessin relacionades amb la literatura de suspens, et mostraríem publicitat sobre llibres de suspens.'
-            description_three: 'Por tant, activant aquest tipus de galetes, la publicitat que et mostrem a la nostra pàgina web no serà genèrica, sinó que estarà orientada a les teves cerques, gustos i interessos, i per tant, ajustades exclusivament a tu.'
+            description_three: 'Per tant, activant aquest tipus de galetes, la publicitat que et mostrem a la nostra pàgina web no serà genèrica, sinó que estarà orientada a les teves cerques, gustos i interessos, i per tant, ajustades exclusivament a tu.'
             description_four: 'Pots activar o desactivar aquestes galetes marcant la casella corresponent'
             description_four_one: ', ja que estan desactivades per defecte.'
         save: 'DESAR LES MEVES PREFERÈNCIES'
+        click_text: '(Fes clic per desplegar més informació)'
 visit: 'Visitar pàgina web de'
 footer:
     privacy_policy: "Política de privacitat"
