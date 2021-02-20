@@ -1165,11 +1165,37 @@ h4, .h4{
     border-bottom: 1px solid #fff;
 }
 
+.flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+}
+
+.flex-column.checks {
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
+}
+
+.flex-column.checks .flex-cell,
+.flex-column.info .flex-cell {
+    border-bottom: none;
+} 
+
 .flex-cell {
     -ms-flex-item-align: stretch;
         align-self: stretch;
     text-align: center;
     border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     padding: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1177,6 +1203,9 @@ h4, .h4{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1185,19 +1214,29 @@ h4, .h4{
         -ms-flex-direction: column;
             flex-direction: column
 }
-.flex-cell.one {
-    -ms-flex-preferred-size: 42%;
-        flex-basis: 42%;
-}
-.flex-cell.two {
-    -ms-flex-preferred-size: 42%;
-        flex-basis: 42%;
-}
-.flex-cell.medium {
-    -ms-flex-preferred-size: 16%;
-        flex-basis: 16%;
-}
+
 .flex-cell:last-child {
+    border-bottom: none;
+}
+
+.flex-cell.clickable {
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.flex-cell.clickable.active {
+    border-right: none;
+}
+
+.flex-cell.active,
+.flex-cell.clickable:hover {
+    background-color: #023950;
+}
+
+.flex-column.checks .flex-cell {
     border-right: none;
 }
 
@@ -1205,7 +1244,15 @@ h4, .h4{
     padding: 0;
     height: 400px;
     overflow-y: scroll;
-} 
+}
+
+.modal-body--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+}
+
 @media only screen and (min-width: 768px){
     .table-marks{
         width: 90%;
