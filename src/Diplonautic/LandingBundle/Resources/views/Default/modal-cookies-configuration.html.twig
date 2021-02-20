@@ -4,109 +4,92 @@
     <h5 class="modal-title text-center">{% trans %}cookies.configuration.title{% endtrans %}</h5>
   </div>
   <div class="modal-body">
-    <div class="flex-row">
-      <div class="flex-cell one">
-        <div>
-          <p class="f10">{% trans %}cookies.configuration.tech_cookies.title{% endtrans %}</p>
-          <p>{% trans %}cookies.configuration.tech_cookies.subtitle{% endtrans %}</p>
+    <div class="modal-body--flex">
+      <div class="flex-column">
+        <div class="flex-cell clickable active" id="cookies-agreement">
+          <p class="f10"><b>{% trans %}cookies.configuration.tech_cookies.title{% endtrans %}</b></p>
+          <p><i>{% trans %}cookies.configuration.tech_cookies.subtitle{% endtrans %}</i></p>
+          <p><i>{% trans %}cookies.configuration.click_text{% endtrans %}</i></p>
+        </div>
+        <div class="flex-cell clickable" id="analytics-agreement">
+          <p class="f10"><b>{% trans %}cookies.configuration.anal_cookies.title{% endtrans %}</b></p>
+          <p><i>{% trans %}cookies.configuration.anal_cookies.subtitle{% endtrans %}</i></p>
+          <p><i>{% trans %}cookies.configuration.click_text{% endtrans %}</i></p>
+        </div>
+        <div class="flex-cell clickable" id="functional-cookies">
+          <p class="f10"><b>{% trans %}cookies.configuration.func_cookies.title{% endtrans %}</b></p>
+          <p><i>{% trans %}cookies.configuration.func_cookies.subtitle{% endtrans %}</i></p>
+          <p><i>{% trans %}cookies.configuration.click_text{% endtrans %}</i></p>
+        </div>
+        <div class="flex-cell clickable" id="publicity-cookies">
+          <p class="f10"><b>{% trans %}cookies.configuration.publ_cookies.title{% endtrans %}</b></p>
+          <p><i>{% trans %}cookies.configuration.publ_cookies.subtitle{% endtrans %}</i></p>
+          <p><i>{% trans %}cookies.configuration.click_text{% endtrans %}</i></p>
+        </div>
+        <div class="flex-cell clickable" id="compartamental-cookies">
+          <p class="f10"><b>{% trans %}cookies.configuration.compl_cookies.title{% endtrans %}</b></p>
+          <p><i>{% trans %}cookies.configuration.compl_cookies.subtitle{% endtrans %}</i></p>
+          <p><i>{% trans %}cookies.configuration.click_text{% endtrans %}</i></p>
         </div>
       </div>
-      <div class="flex-cell two">
-        <div>
+      <div class="flex-column info">
+        <div class="flex-cell cookies-agreement active">
           <p>{% trans %}cookies.configuration.tech_cookies.description_one{% endtrans %}<b>{% trans %}cookies.configuration.tech_cookies.description_one_one{% endtrans %}</b></p>
           <p>{% trans %}cookies.configuration.tech_cookies.description_two{% endtrans %}</p>
         </div>
-      </div>
-      <div class="flex-cell medium">
-        <label class="checkbox-label">
-          <input type="checkbox" name="cookies_agreement" checked>
-          <span class="checkbox-custom rectangular"></span>
-        </label>
-      </div>
-    </div>
-    <div class="flex-row">
-      <div class="flex-cell one">
-        <div>
-          <p class="f10">{% trans %}cookies.configuration.anal_cookies.title{% endtrans %}</p>
-          <p>{% trans %}cookies.configuration.anal_cookies.subtitle{% endtrans %}</p>
-        </div>
-      </div>
-      <div class="flex-cell two">
-        <div>
+        <div class="flex-cell hide analytics-agreement">
           <p>{% trans %}cookies.configuration.anal_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.anal_cookies.description_two{% endtrans %}<b>{% trans %}cookies.configuration.anal_cookies.description_two_one{% endtrans %}</b>{% trans %}cookies.configuration.anal_cookies.description_two_two{% endtrans %}</p>
           <p><b>{% trans %}cookies.configuration.anal_cookies.description_three{% endtrans %}</b>{% trans %}cookies.configuration.anal_cookies.description_three_one{% endtrans %}</p>
         </div>
-      </div>
-      <div class="flex-cell medium">
-        <label class="checkbox-label">
-          <input type="checkbox" name="analytics_agreement" {% if app.request.cookies.get('analytics_agreement')== 'true' %}checked{% endif %}>
-          <span class="checkbox-custom rectangular"></span>
-        </label>
-      </div>
-    </div>
-    <div class="flex-row">
-      <div class="flex-cell one">
-        <div>
-          <p class="f10">{% trans %}cookies.configuration.func_cookies.title{% endtrans %}</p>
-          <p>{% trans %}cookies.configuration.func_cookies.subtitle{% endtrans %}</p>
-        </div>
-      </div>
-      <div class="flex-cell two">
-        <div>
+        <div class="flex-cell hide functional-cookies">
           <p>{% trans %}cookies.configuration.func_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.func_cookies.description_two{% endtrans %}<b>{% trans %}cookies.configuration.func_cookies.description_two_one{% endtrans %}</b>{% trans %}cookies.configuration.func_cookies.description_two_two{% endtrans %}</p>
           <p><b>{% trans %}cookies.configuration.func_cookies.description_three{% endtrans %}</b>{% trans %}cookies.configuration.func_cookies.description_three_one{% endtrans %}</p>
         </div>
-      </div>
-      <div class="flex-cell medium">
-        <label class="checkbox-label">
-          <input type="checkbox" name="functional_cookies" {% if app.request.cookies.get('functional_cookies')== 'true' %}checked{% endif %}>
-          <span class="checkbox-custom rectangular"></span>
-        </label>
-      </div>
-    </div>
-    <div class="flex-row">
-      <div class="flex-cell one">
-        <div>
-          <p class="f10">{% trans %}cookies.configuration.publ_cookies.title{% endtrans %}</p>
-          <p>{% trans %}cookies.configuration.publ_cookies.subtitle{% endtrans %}</p>
-        </div>
-      </div>
-      <div class="flex-cell two">
-        <div>
+        <div class="flex-cell hide publicity-cookies">
           <p>{% trans %}cookies.configuration.publ_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.publ_cookies.description_two{% endtrans %}</p>
           <p><b>{% trans %}cookies.configuration.publ_cookies.description_three{% endtrans %}</b>{% trans %}cookies.configuration.publ_cookies.description_three_one{% endtrans %}</p>
         </div>
-      </div>
-      <div class="flex-cell medium">
-        <label class="checkbox-label">
-          <input type="checkbox" name="publicity_cookies" {% if app.request.cookies.get('publicity_cookies')== 'true' %}checked{% endif %}>
-          <span class="checkbox-custom rectangular"></span>
-        </label>
-      </div>
-    </div>
-    <div class="flex-row">
-      <div class="flex-cell one">
-        <div>
-          <p class="f10">{% trans %}cookies.configuration.compl_cookies.title{% endtrans %}</p>
-          <p>{% trans %}cookies.configuration.compl_cookies.subtitle{% endtrans %}</p>
-        </div>
-      </div>
-      <div class="flex-cell two">
-        <div>
+        <div class="flex-cell hide compartamental-cookies">
           <p>{% trans %}cookies.configuration.compl_cookies.description_one{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.compl_cookies.description_two{% endtrans %}</p>
           <p>{% trans %}cookies.configuration.compl_cookies.description_three{% endtrans %}</p>
           <p><b>{% trans %}cookies.configuration.compl_cookies.description_four{% endtrans %}</b>{% trans %}cookies.configuration.compl_cookies.description_four_one{% endtrans %}</p>
         </div>
       </div>
-      <div class="flex-cell medium">
-        <label class="checkbox-label">
-          <input type="checkbox" name="compartamental_cookies" {% if app.request.cookies.get('compartamental_cookies')== 'true' %}checked{% endif %}>
-          <span class="checkbox-custom rectangular"></span>
-        </label>
+      <div class="flex-column checks">
+        <div class="flex-cell medium cookies-agreement active">
+          <label class="checkbox-label">
+            <input type="checkbox" name="cookies_agreement" checked>
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
+        <div class="flex-cell medium hide analytics-agreement">
+          <label class="checkbox-label">
+            <input type="checkbox" name="analytics_agreement" {% if app.request.cookies.get('analytics_agreement')== 'true' %}checked{% endif %}>
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
+        <div class="flex-cell medium hide functional-cookies">
+          <label class="checkbox-label">
+            <input type="checkbox" name="functional_cookies" {% if app.request.cookies.get('functional_cookies')== 'true' %}checked{% endif %}>
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
+        <div class="flex-cell medium hide publicity-cookies">
+          <label class="checkbox-label">
+            <input type="checkbox" name="publicity_cookies" {% if app.request.cookies.get('publicity_cookies')== 'true' %}checked{% endif %}>
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
+        <div class="flex-cell medium hide compartamental-cookies">
+          <label class="checkbox-label">
+            <input type="checkbox" name="compartamental_cookies" {% if app.request.cookies.get('compartamental_cookies')== 'true' %}checked{% endif %}>
+            <span class="checkbox-custom rectangular"></span>
+          </label>
+        </div>
       </div>
     </div>
   </div>
