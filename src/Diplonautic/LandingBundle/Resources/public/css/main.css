@@ -1242,7 +1242,7 @@ h4, .h4{
 
 .modal-content__configuration .modal-body {
     padding: 0;
-    height: 400px;
+    height: 60vh;
     overflow-y: scroll;
 }
 
@@ -1257,6 +1257,9 @@ h4, .h4{
     .table-marks{
         width: 90%;
         height: 100%
+    }
+    .modal-content__configuration .modal-body {
+        height: 400px;
     }
 }
 @media only screen and (max-width: 768px){
