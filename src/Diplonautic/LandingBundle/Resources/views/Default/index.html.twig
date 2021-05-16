@@ -1,6 +1,6 @@
 {% trans_default_domain "general" %}
 {% extends 'DiplonauticLandingBundle::layout.html.twig' %}
-{% block meta_description %}{%trans%}meta.index{%endtrans%}{% endblock %}
+{% block meta_description %}{% trans %}meta.index{% endtrans %}{% endblock %}
 {% block meta_title %}Diplonautic{% endblock %}
 
 {% block title %}Diplonautic{% endblock %}
@@ -13,15 +13,27 @@
                 <div class="row">
                     <div class="main-index no-padding col-sm-11">
                         <div class="main-description">
-                            <h1 class="h3"><b>{%trans%}index.title{%endtrans%}</b></h1>
-                            <div class="divisory hidden-xs"><div class="sub-div1"></div><div class="sub-div2"></div></div>
-                            <p>{%trans%}index.we_improve{%endtrans%}</p>
-                            <ul>
-                                <li>{%trans%}index.list.installation{%endtrans%}</li>
-                                <li>{%trans%}index.list.repair{%endtrans%}</li>
-                                <li>{%trans%}index.list.maintenance{%endtrans%}</li>
-                            </ul>
-                            <p>{%trans%}index.electrical{%endtrans%}</p>
+                            <div class="fixed-container">
+                                <h1 class="h3"><b>{% trans %}index.title{% endtrans %}</b></h1>
+                                <div class="divisory hidden-xs"><div class="sub-div1"></div><div class="sub-div2"></div></div>
+                                <p>{% trans %}index.we_improve{% endtrans %}</p>
+                                <ul>
+                                    <li>{% trans %}index.list.installation{% endtrans %}</li>
+                                    <li>{% trans %}index.list.repair{% endtrans %}</li>
+                                    <li>{% trans %}index.list.maintenance{% endtrans %}</li>
+                                </ul>
+                                <p>{% trans %}index.electrical{% endtrans %}</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-9">
+                                        <p>{% trans %}index.electro{% endtrans %}</p>
+                                    </div>
+                                    <div class="col-xs-4 col-xs-offset-4 col-lg-3 col-lg-offset-0">
+                                        <a href="http://electromotor.blogspot.com/2019/" title="{%trans%}visit{%endtrans%} ElectroMotor" rel="nofollow" target="_blank">
+                                            <img src="{{ asset("bundles/diplonauticlanding/images/electroMotor.svg")}}" alt="ElectroMotor">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="main-marks">
