@@ -10,11 +10,22 @@ body{
     background: url(../images/Background-mob.jpg) no-repeat center center fixed;
     background-size: cover;
     min-height: 480px;
-    height:100%;
+    height:100vh;
     width: 100%;
 }
 .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height:100%;
+}
+
+.initial {
+    display: initial;
 }
 
 a {
@@ -482,6 +493,16 @@ h4, .h4{
     overflow:scroll;
 }
 /*--------------------------------home----------------------------------------*/
+.navigation{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    width: 100%;
+    padding-left: 15px;
+} 
 .main{
     margin: 4% 0 20%;
 }
@@ -666,7 +687,6 @@ h4, .h4{
         min-height: 0;
     }
    
-    .main-index .main-description,
     .main-index .main-description-product {
         -ms-flex-item-align: stretch;
             align-self: stretch;
@@ -682,10 +702,15 @@ h4, .h4{
     }
 
     .main-index .main-description {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        max-height: 70vh;
+    }
+
+    .main-index .main-description .fixed-container{
+        max-height: 60vh;
+        overflow-y: scroll;
     }
 
     .main-index .main-description-product {
@@ -723,7 +748,10 @@ h4, .h4{
         font-size: 12px;
     }
     .main{
-        margin: 10% 0 6%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        margin: 0;
     }
     .product-title{
         margin-left: 6%;
@@ -747,6 +775,10 @@ h4, .h4{
         display: block;
         padding: 8px;
         font-size: 14px;
+    }
+    .contact-electro {
+        margin-bottom: 0;
+        margin-top: 42px;
     }
 }
 @media only screen and (min-width:992px) {
@@ -792,9 +824,6 @@ h4, .h4{
     .pictos p{
         font-size: 14px;
     }
-    .main{
-        margin: 8% 0 6%;
-    }
 /*    .main-index .main-description{
         min-height: 317px;
         padding: 30px 40px;
@@ -838,9 +867,6 @@ h4, .h4{
     .main-legal,
     .main-description{
         padding: 37px 74px 47px;
-    }
-    .main{
-        margin: 10% 0 6%;
     }
 }
 
